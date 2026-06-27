@@ -1,0 +1,394 @@
+[
+  {
+    "type": "package",
+    "id": "research",
+    "title": "باقة الباحث العلمي",
+    "ratio": "16:9",
+    "path": "images/packages/research.webp",
+    "folder": "images/packages/"
+  },
+  {
+    "type": "section",
+    "id": "g00",
+    "title": "اقتراح عنوان البحث",
+    "ratio": "1:1",
+    "path": "images/sections/g00.webp",
+    "folder": "images/sections/"
+  },
+  {
+    "type": "bot",
+    "id": "b001",
+    "title": "اقتراح عنوان وفكرة بحث نوعي",
+    "ratio": "1:1",
+    "path": "images/bots/b001.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b002",
+    "title": "اقتراح عنوان وفكرة بحث كمّي",
+    "ratio": "1:1",
+    "path": "images/bots/b002.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b003",
+    "title": "اقتراح عنوان وفكرة بحث مختلط",
+    "ratio": "1:1",
+    "path": "images/bots/b003.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "section",
+    "id": "g01",
+    "title": "صناعة خطة البحث",
+    "ratio": "1:1",
+    "path": "images/sections/g01.webp",
+    "folder": "images/sections/"
+  },
+  {
+    "type": "bot",
+    "id": "b004",
+    "title": "صناعة خطة بحث نوعي",
+    "ratio": "1:1",
+    "path": "images/bots/b004.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b005",
+    "title": "صناعة خطة بحث كمّي",
+    "ratio": "1:1",
+    "path": "images/bots/b005.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b006",
+    "title": "صناعة خطة بحث مختلط",
+    "ratio": "1:1",
+    "path": "images/bots/b006.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "section",
+    "id": "g02",
+    "title": "دعم خطة البحث",
+    "ratio": "1:1",
+    "path": "images/sections/g02.webp",
+    "folder": "images/sections/"
+  },
+  {
+    "type": "bot",
+    "id": "b007",
+    "title": "البحث عن الدراسات السابقة",
+    "ratio": "1:1",
+    "path": "images/bots/b007.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b008",
+    "title": "السمينار البحثي",
+    "ratio": "1:1",
+    "path": "images/bots/b008.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b009",
+    "title": "اكتشاف الفجوة البحثية",
+    "ratio": "1:1",
+    "path": "images/bots/b009.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "section",
+    "id": "g03",
+    "title": "خطة البحث الشاملة",
+    "ratio": "1:1",
+    "path": "images/sections/g03.webp",
+    "folder": "images/sections/"
+  },
+  {
+    "type": "bot",
+    "id": "b010",
+    "title": "الخطة النوعية الشاملة",
+    "ratio": "1:1",
+    "path": "images/bots/b010.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b011",
+    "title": "الخطة الكمّية الشاملة",
+    "ratio": "1:1",
+    "path": "images/bots/b011.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b012",
+    "title": "الخطة المختلطة الشاملة",
+    "ratio": "1:1",
+    "path": "images/bots/b012.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "section",
+    "id": "g04",
+    "title": "كتابة البحث غير الميداني",
+    "ratio": "1:1",
+    "path": "images/sections/g04.webp",
+    "folder": "images/sections/"
+  },
+  {
+    "type": "bot",
+    "id": "b013",
+    "title": "كتابة البحث الوثائقي",
+    "ratio": "1:1",
+    "path": "images/bots/b013.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b014",
+    "title": "كتابة البحث النصي",
+    "ratio": "1:1",
+    "path": "images/bots/b014.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b015",
+    "title": "كتابة البحث التاريخي",
+    "ratio": "1:1",
+    "path": "images/bots/b015.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b016",
+    "title": "كتابة البحث التأصيلي",
+    "ratio": "1:1",
+    "path": "images/bots/b016.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "section",
+    "id": "g05",
+    "title": "التوثيق والتحرير العلمي",
+    "ratio": "1:1",
+    "path": "images/sections/g05.webp",
+    "folder": "images/sections/"
+  },
+  {
+    "type": "bot",
+    "id": "b017",
+    "title": "المحتوى الشرعي الموثق",
+    "ratio": "1:1",
+    "path": "images/bots/b017.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b018",
+    "title": "إنشاء وتوثيق المحتوى",
+    "ratio": "1:1",
+    "path": "images/bots/b018.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b019",
+    "title": "البحوث الكاملة من المكتبة الشاملة",
+    "ratio": "1:1",
+    "path": "images/bots/b019.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b020",
+    "title": "الجامع في تحصيل المراجع",
+    "ratio": "1:1",
+    "path": "images/bots/b020.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b021",
+    "title": "التوثيق المرجعي الإحالي للروابط",
+    "ratio": "1:1",
+    "path": "images/bots/b021.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b022",
+    "title": "التوثيق المرجعي الإحالي للملفات",
+    "ratio": "1:1",
+    "path": "images/bots/b022.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "section",
+    "id": "g06",
+    "title": "تحليل البحث الميداني",
+    "ratio": "1:1",
+    "path": "images/sections/g06.webp",
+    "folder": "images/sections/"
+  },
+  {
+    "type": "bot",
+    "id": "b023",
+    "title": "التحليل الإحصائي التنفيذي",
+    "ratio": "1:1",
+    "path": "images/bots/b023.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b024",
+    "title": "تحليل النتائج البحثية",
+    "ratio": "1:1",
+    "path": "images/bots/b024.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b025",
+    "title": "التحليل الإحصائي المتقدم",
+    "ratio": "1:1",
+    "path": "images/bots/b025.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b026",
+    "title": "التقرير الإحصائي",
+    "ratio": "1:1",
+    "path": "images/bots/b026.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b027",
+    "title": "تحليل البحث الميداني الشامل",
+    "ratio": "1:1",
+    "path": "images/bots/b027.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "section",
+    "id": "g07",
+    "title": "التحرير اللغوي للنصوص",
+    "ratio": "1:1",
+    "path": "images/sections/g07.webp",
+    "folder": "images/sections/"
+  },
+  {
+    "type": "bot",
+    "id": "b028",
+    "title": "إعادة الصياغة",
+    "ratio": "1:1",
+    "path": "images/bots/b028.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b029",
+    "title": "التدقيق اللغوي",
+    "ratio": "1:1",
+    "path": "images/bots/b029.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b030",
+    "title": "تشكيل النصوص العربية",
+    "ratio": "1:1",
+    "path": "images/bots/b030.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b031",
+    "title": "إعراب النصوص",
+    "ratio": "1:1",
+    "path": "images/bots/b031.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "section",
+    "id": "g08",
+    "title": "التراجم والمعاجم",
+    "ratio": "1:1",
+    "path": "images/sections/g08.webp",
+    "folder": "images/sections/"
+  },
+  {
+    "type": "bot",
+    "id": "b032",
+    "title": "ترجمة الكلمات الغريبة",
+    "ratio": "1:1",
+    "path": "images/bots/b032.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b033",
+    "title": "ترجمة الأعلام",
+    "ratio": "1:1",
+    "path": "images/bots/b033.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b034",
+    "title": "ترجمة المذاهب والبلدان",
+    "ratio": "1:1",
+    "path": "images/bots/b034.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "section",
+    "id": "g09",
+    "title": "الجودة والإخراج",
+    "ratio": "1:1",
+    "path": "images/sections/g09.webp",
+    "folder": "images/sections/"
+  },
+  {
+    "type": "bot",
+    "id": "b035",
+    "title": "تخريج الحديث النبوي",
+    "ratio": "1:1",
+    "path": "images/bots/b035.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b036",
+    "title": "استيفاء المراجع وترتيبها",
+    "ratio": "1:1",
+    "path": "images/bots/b036.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b037",
+    "title": "الملخص والإغلاق البحثي",
+    "ratio": "1:1",
+    "path": "images/bots/b037.webp",
+    "folder": "images/bots/"
+  },
+  {
+    "type": "bot",
+    "id": "b038",
+    "title": "استدعاء بوتات البحث",
+    "ratio": "1:1",
+    "path": "images/bots/b038.webp",
+    "folder": "images/bots/"
+  }
+]

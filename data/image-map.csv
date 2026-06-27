@@ -1,0 +1,50 @@
+﻿type,id,title,ratio,path,folder
+package,research,باقة الباحث العلمي,16:9,images/packages/research.webp,images/packages/
+section,g00,اقتراح عنوان البحث,1:1,images/sections/g00.webp,images/sections/
+bot,b001,اقتراح عنوان وفكرة بحث نوعي,1:1,images/bots/b001.webp,images/bots/
+bot,b002,اقتراح عنوان وفكرة بحث كمّي,1:1,images/bots/b002.webp,images/bots/
+bot,b003,اقتراح عنوان وفكرة بحث مختلط,1:1,images/bots/b003.webp,images/bots/
+section,g01,صناعة خطة البحث,1:1,images/sections/g01.webp,images/sections/
+bot,b004,صناعة خطة بحث نوعي,1:1,images/bots/b004.webp,images/bots/
+bot,b005,صناعة خطة بحث كمّي,1:1,images/bots/b005.webp,images/bots/
+bot,b006,صناعة خطة بحث مختلط,1:1,images/bots/b006.webp,images/bots/
+section,g02,دعم خطة البحث,1:1,images/sections/g02.webp,images/sections/
+bot,b007,البحث عن الدراسات السابقة,1:1,images/bots/b007.webp,images/bots/
+bot,b008,السمينار البحثي,1:1,images/bots/b008.webp,images/bots/
+bot,b009,اكتشاف الفجوة البحثية,1:1,images/bots/b009.webp,images/bots/
+section,g03,خطة البحث الشاملة,1:1,images/sections/g03.webp,images/sections/
+bot,b010,الخطة النوعية الشاملة,1:1,images/bots/b010.webp,images/bots/
+bot,b011,الخطة الكمّية الشاملة,1:1,images/bots/b011.webp,images/bots/
+bot,b012,الخطة المختلطة الشاملة,1:1,images/bots/b012.webp,images/bots/
+section,g04,كتابة البحث غير الميداني,1:1,images/sections/g04.webp,images/sections/
+bot,b013,كتابة البحث الوثائقي,1:1,images/bots/b013.webp,images/bots/
+bot,b014,كتابة البحث النصي,1:1,images/bots/b014.webp,images/bots/
+bot,b015,كتابة البحث التاريخي,1:1,images/bots/b015.webp,images/bots/
+bot,b016,كتابة البحث التأصيلي,1:1,images/bots/b016.webp,images/bots/
+section,g05,التوثيق والتحرير العلمي,1:1,images/sections/g05.webp,images/sections/
+bot,b017,المحتوى الشرعي الموثق,1:1,images/bots/b017.webp,images/bots/
+bot,b018,إنشاء وتوثيق المحتوى,1:1,images/bots/b018.webp,images/bots/
+bot,b019,البحوث الكاملة من المكتبة الشاملة,1:1,images/bots/b019.webp,images/bots/
+bot,b020,الجامع في تحصيل المراجع,1:1,images/bots/b020.webp,images/bots/
+bot,b021,التوثيق المرجعي الإحالي للروابط,1:1,images/bots/b021.webp,images/bots/
+bot,b022,التوثيق المرجعي الإحالي للملفات,1:1,images/bots/b022.webp,images/bots/
+section,g06,تحليل البحث الميداني,1:1,images/sections/g06.webp,images/sections/
+bot,b023,التحليل الإحصائي التنفيذي,1:1,images/bots/b023.webp,images/bots/
+bot,b024,تحليل النتائج البحثية,1:1,images/bots/b024.webp,images/bots/
+bot,b025,التحليل الإحصائي المتقدم,1:1,images/bots/b025.webp,images/bots/
+bot,b026,التقرير الإحصائي,1:1,images/bots/b026.webp,images/bots/
+bot,b027,تحليل البحث الميداني الشامل,1:1,images/bots/b027.webp,images/bots/
+section,g07,التحرير اللغوي للنصوص,1:1,images/sections/g07.webp,images/sections/
+bot,b028,إعادة الصياغة,1:1,images/bots/b028.webp,images/bots/
+bot,b029,التدقيق اللغوي,1:1,images/bots/b029.webp,images/bots/
+bot,b030,تشكيل النصوص العربية,1:1,images/bots/b030.webp,images/bots/
+bot,b031,إعراب النصوص,1:1,images/bots/b031.webp,images/bots/
+section,g08,التراجم والمعاجم,1:1,images/sections/g08.webp,images/sections/
+bot,b032,ترجمة الكلمات الغريبة,1:1,images/bots/b032.webp,images/bots/
+bot,b033,ترجمة الأعلام,1:1,images/bots/b033.webp,images/bots/
+bot,b034,ترجمة المذاهب والبلدان,1:1,images/bots/b034.webp,images/bots/
+section,g09,الجودة والإخراج,1:1,images/sections/g09.webp,images/sections/
+bot,b035,تخريج الحديث النبوي,1:1,images/bots/b035.webp,images/bots/
+bot,b036,استيفاء المراجع وترتيبها,1:1,images/bots/b036.webp,images/bots/
+bot,b037,الملخص والإغلاق البحثي,1:1,images/bots/b037.webp,images/bots/
+bot,b038,استدعاء بوتات البحث,1:1,images/bots/b038.webp,images/bots/
