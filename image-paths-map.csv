@@ -1,0 +1,396 @@
+﻿type,id,title,old_image,new_image
+package,pkg01,باقة الباحث العلمي,,images/packages/pkg01.png
+section,pkg01-sec01,اقتراح عنوان البحث,,images/sections/pkg01-sec01.png
+bot,pkg01-sec01-bot01,اقتراح عنوان وفكرة بحث نوعي,,images/bots/pkg01-sec01-bot01.png
+bot,pkg01-sec01-bot02,اقتراح عنوان وفكرة بحث كمّي,,images/bots/pkg01-sec01-bot02.png
+bot,pkg01-sec01-bot03,اقتراح عنوان وفكرة بحث مختلط,,images/bots/pkg01-sec01-bot03.png
+section,pkg01-sec02,صناعة خطة البحث,,images/sections/pkg01-sec02.png
+bot,pkg01-sec02-bot01,صناعة خطة بحث نوعي,,images/bots/pkg01-sec02-bot01.png
+bot,pkg01-sec02-bot02,صناعة خطة بحث كمّي,,images/bots/pkg01-sec02-bot02.png
+bot,pkg01-sec02-bot03,صناعة خطة بحث مختلط,,images/bots/pkg01-sec02-bot03.png
+section,pkg01-sec03,دعم خطة البحث,,images/sections/pkg01-sec03.png
+bot,pkg01-sec03-bot01,البحث عن الدراسات السابقة,,images/bots/pkg01-sec03-bot01.png
+bot,pkg01-sec03-bot02,السمينار البحثي,,images/bots/pkg01-sec03-bot02.png
+bot,pkg01-sec03-bot03,اكتشاف الفجوة البحثية,,images/bots/pkg01-sec03-bot03.png
+section,pkg01-sec04,خطة البحث الشاملة,,images/sections/pkg01-sec04.png
+bot,pkg01-sec04-bot01,الخطة النوعية الشاملة,,images/bots/pkg01-sec04-bot01.png
+bot,pkg01-sec04-bot02,الخطة الكمّية الشاملة,,images/bots/pkg01-sec04-bot02.png
+bot,pkg01-sec04-bot03,الخطة المختلطة الشاملة,,images/bots/pkg01-sec04-bot03.png
+section,pkg01-sec05,كتابة البحث غير الميداني,,images/sections/pkg01-sec05.png
+bot,pkg01-sec05-bot01,كتابة البحث الوثائقي,,images/bots/pkg01-sec05-bot01.png
+bot,pkg01-sec05-bot02,كتابة البحث النصي,,images/bots/pkg01-sec05-bot02.png
+bot,pkg01-sec05-bot03,كتابة البحث التاريخي,,images/bots/pkg01-sec05-bot03.png
+bot,pkg01-sec05-bot04,كتابة البحث التأصيلي,,images/bots/pkg01-sec05-bot04.png
+section,pkg01-sec06,التوثيق والتحرير العلمي,,images/sections/pkg01-sec06.png
+bot,pkg01-sec06-bot01,المحتوى الشرعي الموثق,,images/bots/pkg01-sec06-bot01.png
+bot,pkg01-sec06-bot02,إنشاء وتوثيق المحتوى,,images/bots/pkg01-sec06-bot02.png
+bot,pkg01-sec06-bot03,البحوث الكاملة من المكتبة الشاملة,,images/bots/pkg01-sec06-bot03.png
+bot,pkg01-sec06-bot04,الجامع في تحصيل المراجع,,images/bots/pkg01-sec06-bot04.png
+bot,pkg01-sec06-bot05,التوثيق المرجعي الإحالي للروابط,,images/bots/pkg01-sec06-bot05.png
+bot,pkg01-sec06-bot06,التوثيق المرجعي الإحالي للملفات,,images/bots/pkg01-sec06-bot06.png
+section,pkg01-sec07,تحليل البحث الميداني,,images/sections/pkg01-sec07.png
+bot,pkg01-sec07-bot01,التحليل الإحصائي التنفيذي,,images/bots/pkg01-sec07-bot01.png
+bot,pkg01-sec07-bot02,تحليل النتائج البحثية,,images/bots/pkg01-sec07-bot02.png
+bot,pkg01-sec07-bot03,التحليل الإحصائي المتقدم,,images/bots/pkg01-sec07-bot03.png
+bot,pkg01-sec07-bot04,التقرير الإحصائي,,images/bots/pkg01-sec07-bot04.png
+bot,pkg01-sec07-bot05,تحليل البحث الميداني الشامل,,images/bots/pkg01-sec07-bot05.png
+section,pkg01-sec08,التحرير اللغوي للنصوص,,images/sections/pkg01-sec08.png
+bot,pkg01-sec08-bot01,إعادة الصياغة,,images/bots/pkg01-sec08-bot01.png
+bot,pkg01-sec08-bot02,التدقيق اللغوي,,images/bots/pkg01-sec08-bot02.png
+bot,pkg01-sec08-bot03,تشكيل النصوص العربية,,images/bots/pkg01-sec08-bot03.png
+bot,pkg01-sec08-bot04,إعراب النصوص,,images/bots/pkg01-sec08-bot04.png
+section,pkg01-sec09,التراجم والمعاجم,,images/sections/pkg01-sec09.png
+bot,pkg01-sec09-bot01,ترجمة الكلمات الغريبة,,images/bots/pkg01-sec09-bot01.png
+bot,pkg01-sec09-bot02,ترجمة الأعلام,,images/bots/pkg01-sec09-bot02.png
+bot,pkg01-sec09-bot03,ترجمة المذاهب والبلدان,,images/bots/pkg01-sec09-bot03.png
+section,pkg01-sec10,الجودة والإخراج,,images/sections/pkg01-sec10.png
+bot,pkg01-sec10-bot01,تخريج الحديث النبوي,,images/bots/pkg01-sec10-bot01.png
+bot,pkg01-sec10-bot02,استيفاء المراجع وترتيبها,,images/bots/pkg01-sec10-bot02.png
+bot,pkg01-sec10-bot03,الملخص والإغلاق البحثي,,images/bots/pkg01-sec10-bot03.png
+bot,pkg01-sec10-bot04,استدعاء بوتات البحث,,images/bots/pkg01-sec10-bot04.png
+package,pkg02,باقة ملحقات الباحث,,images/packages/pkg02.png
+section,pkg02-sec01,المراجعة والفحص,,images/sections/pkg02-sec01.png
+bot,pkg02-sec01-bot01,مراجعة البحث النوعي الميداني,,images/bots/pkg02-sec01-bot01.png
+bot,pkg02-sec01-bot02,مراجعة البحث الكمي,,images/bots/pkg02-sec01-bot02.png
+bot,pkg02-sec01-bot03,مراجعة البحث المختلط,,images/bots/pkg02-sec01-bot03.png
+bot,pkg02-sec01-bot04,مراجعة البحث غير الميداني,,images/bots/pkg02-sec01-bot04.png
+bot,pkg02-sec01-bot05,الفاحص المنهجي للبحث التطبيقي,,images/bots/pkg02-sec01-bot05.png
+section,pkg02-sec02,الفحص والتنسيق الأكاديمي,,images/sections/pkg02-sec02.png
+bot,pkg02-sec02-bot01,كشف الانتحال والأسلوب البشري,,images/bots/pkg02-sec02-bot01.png
+bot,pkg02-sec02-bot02,تنسيق الرسائل الجامعية,,images/bots/pkg02-sec02-bot02.png
+section,pkg02-sec03,الأدلة المرجعية للبحث,,images/sections/pkg02-sec03.png
+bot,pkg02-sec03-bot01,دليل كتابة الرسائل العلمية,,images/bots/pkg02-sec03-bot01.png
+bot,pkg02-sec03-bot02,دليل الأنظمة البحثية,,images/bots/pkg02-sec03-bot02.png
+bot,pkg02-sec03-bot03,دليل فهارس المخطوطات,,images/bots/pkg02-sec03-bot03.png
+section,pkg02-sec04,الأدوات المساعدة,,images/sections/pkg02-sec04.png
+bot,pkg02-sec04-bot01,هندسة الأوامر,,images/bots/pkg02-sec04-bot01.png
+bot,pkg02-sec04-bot02,برمجيات العقيل,,images/bots/pkg02-sec04-bot02.png
+bot,pkg02-sec04-bot03,روابط تفريغ النصوص,,images/bots/pkg02-sec04-bot03.png
+bot,pkg02-sec04-bot04,واجهة ويب لخدمة البحث,,images/bots/pkg02-sec04-bot04.png
+bot,pkg02-sec04-bot05,استمارة تحكيم الأداة البحثية,,images/bots/pkg02-sec04-bot05.png
+section,pkg02-sec05,الترجمة للإنجليزية,,images/sections/pkg02-sec05.png
+bot,pkg02-sec05-bot01,ترجمة المصطلحات,,images/bots/pkg02-sec05-bot01.png
+bot,pkg02-sec05-bot02,ترجمة البحوث العلمية,,images/bots/pkg02-sec05-bot02.png
+section,pkg02-sec06,القرآن وعلومه,,images/sections/pkg02-sec06.png
+bot,pkg02-sec06-bot01,مفردات القرآن,,images/bots/pkg02-sec06-bot01.png
+bot,pkg02-sec06-bot02,المتشابه اللفظي في القرآن,,images/bots/pkg02-sec06-bot02.png
+bot,pkg02-sec06-bot03,علوم القرآن والقراءات,,images/bots/pkg02-sec06-bot03.png
+section,pkg02-sec07,علوم الحديث,,images/sections/pkg02-sec07.png
+bot,pkg02-sec07-bot01,شرح غريب الحديث,,images/bots/pkg02-sec07-bot01.png
+bot,pkg02-sec07-bot02,فهرسة وشرح غريب الحديث,,images/bots/pkg02-sec07-bot02.png
+bot,pkg02-sec07-bot03,علل الحديث النبوي,,images/bots/pkg02-sec07-bot03.png
+section,pkg02-sec08,الفقه وأصوله,,images/sections/pkg02-sec08.png
+bot,pkg02-sec08-bot01,تقسيم التركة في الفرائض,,images/bots/pkg02-sec08-bot01.png
+bot,pkg02-sec08-bot02,نظام الزكاة,,images/bots/pkg02-sec08-bot02.png
+bot,pkg02-sec08-bot03,أصول الفقه,,images/bots/pkg02-sec08-bot03.png
+section,pkg02-sec09,الفتوى والتوجيه الشرعي,,images/sections/pkg02-sec09.png
+bot,pkg02-sec09-bot01,الرد الفوري على الفتوى الشرعية,,images/bots/pkg02-sec09-bot01.png
+section,pkg02-sec10,أدوات الإنتاج المعرفي,,images/sections/pkg02-sec10.png
+bot,pkg02-sec10-bot01,المساعد في تأليف الكتب,,images/bots/pkg02-sec10-bot01.png
+bot,pkg02-sec10-bot02,مؤلف كتب حوارية تفاعلية,,images/bots/pkg02-sec10-bot02.png
+bot,pkg02-sec10-bot03,تحويل الكتب إلى إلكترونية,,images/bots/pkg02-sec10-bot03.png
+package,pkg03,باقة التعليم والتدريب,,images/packages/pkg03.png
+section,pkg03-sec01,التعليم التفاعلي,,images/sections/pkg03-sec01.png
+bot,pkg03-sec01-bot01,المعلم التفاعلي في حفظ القرآن,,images/bots/pkg03-sec01-bot01.png
+bot,pkg03-sec01-bot02,المعلم التفاعلي في الرياضيات,,images/bots/pkg03-sec01-bot02.png
+bot,pkg03-sec01-bot03,المعلم التفاعلي في الإنجليزي,,images/bots/pkg03-sec01-bot03.png
+bot,pkg03-sec01-bot04,المعلم التفاعلي في نطق الإنجليزي,,images/bots/pkg03-sec01-bot04.png
+bot,pkg03-sec01-bot05,المعلم التفاعلي في النحو,,images/bots/pkg03-sec01-bot05.png
+section,pkg03-sec02,الدعوة والخطاب الشرعي,,images/sections/pkg03-sec02.png
+bot,pkg03-sec02-bot01,صناعة الخطبة المنبرية,,images/bots/pkg03-sec02-bot01.png
+section,pkg03-sec03,القدرات والإلهام,,images/sections/pkg03-sec03.png
+bot,pkg03-sec03-bot01,اختبار قدرات العامة,,images/bots/pkg03-sec03-bot01.png
+bot,pkg03-sec03-bot02,أحاجي الكلمات المبعثرة,,images/bots/pkg03-sec03-bot02.png
+bot,pkg03-sec03-bot03,استلهام حكمة لكل فكرة,,images/bots/pkg03-sec03-bot03.png
+section,pkg03-sec04,التدريب والتصميم,,images/sections/pkg03-sec04.png
+bot,pkg03-sec04-bot01,إعداد حقيبة تدريبية,,images/bots/pkg03-sec04-bot01.png
+bot,pkg03-sec04-bot02,تصميم عروض بوربوينت,,images/bots/pkg03-sec04-bot02.png
+bot,pkg03-sec04-bot03,صفحة هبوط تدريبية,,images/bots/pkg03-sec04-bot03.png
+section,pkg03-sec05,التصميم التعليمي,,images/sections/pkg03-sec05.png
+bot,pkg03-sec05-bot01,تصميم رسوم تعليمية,,images/bots/pkg03-sec05-bot01.png
+bot,pkg03-sec05-bot02,تصميم ملصقات تعليمية,,images/bots/pkg03-sec05-bot02.png
+bot,pkg03-sec05-bot03,تصميم وبناء المناهج التعليمية,,images/bots/pkg03-sec05-bot03.png
+bot,pkg03-sec05-bot04,تشريح سينمائي واقعي,,images/bots/pkg03-sec05-bot04.png
+bot,pkg03-sec05-bot05,تشريح سينمائي شفاف,,images/bots/pkg03-sec05-bot05.png
+section,pkg03-sec06,البرامج المساعدة,,images/sections/pkg03-sec06.png
+bot,pkg03-sec06-bot01,قارئ رموز الرياضيات الذكي,,images/bots/pkg03-sec06-bot01.png
+section,pkg03-sec07,النظام والقانون,,images/sections/pkg03-sec07.png
+bot,pkg03-sec07-bot01,النظام السعودي,,images/bots/pkg03-sec07-bot01.png
+bot,pkg03-sec07-bot02,التطبيقات القضائية,,images/bots/pkg03-sec07-bot02.png
+bot,pkg03-sec07-bot03,الاستثمار الأجنبي,,images/bots/pkg03-sec07-bot03.png
+bot,pkg03-sec07-bot04,إعادة الصياغة القانونية,,images/bots/pkg03-sec07-bot04.png
+package,pkg04,باقة التصميم الذكي,,images/packages/pkg04.png
+section,pkg04-sec01,النصوص والصور,,images/sections/pkg04-sec01.png
+bot,pkg04-sec01-bot01,تحويل الصورة إلى نص,,images/bots/pkg04-sec01-bot01.png
+bot,pkg04-sec01-bot02,تحويل النص إلى صورة,,images/bots/pkg04-sec01-bot02.png
+bot,pkg04-sec01-bot03,توليد الصور الدعائية,,images/bots/pkg04-sec01-bot03.png
+section,pkg04-sec02,تحرير الصور,,images/sections/pkg04-sec02.png
+bot,pkg04-sec02-bot01,تكبير وتحسين الصور,,images/bots/pkg04-sec02-bot01.png
+bot,pkg04-sec02-bot02,تعديل وتحرير الصور,,images/bots/pkg04-sec02-bot02.png
+bot,pkg04-sec02-bot03,ترميم الصورة وإزالة التشوهات,,images/bots/pkg04-sec02-bot03.png
+bot,pkg04-sec02-bot04,تعديل الصورة بعجلة الألوان,,images/bots/pkg04-sec02-bot04.png
+bot,pkg04-sec02-bot05,عمل مؤثرات على الصور,,images/bots/pkg04-sec02-bot05.png
+section,pkg04-sec03,وصف وتحليل الصور,,images/sections/pkg04-sec03.png
+bot,pkg04-sec03-bot01,تحليل الصور,,images/bots/pkg04-sec03-bot01.png
+bot,pkg04-sec03-bot02,وصف الصورة,,images/bots/pkg04-sec03-bot02.png
+section,pkg04-sec04,تصميم وتطبيق الشعارات,,images/sections/pkg04-sec04.png
+bot,pkg04-sec04-bot01,تصميم الشعارات,,images/bots/pkg04-sec04-bot01.png
+bot,pkg04-sec04-bot02,تصميم الشعار على الرخام,,images/bots/pkg04-sec04-bot02.png
+bot,pkg04-sec04-bot03,تصميم شعار بملامح الوجه,,images/bots/pkg04-sec04-bot03.png
+bot,pkg04-sec04-bot04,تركيب الشعار على المنتج,,images/bots/pkg04-sec04-bot04.png
+section,pkg04-sec05,الهوية البصرية,,images/sections/pkg04-sec05.png
+bot,pkg04-sec05-bot01,تصميم هوية بصرية,,images/bots/pkg04-sec05-bot01.png
+bot,pkg04-sec05-bot02,تصميم هوية بصرية مؤسسية,,images/bots/pkg04-sec05-bot02.png
+bot,pkg04-sec05-bot03,تصميم بورتفوليو تفاعلي,,images/bots/pkg04-sec05-bot03.png
+bot,pkg04-sec05-bot04,تصميم بورتفوليو مهني,,images/bots/pkg04-sec05-bot04.png
+bot,pkg04-sec05-bot05,تصميم موك اب إعلاني,,images/bots/pkg04-sec05-bot05.png
+section,pkg04-sec06,المنتج الإعلاني,,images/sections/pkg04-sec06.png
+bot,pkg04-sec06-bot01,تصميم المنتجات,,images/bots/pkg04-sec06-bot01.png
+bot,pkg04-sec06-bot02,تصميم إعلان تجاري,,images/bots/pkg04-sec06-bot02.png
+section,pkg04-sec07,بناء الصورة والهيكل البصري,,images/sections/pkg04-sec07.png
+bot,pkg04-sec07-bot01,تصميم مسارات فيكتور,,images/bots/pkg04-sec07-bot01.png
+bot,pkg04-sec07-bot02,تصميم أيقونات وصور مصغرة,,images/bots/pkg04-sec07-bot02.png
+section,pkg04-sec08,تفكيك المنتج وتحليل مكوناته,,images/sections/pkg04-sec08.png
+bot,pkg04-sec08-bot01,تفكيك العناصر وترتيبها,,images/bots/pkg04-sec08-bot01.png
+bot,pkg04-sec08-bot02,تقسيم المنتج إلى عدة قطع,,images/bots/pkg04-sec08-bot02.png
+bot,pkg04-sec08-bot03,تكوين المجسّم من عناصره,,images/bots/pkg04-sec08-bot03.png
+bot,pkg04-sec08-bot04,سلسلة المراحل العمرية للمنتج,,images/bots/pkg04-sec08-bot04.png
+section,pkg04-sec09,انفوغرافي وهولوغرافي,,images/sections/pkg04-sec09.png
+bot,pkg04-sec09-bot01,تصميم انفوغرافي,,images/bots/pkg04-sec09-bot01.png
+bot,pkg04-sec09-bot02,تصميم هولوغرافي مخططات,,images/bots/pkg04-sec09-bot02.png
+bot,pkg04-sec09-bot03,تصميم هولوغرافي عرض صورة,,images/bots/pkg04-sec09-bot03.png
+bot,pkg04-sec09-bot04,تصميم هولوغرافي عرض صور,,images/bots/pkg04-sec09-bot04.png
+section,pkg04-sec10,التحويل الفني وإعادة التشكيل,,images/sections/pkg04-sec10.png
+bot,pkg04-sec10-bot01,تحويل الكائنات إلى منحوتات,,images/bots/pkg04-sec10-bot01.png
+bot,pkg04-sec10-bot02,تحويل الشخصية إلى تمثال,,images/bots/pkg04-sec10-bot02.png
+bot,pkg04-sec10-bot03,تحويل الرسم إلى شخصية واقعية,,images/bots/pkg04-sec10-bot03.png
+bot,pkg04-sec10-bot04,تحويل الوجه إلى فن هندسي,,images/bots/pkg04-sec10-bot04.png
+section,pkg04-sec11,الدمج والتركيب البصري,,images/sections/pkg04-sec11.png
+bot,pkg04-sec11-bot01,دمج الرسم مع الواقع,,images/bots/pkg04-sec11-bot01.png
+bot,pkg04-sec11-bot02,دمج العناصر في صورة واحدة,,images/bots/pkg04-sec11-bot02.png
+bot,pkg04-sec11-bot03,دمج الشخصية مع المنتج,,images/bots/pkg04-sec11-bot03.png
+bot,pkg04-sec11-bot04,تركيب أوراق نقدية على كائن,,images/bots/pkg04-sec11-bot04.png
+section,pkg04-sec12,إضفاء الطابع التعبيري والتأثيرات,,images/sections/pkg04-sec12.png
+bot,pkg04-sec12-bot01,إظهار تعابير بشرية على المنتج,,images/bots/pkg04-sec12-bot01.png
+bot,pkg04-sec12-bot02,تصميم تأثيرات نصية,,images/bots/pkg04-sec12-bot02.png
+section,pkg04-sec13,الخطوط والكتابات العربية,,images/sections/pkg04-sec13.png
+bot,pkg04-sec13-bot01,تهنئة باسمك وصورتك,,images/bots/pkg04-sec13-bot01.png
+bot,pkg04-sec13-bot02,تصميم تهاني العيد,,images/bots/pkg04-sec13-bot02.png
+bot,pkg04-sec13-bot03,دليل الخطوط العربية,,images/bots/pkg04-sec13-bot03.png
+bot,pkg04-sec13-bot04,كتابة كوفي مربع شبكي,,images/bots/pkg04-sec13-bot04.png
+bot,pkg04-sec13-bot05,كتابة الإعلانات التجارية,,images/bots/pkg04-sec13-bot05.png
+package,pkg05,باقة الفن والأزياء,,images/packages/pkg05.png
+section,pkg05-sec01,الكتابة على الوجه,,images/sections/pkg05-sec01.png
+bot,pkg05-sec01-bot01,الكتابة على الوجه,,images/bots/pkg05-sec01-bot01.png
+bot,pkg05-sec01-bot02,تايبوغرافي على الوجه,,images/bots/pkg05-sec01-bot02.png
+bot,pkg05-sec01-bot03,تايبوغرافي متكيف مع الخامة,,images/bots/pkg05-sec01-bot03.png
+bot,pkg05-sec01-bot04,تصميم الوشم التجريدي,,images/bots/pkg05-sec01-bot04.png
+section,pkg05-sec02,الأغلفة والقوالب,,images/sections/pkg05-sec02.png
+bot,pkg05-sec02-bot01,تصميم أغلفة الكتب,,images/bots/pkg05-sec02-bot01.png
+bot,pkg05-sec02-bot02,تصميم أغلفة المجلات,,images/bots/pkg05-sec02-bot02.png
+bot,pkg05-sec02-bot03,تصميم أغلفة المجلات,,images/bots/pkg05-sec02-bot03.png
+bot,pkg05-sec02-bot04,تصميم أغلفة المنتجات,,images/bots/pkg05-sec02-bot04.png
+bot,pkg05-sec02-bot05,تصميم أغطية شفافة,,images/bots/pkg05-sec02-bot05.png
+bot,pkg05-sec02-bot06,تصميم قوالب زجاجية,,images/bots/pkg05-sec02-bot06.png
+section,pkg05-sec03,تصميم الزخارف,,images/sections/pkg05-sec03.png
+bot,pkg05-sec03-bot01,تصميم زخارف إسلامية,,images/bots/pkg05-sec03-bot01.png
+bot,pkg05-sec03-bot02,تصميم زخارف كلاسيكية,,images/bots/pkg05-sec03-bot02.png
+section,pkg05-sec04,التصميم بالرسم,,images/sections/pkg05-sec04.png
+bot,pkg05-sec04-bot01,فن التصميم بالقلم الرصاص,,images/bots/pkg05-sec04-bot01.png
+bot,pkg05-sec04-bot02,فن التصميم بالألوان المائية,,images/bots/pkg05-sec04-bot02.png
+bot,pkg05-sec04-bot03,فن التصميم بالألوان الزيتية,,images/bots/pkg05-sec04-bot03.png
+bot,pkg05-sec04-bot04,فن التصميم بالمساحيق,,images/bots/pkg05-sec04-bot04.png
+bot,pkg05-sec04-bot05,فن التصميم بالرمل,,images/bots/pkg05-sec04-bot05.png
+bot,pkg05-sec04-bot06,فن التصميم بالتطريز,,images/bots/pkg05-sec04-bot06.png
+section,pkg05-sec05,الأزياء والإكسسوارات,,images/sections/pkg05-sec05.png
+bot,pkg05-sec05-bot01,تصميم أزياء تراثية,,images/bots/pkg05-sec05-bot01.png
+bot,pkg05-sec05-bot02,تصميم أزياء مستقبلية,,images/bots/pkg05-sec05-bot02.png
+bot,pkg05-sec05-bot03,تصميم قوالب لؤلؤية,,images/bots/pkg05-sec05-bot03.png
+bot,pkg05-sec05-bot04,تصميم فن الأظافر,,images/bots/pkg05-sec05-bot04.png
+section,pkg05-sec06,الفنون السريالية,,images/sections/pkg05-sec06.png
+bot,pkg05-sec06-bot01,توليد الصور السريالية,,images/bots/pkg05-sec06-bot01.png
+bot,pkg05-sec06-bot02,توليد بورتريه سريالية,,images/bots/pkg05-sec06-bot02.png
+section,pkg05-sec07,التصميم الضوئي,,images/sections/pkg05-sec07.png
+bot,pkg05-sec07-bot01,دليل الإضاءة,,images/bots/pkg05-sec07-bot01.png
+bot,pkg05-sec07-bot02,انعكاس الطيف على الأجسام,,images/bots/pkg05-sec07-bot02.png
+bot,pkg05-sec07-bot03,توليد مشهد بإضاءة نيون,,images/bots/pkg05-sec07-bot03.png
+bot,pkg05-sec07-bot04,إظهار الكائن بأشعة سينية,,images/bots/pkg05-sec07-bot04.png
+bot,pkg05-sec07-bot05,تحسين إضاءة الوجه,,images/bots/pkg05-sec07-bot05.png
+bot,pkg05-sec07-bot06,تأثير نيون على الحواف,,images/bots/pkg05-sec07-bot06.png
+section,pkg05-sec08,تصميم التراث الإفريقي,,images/sections/pkg05-sec08.png
+bot,pkg05-sec08-bot01,تصميم ملامح افريقية,,images/bots/pkg05-sec08-bot01.png
+bot,pkg05-sec08-bot02,تصميم مشهد أزياء افريقية,,images/bots/pkg05-sec08-bot02.png
+section,pkg05-sec09,تصميم الخامات,,images/sections/pkg05-sec09.png
+bot,pkg05-sec09-bot01,دليل الخامات,,images/bots/pkg05-sec09-bot01.png
+bot,pkg05-sec09-bot02,تصميم الخامات على الشعار,,images/bots/pkg05-sec09-bot02.png
+bot,pkg05-sec09-bot03,تصميم الخامات على الكتابة,,images/bots/pkg05-sec09-bot03.png
+bot,pkg05-sec09-bot04,تصميم الخامات على الوجه,,images/bots/pkg05-sec09-bot04.png
+bot,pkg05-sec09-bot05,تصميم الخامات على القماش,,images/bots/pkg05-sec09-bot05.png
+package,pkg06,باقة تصميم ثري دي,,images/packages/pkg06.png
+section,pkg06-sec01,التحويل الهندسي,,images/sections/pkg06-sec01.png
+bot,pkg06-sec01-bot01,خبير الرسم المعماري,,images/bots/pkg06-sec01-bot01.png
+bot,pkg06-sec01-bot02,تحويل كروكي إلى ثري دي,,images/bots/pkg06-sec01-bot02.png
+bot,pkg06-sec01-bot03,تحويل الرسوم إلى مجسّمات,,images/bots/pkg06-sec01-bot03.png
+bot,pkg06-sec01-bot04,عمل هياكل معمارية من الصور,,images/bots/pkg06-sec01-bot04.png
+bot,pkg06-sec01-bot05,تحويل المناظير إلى مساقط علوية,,images/bots/pkg06-sec01-bot05.png
+bot,pkg06-sec01-bot06,تحليل الفراغات الداخلية,,images/bots/pkg06-sec01-bot06.png
+section,pkg06-sec02,التصميم الإنشائي,,images/sections/pkg06-sec02.png
+bot,pkg06-sec02-bot01,مهندس التصميم الإنشائي,,images/bots/pkg06-sec02-bot01.png
+bot,pkg06-sec02-bot02,إنشاء شبكة المضلعات,,images/bots/pkg06-sec02-bot02.png
+section,pkg06-sec03,التصميم والتخطيط,,images/sections/pkg06-sec03.png
+bot,pkg06-sec03-bot01,التصميم الداخلي,,images/bots/pkg06-sec03-bot01.png
+bot,pkg06-sec03-bot02,التصميم المعماري,,images/bots/pkg06-sec03-bot02.png
+section,pkg06-sec04,الإخراج المعماري,,images/sections/pkg06-sec04.png
+bot,pkg06-sec04-bot01,تصميم ايزوميتريك معماري,,images/bots/pkg06-sec04-bot01.png
+bot,pkg06-sec04-bot02,قياس قطع الأثاث,,images/bots/pkg06-sec04-bot02.png
+bot,pkg06-sec04-bot03,تحريك الأثاث للغرف الفارغة,,images/bots/pkg06-sec04-bot03.png
+section,pkg06-sec05,تصميم موديل ثري دي,,images/sections/pkg06-sec05.png
+bot,pkg06-sec05-bot01,تحليل الصورة ثري دي,,images/bots/pkg06-sec05-bot01.png
+bot,pkg06-sec05-bot02,نمذجة ثري دي,,images/bots/pkg06-sec05-bot02.png
+bot,pkg06-sec05-bot03,خامات ثري دي,,images/bots/pkg06-sec05-bot03.png
+section,pkg06-sec06,تجهيز المشاهد,,images/sections/pkg06-sec06.png
+bot,pkg06-sec06-bot01,إضاءات ثري دي,,images/bots/pkg06-sec06-bot01.png
+bot,pkg06-sec06-bot02,كاميرا ثري دي,,images/bots/pkg06-sec06-bot02.png
+bot,pkg06-sec06-bot03,رندر ثري دي,,images/bots/pkg06-sec06-bot03.png
+section,pkg06-sec07,الحركة والإنتاج,,images/sections/pkg06-sec07.png
+bot,pkg06-sec07-bot01,مفاصل الحركة ثري دي,,images/bots/pkg06-sec07-bot01.png
+bot,pkg06-sec07-bot02,مؤثرات ثري دي,,images/bots/pkg06-sec07-bot02.png
+bot,pkg06-sec07-bot03,انيميشن ثري دي,,images/bots/pkg06-sec07-bot03.png
+bot,pkg06-sec07-bot04,موشن جرافيك ثري دي,,images/bots/pkg06-sec07-bot04.png
+bot,pkg06-sec07-bot05,الإنتاج ثلاثي الأبعاد,,images/bots/pkg06-sec07-bot05.png
+section,pkg06-sec08,الألوان والأنماط,,images/sections/pkg06-sec08.png
+bot,pkg06-sec08-bot01,دليل الألوان,,images/bots/pkg06-sec08-bot01.png
+bot,pkg06-sec08-bot02,دليل الأنماط,,images/bots/pkg06-sec08-bot02.png
+package,pkg07,باقة صناعة الأفلام,,images/packages/pkg07.png
+section,pkg07-sec01,توليد الصور,,images/sections/pkg07-sec01.png
+bot,pkg07-sec01-bot01,توليد برومبت سينمائي,,images/bots/pkg07-sec01-bot01.png
+bot,pkg07-sec01-bot02,توليد لقطة سينمائية,,images/bots/pkg07-sec01-bot02.png
+section,pkg07-sec02,فكرة الفيلم وهويته,,images/sections/pkg07-sec02.png
+bot,pkg07-sec02-bot01,اختيار فكرة فيلم سينمائي,,images/bots/pkg07-sec02-bot01.png
+bot,pkg07-sec02-bot02,ضبط الأسلوب والهوية البصرية,,images/bots/pkg07-sec02-bot02.png
+bot,pkg07-sec02-bot03,اختيار هوية شخصية الفيلم,,images/bots/pkg07-sec02-bot03.png
+bot,pkg07-sec02-bot04,وصف وتحليل الشخصية,,images/bots/pkg07-sec02-bot04.png
+bot,pkg07-sec02-bot05,إنشاء وضعيات للشخصية,,images/bots/pkg07-sec02-bot05.png
+bot,pkg07-sec02-bot06,تعابير الوجه ولغة الجسد,,images/bots/pkg07-sec02-bot06.png
+section,pkg07-sec03,التأسيس والمرجعية,,images/sections/pkg07-sec03.png
+bot,pkg07-sec03-bot01,توليد مشاهد ستوري بورد,,images/bots/pkg07-sec03-bot01.png
+bot,pkg07-sec03-bot02,توليد إطارات مرجعية للفيديو,,images/bots/pkg07-sec03-bot02.png
+section,pkg07-sec04,التحريك والإخراج,,images/sections/pkg07-sec04.png
+bot,pkg07-sec04-bot01,هيكل الحركة والمنطق الفيزيائي,,images/bots/pkg07-sec04-bot01.png
+bot,pkg07-sec04-bot02,تحريك الشخصية السينمائية,,images/bots/pkg07-sec04-bot02.png
+bot,pkg07-sec04-bot03,الإخراج الحركي واللقطات,,images/bots/pkg07-sec04-bot03.png
+bot,pkg07-sec04-bot04,مراجعة الاتساق والثبات,,images/bots/pkg07-sec04-bot04.png
+bot,pkg07-sec04-bot05,دعم إنتاج الفيلم,,images/bots/pkg07-sec04-bot05.png
+bot,pkg07-sec04-bot06,إنتاج فيلم كامل,,images/bots/pkg07-sec04-bot06.png
+section,pkg07-sec05,توليد الفيديو,,images/sections/pkg07-sec05.png
+bot,pkg07-sec05-bot01,توليد مقطع برومو,,images/bots/pkg07-sec05-bot01.png
+bot,pkg07-sec05-bot02,توليد قصص فيديو,,images/bots/pkg07-sec05-bot02.png
+bot,pkg07-sec05-bot03,دمج لقطات في فيديو واحد,,images/bots/pkg07-sec05-bot03.png
+bot,pkg07-sec05-bot04,بناء مشهد متعدد اللقطات,,images/bots/pkg07-sec05-bot04.png
+section,pkg07-sec06,منصات توليد الفيديو,,images/sections/pkg07-sec06.png
+bot,pkg07-sec06-bot01,داعم فيو ثري بالعربية,,images/bots/pkg07-sec06-bot01.png
+bot,pkg07-sec06-bot02,الدليل الإرشادي لمنصة هيقزفيلد,,images/bots/pkg07-sec06-bot02.png
+section,pkg07-sec07,الإنتاج والإخراج,,images/sections/pkg07-sec07.png
+bot,pkg07-sec07-bot01,توليد فيلم بالمونتاج الإيقاعي,,images/bots/pkg07-sec07-bot01.png
+bot,pkg07-sec07-bot02,توليد فيديو تايم لابس,,images/bots/pkg07-sec07-bot02.png
+bot,pkg07-sec07-bot03,توليد دوران حول المنتج,,images/bots/pkg07-sec07-bot03.png
+section,pkg07-sec08,التفكيك والتحليل البصري,,images/sections/pkg07-sec08.png
+bot,pkg07-sec08-bot01,انيميشن تفكيك عناصر المنتج,,images/bots/pkg07-sec08-bot01.png
+bot,pkg07-sec08-bot02,انيميشن إعادة بناء الشكل الجاهز,,images/bots/pkg07-sec08-bot02.png
+bot,pkg07-sec08-bot03,انيميشن الموقع الافتراضي,,images/bots/pkg07-sec08-bot03.png
+section,pkg07-sec09,الإعلانات والهوية البصرية,,images/sections/pkg07-sec09.png
+bot,pkg07-sec09-bot01,توليد إعلانات كرتونية,,images/bots/pkg07-sec09-bot01.png
+bot,pkg07-sec09-bot02,المنتجات تتكلم بنمط بيكسار,,images/bots/pkg07-sec09-bot02.png
+bot,pkg07-sec09-bot03,تحويل الشخصية إلى كائن آخر,,images/bots/pkg07-sec09-bot03.png
+section,pkg07-sec10,الصوت والمقامات,,images/sections/pkg07-sec10.png
+bot,pkg07-sec10-bot01,الشعر الغنائي,,images/bots/pkg07-sec10-bot01.png
+bot,pkg07-sec10-bot02,كتابة المقامات الأدبية,,images/bots/pkg07-sec10-bot02.png
+bot,pkg07-sec10-bot03,تحليل المقامات الموسيقية,,images/bots/pkg07-sec10-bot03.png
+section,pkg07-sec11,الموسيقى والمؤثرات,,images/sections/pkg07-sec11.png
+bot,pkg07-sec11-bot01,توصيف موسيقى لمنصة سنو,,images/bots/pkg07-sec11-bot01.png
+bot,pkg07-sec11-bot02,توليد معزوفة شرقية,,images/bots/pkg07-sec11-bot02.png
+bot,pkg07-sec11-bot03,المؤثرات الصوتية,,images/bots/pkg07-sec11-bot03.png
+bot,pkg07-sec11-bot04,مساعد تفريغ النصوص,,images/bots/pkg07-sec11-bot04.png
+section,pkg07-sec12,الفصاحة والخطابة,,images/sections/pkg07-sec12.png
+bot,pkg07-sec12-bot01,علم العروض والأوزان الشعرية,,images/bots/pkg07-sec12-bot01.png
+bot,pkg07-sec12-bot02,تشكيل نصوص التعليق الصوتي,,images/bots/pkg07-sec12-bot02.png
+package,pkg08,باقة الإدارة والتسويق,,images/packages/pkg08.png
+section,pkg08-sec01,المشاريع وريادة الأعمال,,images/sections/pkg08-sec01.png
+bot,pkg08-sec01-bot01,دراسة جدوى تطوير الموارد,,images/bots/pkg08-sec01-bot01.png
+bot,pkg08-sec01-bot02,دراسة جدوى ربحية,,images/bots/pkg08-sec01-bot02.png
+bot,pkg08-sec01-bot03,صناعة المشاريع الذاتية,,images/bots/pkg08-sec01-bot03.png
+section,pkg08-sec02,توليد الأفكار,,images/sections/pkg08-sec02.png
+bot,pkg08-sec02-bot01,صناعة الأفكار,,images/bots/pkg08-sec02-bot01.png
+bot,pkg08-sec02-bot02,العصف الذهني,,images/bots/pkg08-sec02-bot02.png
+bot,pkg08-sec02-bot03,نظرية تريز للحلول الابتكارية,,images/bots/pkg08-sec02-bot03.png
+section,pkg08-sec03,الدعم النفسي,,images/sections/pkg08-sec03.png
+bot,pkg08-sec03-bot01,علم النفس التسويقي,,images/bots/pkg08-sec03-bot01.png
+bot,pkg08-sec03-bot02,إدارة الضغوط والأزمات,,images/bots/pkg08-sec03-bot02.png
+section,pkg08-sec04,الإعلان والحملات,,images/sections/pkg08-sec04.png
+bot,pkg08-sec04-bot01,كتابة محتوى تسويقي,,images/bots/pkg08-sec04-bot01.png
+bot,pkg08-sec04-bot02,كتابة إعلانات تجارية,,images/bots/pkg08-sec04-bot02.png
+bot,pkg08-sec04-bot03,إطلاق الحملات التسويقية,,images/bots/pkg08-sec04-bot03.png
+section,pkg08-sec05,تحسين الظهور,,images/sections/pkg08-sec05.png
+bot,pkg08-sec05-bot01,خبير الأسماء التجارية,,images/bots/pkg08-sec05-bot01.png
+bot,pkg08-sec05-bot02,الكلمات المفتاحية,,images/bots/pkg08-sec05-bot02.png
+bot,pkg08-sec05-bot03,تحسين محركات البحث,,images/bots/pkg08-sec05-bot03.png
+bot,pkg08-sec05-bot04,تحسين المتاجر الإلكترونية,,images/bots/pkg08-sec05-bot04.png
+bot,pkg08-sec05-bot05,تحسين تجربة العميل,,images/bots/pkg08-sec05-bot05.png
+section,pkg08-sec06,تجهيز أصول الموقع,,images/sections/pkg08-sec06.png
+bot,pkg08-sec06-bot01,البحث المرجعي وتحليل الهوية,,images/bots/pkg08-sec06-bot01.png
+bot,pkg08-sec06-bot02,توليد التصور الكامل للموقع,,images/bots/pkg08-sec06-bot02.png
+bot,pkg08-sec06-bot03,تجهيز الأصول المطابقة للتصميم,,images/bots/pkg08-sec06-bot03.png
+bot,pkg08-sec06-bot04,تحويل التصميم إلى موقع,,images/bots/pkg08-sec06-bot04.png
+section,pkg08-sec07,الويب وتصميم المواقع,,images/sections/pkg08-sec07.png
+bot,pkg08-sec07-bot01,تصميم واجهة ويب,,images/bots/pkg08-sec07-bot01.png
+bot,pkg08-sec07-bot02,واجهة المستخدم البرمجية,,images/bots/pkg08-sec07-bot02.png
+section,pkg08-sec08,التسويق الرقمي والتحويل,,images/sections/pkg08-sec08.png
+bot,pkg08-sec08-bot01,تصميم صفحات الهبوط,,images/bots/pkg08-sec08-bot01.png
+bot,pkg08-sec08-bot02,خطة التسويق الإلكترونية,,images/bots/pkg08-sec08-bot02.png
+section,pkg08-sec09,الإدارة المهنية والتشغيل,,images/sections/pkg08-sec09.png
+bot,pkg08-sec09-bot01,إنشاء خطة عمل تشغيلية,,images/bots/pkg08-sec09-bot01.png
+bot,pkg08-sec09-bot02,كتابة سيرة ذاتية,,images/bots/pkg08-sec09-bot02.png
+bot,pkg08-sec09-bot03,التمكين الوظيفي,,images/bots/pkg08-sec09-bot03.png
+bot,pkg08-sec09-bot04,صياغة العقود التجارية,,images/bots/pkg08-sec09-bot04.png
+bot,pkg08-sec09-bot05,إعداد التقارير الدورية,,images/bots/pkg08-sec09-bot05.png
+bot,pkg08-sec09-bot06,المساعد العقاري الذكي,,images/bots/pkg08-sec09-bot06.png
+section,pkg08-sec10,الاستثمار والتمويل,,images/sections/pkg08-sec10.png
+bot,pkg08-sec10-bot01,المستشار المالي الذكي,,images/bots/pkg08-sec10-bot01.png
+bot,pkg08-sec10-bot02,التحليل الفني والمالي للأسهم,,images/bots/pkg08-sec10-bot02.png
+bot,pkg08-sec10-bot03,ماسحة الأخبار المالية,,images/bots/pkg08-sec10-bot03.png
+bot,pkg08-sec10-bot04,تحليل صفقات الفوركس,,images/bots/pkg08-sec10-bot04.png
+section,pkg08-sec11,الحوكمة والأسواق,,images/sections/pkg08-sec11.png
+bot,pkg08-sec11-bot01,حوكمة الشركات,,images/bots/pkg08-sec11-bot01.png
+bot,pkg08-sec11-bot02,حوكمة مؤشرات الأداء,,images/bots/pkg08-sec11-bot02.png
+bot,pkg08-sec11-bot03,نظام الشركات ولوائح السوق,,images/bots/pkg08-sec11-bot03.png
+bot,pkg08-sec11-bot04,محلل السوق والمنافسين,,images/bots/pkg08-sec11-bot04.png
+section,pkg08-sec12,المنصات والأتمتة,,images/sections/pkg08-sec12.png
+bot,pkg08-sec12-bot01,دعم البائعين في منصة خمسات,,images/bots/pkg08-sec12-bot01.png
+bot,pkg08-sec12-bot02,المساعد الذكي في أتمتة العمل,,images/bots/pkg08-sec12-bot02.png
+package,pkg09,باقة الصحة والمجتمع,,images/packages/pkg09.png
+section,pkg09-sec01,القياس النفسي,,images/sections/pkg09-sec01.png
+bot,pkg09-sec01-bot01,مقياس التركيز الذهني,,images/bots/pkg09-sec01-bot01.png
+bot,pkg09-sec01-bot02,قياس الحيل النفسية,,images/bots/pkg09-sec01-bot02.png
+bot,pkg09-sec01-bot03,فهم الشخصية,,images/bots/pkg09-sec01-bot03.png
+section,pkg09-sec02,الوعي الصحي,,images/sections/pkg09-sec02.png
+bot,pkg09-sec02-bot01,الكشف عن المنتج الصحي,,images/bots/pkg09-sec02-bot01.png
+section,pkg09-sec03,التواصل والتفاعل,,images/sections/pkg09-sec03.png
+bot,pkg09-sec03-bot01,قياس الكاريزما والتواصل,,images/bots/pkg09-sec03-bot01.png
+bot,pkg09-sec03-bot02,إدارة الحوار الهادف,,images/bots/pkg09-sec03-bot02.png
+section,pkg09-sec04,الصحة الاجتماعية,,images/sections/pkg09-sec04.png
+bot,pkg09-sec04-bot01,التأهيل الأسري والزوجي,,images/bots/pkg09-sec04-bot01.png
+bot,pkg09-sec04-bot02,مدرسة الحكم النبوي الرشيد,,images/bots/pkg09-sec04-bot02.png
+package,pkg10,باقة صناعة البوتات,,images/packages/pkg10.png
+section,pkg10-sec01,أساسيات التكوين,,images/sections/pkg10-sec01.png
+bot,pkg10-sec01-bot01,تعليم جي بي تي,,images/bots/pkg10-sec01-bot01.png
+bot,pkg10-sec01-bot02,صناعة نماذج جي بي تي,,images/bots/pkg10-sec01-bot02.png
+bot,pkg10-sec01-bot03,اختبار مرتكزات الذكاء الاصطناعي,,images/bots/pkg10-sec01-bot03.png
+section,pkg10-sec02,هندسة التعليمات,,images/sections/pkg10-sec02.png
+bot,pkg10-sec02-bot01,تعليمات النظام والسياق,,images/bots/pkg10-sec02-bot01.png
+bot,pkg10-sec02-bot02,تعليمات المواعيد والمهام,,images/bots/pkg10-sec02-bot02.png
+bot,pkg10-sec02-bot03,تعليمات وضع الوكيل,,images/bots/pkg10-sec02-bot03.png
+section,pkg10-sec03,تعليمات التكوين,,images/sections/pkg10-sec03.png
+bot,pkg10-sec03-bot01,تعليمات تكوين النموذج,,images/bots/pkg10-sec03-bot01.png
+bot,pkg10-sec03-bot02,شارح تعليمات تكوين النماذج,,images/bots/pkg10-sec03-bot02.png
+bot,pkg10-sec03-bot03,اختبار تعليمات تكوين النماذج,,images/bots/pkg10-sec03-bot03.png
+bot,pkg10-sec03-bot04,إدارة ملفات المعرفة,,images/bots/pkg10-sec03-bot04.png
