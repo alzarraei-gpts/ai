@@ -1,1 +1,38 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>بوابة النماذج الذكية</title><link rel="stylesheet" href="css/style.css"></head><body><header class="topbar"><div class="shell"><a class="brand" href="index.html"><span class="brand-mark"></span><span><h1>بوابة النماذج الذكية</h1><p>واجهة عامة للباقات والبوتات</p></span></a><nav class="nav"><a href="index.html">الرئيسية</a><a href="package.html">التقسيمات</a></nav></div></header><main id="app"></main><div id="modal" class="modal" onclick="if(event.target.id==='modal')this.classList.remove('open')"></div><footer class="footer"><div class="shell">بوابة قابلة للتوسع: الباقات ← التقسيمات ← البوتات.</div></footer><script src="data/research-dynamic-data.js"></script><script src="js/data-service.js"></script><script src="js/app.js"></script></body></html>
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>تقسيمات الباقة | بوابة النماذج الذكية</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="public-sections">
+  <header class="topbar public-topbar">
+    <div class="shell">
+      <a class="brand" href="index.html" aria-label="بوابة النماذج الذكية">
+        <span class="brand-mark"></span>
+        <span>
+          <h1>بوابة النماذج الذكية</h1>
+          <p>التقسيمات التابعة للباقة المختارة</p>
+        </span>
+      </a>
+      <nav class="nav" aria-label="التنقل الرئيسي">
+        <a href="index.html">الرئيسية</a>
+        <a href="package.html">التقسيمات</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <div id="modal" class="modal" onclick="if(event.target.id==='modal')this.classList.remove('open')"></div>
+
+  <footer class="footer">
+    <div class="shell">اختر تقسيمًا للوصول إلى البوتات التابعة له.</div>
+  </footer>
+
+  <script src="data/research-dynamic-data.js"></script>
+  <script src="js/data-service.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
