@@ -1,3 +1,4 @@
+window.__DATA_VERSION__ = window.__DATA_VERSION__ || '2026-06-28-01';
 const STORAGE_KEY = 'researchPackageData.v1';
 
 function isAdminPage(){
@@ -20,7 +21,7 @@ async function loadProjectFileData(){
   if(window.RESEARCH_DATA && validData(window.RESEARCH_DATA)){
     return cloneData(window.RESEARCH_DATA);
   }
-  const res = await fetch('data/research-dynamic-data.json', {cache:'no-store'});
+  const res = await fetch('data/research-dynamic-data.json?v=' + encodeURIComponent(window.__DATA_VERSION__ || '1'), {cache:'no-store'});
   if(!res.ok) throw new Error('تعذر تحميل data/research-dynamic-data.json');
   const data = await res.json();
   if(!validData(data)) throw new Error('ملف data/research-dynamic-data.json لا يحتوي على packages صحيحة');
