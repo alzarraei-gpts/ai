@@ -4,30 +4,62 @@ function isAdminPage(){
   return /(^|\/)admin\.html$/i.test(location.pathname) || location.pathname.endsWith('/admin.html');
 }
 
+function cloneData(data){
+  return JSON.parse(JSON.stringify(data));
+}
+
+function packageCount(data){
+  return Array.isArray(data?.packages) ? data.packages.length : 0;
+}
+
+function validData(data){
+  return data && Array.isArray(data.packages) && data.packages.length > 0;
+}
+
+async function loadProjectFileData(){
+  if(window.RESEARCH_DATA && validData(window.RESEARCH_DATA)){
+    return cloneData(window.RESEARCH_DATA);
+  }
+  const res = await fetch('data/research-dynamic-data.json', {cache:'no-store'});
+  if(!res.ok) throw new Error('تعذر تحميل data/research-dynamic-data.json');
+  const data = await res.json();
+  if(!validData(data)) throw new Error('ملف data/research-dynamic-data.json لا يحتوي على packages صحيحة');
+  return data;
+}
+
 async function loadData(){
-  // مهم: صفحات الزائر لا تقرأ الحفظ المؤقت من localStorage.
-  // هذا يمنع ظهور صور/مسارات قديمة بعد تصدير JSON أو JS واستبدال الملفات.
-  if(isAdminPage()){
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if(saved){
-      try { return JSON.parse(saved); } catch(e){ console.warn('تعذر قراءة الحفظ المؤقت، سيتم تجاهله.', e); }
+  const fileData = await loadProjectFileData();
+
+  // صفحات الزائر تقرأ ملفات المشروع فقط، ولا تتأثر بالحفظ المؤقت في المتصفح.
+  if(!isAdminPage()) return fileData;
+
+  // لوحة التحكم تستخدم الحفظ المؤقت فقط إذا كان أحدث/أوسع من ملف المشروع.
+  // إذا كان الحفظ المؤقت يحتوي باقة واحدة بينما ملف المشروع يحتوي عشر باقات، نتجاهله تلقائيًا.
+  const saved = localStorage.getItem(STORAGE_KEY);
+  if(saved){
+    try{
+      const savedData = JSON.parse(saved);
+      if(validData(savedData)){
+        const savedCount = packageCount(savedData);
+        const fileCount = packageCount(fileData);
+        if(savedCount >= fileCount){
+          return savedData;
+        }
+        console.warn('تم تجاهل الحفظ المؤقت لأنه يحتوي باقات أقل من ملف المشروع.', {savedCount, fileCount});
+        localStorage.removeItem(STORAGE_KEY);
+      }
+    }catch(e){
+      console.warn('تعذر قراءة الحفظ المؤقت، سيتم تجاهله.', e);
+      localStorage.removeItem(STORAGE_KEY);
     }
   }
 
-  // المصدر الأفضل للعرض المنشور: ملف JS الجاهز
-  // data/research-dynamic-data.js يجب أن يحتوي: window.RESEARCH_DATA = {...};
-  if(window.RESEARCH_DATA){
-    return JSON.parse(JSON.stringify(window.RESEARCH_DATA));
-  }
-
-  // بديل عند التشغيل عبر سيرفر محلي أو GitHub Pages
-  const res = await fetch('data/research-dynamic-data.json', {cache:'no-store'});
-  if(!res.ok) throw new Error('تعذر تحميل data/research-dynamic-data.json');
-  return await res.json();
+  // بعد استعادة ملف العشر باقات، نخزنه مؤقتًا للوحة التحكم حتى تظهر القوائم كاملة.
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(fileData));
+  return fileData;
 }
 
 function saveData(data){
-  // الحفظ المؤقت خاص بلوحة التحكم فقط. الحفظ الدائم يكون بتصدير JSON/JS واستبدال ملفات data.
   if(isAdminPage()){
     localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
   }
