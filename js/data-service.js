@@ -1,4 +1,4 @@
-window.__DATA_VERSION__ = window.__DATA_VERSION__ || '2026-06-28-01';
+window.__DATA_VERSION__ = window.__DATA_VERSION__ || '2026-06-28-02';
 const STORAGE_KEY = 'researchPackageData.v1';
 
 function isAdminPage(){
@@ -18,10 +18,26 @@ function validData(data){
 }
 
 async function loadProjectFileData(){
+  const version = encodeURIComponent(window.__DATA_VERSION__ || Date.now());
+
+  // في GitHub Pages نقرأ JSON مباشرة مع كسر الكاش، حتى لا تبقى الواجهة عالقة على research-dynamic-data.js قديم.
+  if(location.protocol === 'http:' || location.protocol === 'https:'){
+    try{
+      const res = await fetch('data/research-dynamic-data.json?v=' + version + '&t=' + Date.now(), {cache:'no-store'});
+      if(res.ok){
+        const data = await res.json();
+        if(validData(data)) return data;
+      }
+    }catch(e){
+      console.warn('تعذر تحميل JSON مباشرة، سيتم استخدام بيانات JS إن وجدت.', e);
+    }
+  }
+
   if(window.RESEARCH_DATA && validData(window.RESEARCH_DATA)){
     return cloneData(window.RESEARCH_DATA);
   }
-  const res = await fetch('data/research-dynamic-data.json?v=' + encodeURIComponent(window.__DATA_VERSION__ || '1'), {cache:'no-store'});
+
+  const res = await fetch('data/research-dynamic-data.json?v=' + version + '&t=' + Date.now(), {cache:'no-store'});
   if(!res.ok) throw new Error('تعذر تحميل data/research-dynamic-data.json');
   const data = await res.json();
   if(!validData(data)) throw new Error('ملف data/research-dynamic-data.json لا يحتوي على packages صحيحة');
@@ -97,9 +113,12 @@ function normalizeImagePath(src){
 function versionedImageSrc(src){
   const value = normalizeImagePath(src);
   if(!value || /^([a-zA-Z]:\\|[a-zA-Z]:\/|file:)/.test(value)) return '';
-  if(value.startsWith('data:') || /^https?:\/\//.test(value)) return value;
-  const v = encodeURIComponent(window.__DATA_VERSION__ || '1');
-  return value + (value.includes('?') ? '&' : '?') + 'v=' + v;
+  if(value.startsWith('data:')) return value;
+  // كسر كاش الصور بقوة؛ مفيد عند استبدال صورة بالاسم نفسه في GitHub Pages.
+  const v = encodeURIComponent((window.__DATA_VERSION__ || 'v') + '-' + Date.now());
+  if(/^https?:\/\//.test(value)) return value + (value.includes('?') ? '&' : '?') + 'v=' + v;
+  const encoded = value.split('/').map(part => encodeURIComponent(part)).join('/');
+  return encoded + (encoded.includes('?') ? '&' : '?') + 'v=' + v;
 }
 
 function imageOrPlaceholder(src, label, cls='media-square'){
