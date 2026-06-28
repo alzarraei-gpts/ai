@@ -3,10 +3,26 @@ let DATA;
 let selectedPackageId = null;
 let selectedSectionId = null;
 let selectedBotId = null;
-const SESSION_IMAGE_URLS = new Map();
-function sessionPreviewSrc(value){
+
+const ADMIN_IMAGE_CACHE_KEY = 'baqat-admin-image-preview-cache-v1';
+let ADMIN_IMAGE_CACHE = {};
+try{
+  ADMIN_IMAGE_CACHE = JSON.parse(localStorage.getItem(ADMIN_IMAGE_CACHE_KEY) || '{}') || {};
+}catch(e){
+  ADMIN_IMAGE_CACHE = {};
+}
+function saveAdminImageCache(){
+  try{ localStorage.setItem(ADMIN_IMAGE_CACHE_KEY, JSON.stringify(ADMIN_IMAGE_CACHE)); }catch(e){ console.warn('تعذر حفظ معاينة الصورة محليًا:', e); }
+}
+function adminPreviewSrc(value){
   value = normalizeImagePathValue(value);
-  return SESSION_IMAGE_URLS.get(value) || value;
+  return ADMIN_IMAGE_CACHE[value] || value;
+}
+function cacheAdminPreview(path, dataUrl){
+  path = normalizeImagePathValue(path);
+  if(!path || !dataUrl) return;
+  ADMIN_IMAGE_CACHE[path] = dataUrl;
+  saveAdminImageCache();
 }
 
 
@@ -246,7 +262,7 @@ function editorCard(level, item){
         ${isBot ? textarea(prefix+'Example', 'مثال الاستخدام', item.example || '') : ''}
       </div>
     </div>
-    <div class="toolbar unified-save-row"><button class="btn primary" type="button" onclick="${saveFn}()">حفظ ${meta.label}</button><button class="btn" type="button" onclick="adoptCurrentPath('${prefix}Image')">اعتماد المسار الحالي</button><button class="btn" type="button" onclick="copyCurrentPath('${prefix}Image')">نسخ المسار الحالي</button></div>
+    <div class="toolbar unified-save-row"><button class="btn primary" type="button" onclick="${saveFn}()">حفظ ${meta.label}</button><button class="btn" type="button" onclick="adoptCurrentPath('${prefix}Image')">اعتماد المسار</button><button class="btn" type="button" onclick="copyCurrentPath('${prefix}Image')">نسخ المسار</button></div>
   </section>`;
 }
 
@@ -257,15 +273,15 @@ function imageEditor(id,label,value,ratioClass,suggested){
   const safe = escapeHtml(value || '');
   const cls = ratioClass === 'wide' ? 'admin-preview wide' : 'admin-preview square';
   const isBad = /^([a-zA-Z]:\\|[a-zA-Z]:\/|file:)/.test(value||'');
-  const sessionSrc = sessionPreviewSrc(value);
-  const cacheSrc = value && !isBad && !sessionSrc.startsWith('blob:') && !sessionSrc.startsWith('data:') && !/^https?:\/\//.test(sessionSrc) ? sessionSrc + (sessionSrc.includes('?')?'&':'?') + 'v=' + encodeURIComponent(DATA?.updatedAt || '1') : sessionSrc;
+  const previewSrc = adminPreviewSrc(value);
+  const cacheSrc = value && !isBad && !previewSrc.startsWith('data:') && !/^https?:\/\//.test(previewSrc) ? previewSrc + (previewSrc.includes('?')?'&':'?') + 'v=' + encodeURIComponent(DATA?.updatedAt || '1') : previewSrc;
   const preview = value && !isBad ? `<img id="${id}Preview" class="${cls}" src="${escapeHtml(cacheSrc)}" alt="${escapeHtml(label)}" onerror="this.outerHTML='<div id=&quot;${id}Preview&quot; class=&quot;${cls}&quot;>لم تظهر الصورة<br><small>${safe}</small></div>'">` : `<div id="${id}Preview" class="${cls}">${isBad?'مسار Windows غير صالح للنشر':'لا توجد صورة'}</div>`;
   const folder = folderForInput(id);
   return `<div class="asset-box">
     <label class="asset-label" for="${id}">${label}</label>
     ${preview}
     <div class="asset-path-card"><span>مجلد الصورة المعتمد</span><code>${escapeHtml(folder)}/</code><small>اكتب اسم الصورة كما هو بعد وضعها داخل هذا المجلد.</small></div>
-    <div class="image-row"><input id="${id}" value="${safe}" placeholder="${escapeHtml(suggested)}" oninput="previewImagePath('${id}')"><label class="btn upload-btn">اختيار صورة باسمها الأصلي<input type="file" accept="image/*" hidden onchange="pickImage(event,'${id}','${ratioClass}')"></label><button class="btn" type="button" onclick="testImagePath('${id}')">اختبار الظهور</button></div>
+    <div class="image-row"><input id="${id}" value="${safe}" placeholder="${escapeHtml(suggested)}" oninput="previewImagePath('${id}')"><label class="btn upload-btn">اختيار صورة<input type="file" accept="image/*" hidden onchange="pickImage(event,'${id}','${ratioClass}')"></label><button class="btn" type="button" onclick="testImagePath('${id}')">اختبار الظهور</button></div>
     <p class="small">التثبيت الدائم: ضع الصورة داخل <code>${escapeHtml(folder)}</code>، ثم اكتب/اعتمد مسارها كما هو. لا توجد أسماء مفروضة مثل g00 أو b001.</p>
   </div>`;
 }
@@ -289,7 +305,7 @@ function savePackage(){
   p.description = val('packageDesc');
   const packageImageValue = normalizeImagePathValue(val('packageImage'));
   if(packageImageValue) p.image = packageImageValue;
-  persist('تم حفظ الباقة مؤقتًا. صدّر JSON للحفظ النهائي.');
+  persist('تم حفظ الباقة مؤقتًا. صدّر JSON للحفظ النهائي.', false);
 }
 function saveSection(){
   const s = sec(); if(!s) return showStatus('لا يوجد تقسيم للحفظ.', true);
@@ -297,7 +313,7 @@ function saveSection(){
   s.description = val('sectionDesc');
   const sectionImageValue = normalizeImagePathValue(val('sectionImage'));
   if(sectionImageValue) s.image = sectionImageValue;
-  persist('تم حفظ التقسيم مؤقتًا. صدّر JSON للحفظ النهائي.');
+  persist('تم حفظ التقسيم مؤقتًا. صدّر JSON للحفظ النهائي.', false);
 }
 function saveBot(){
   const b = bot(); if(!b) return showStatus('لا يوجد بوت للحفظ.', true);
@@ -309,7 +325,7 @@ function saveBot(){
   b.gemini = val('botGemini');
   b.limits = val('botLimits');
   b.example = val('botExample');
-  persist('تم حفظ البوت مؤقتًا. صدّر JSON للحفظ النهائي.');
+  persist('تم حفظ البوت مؤقتًا. صدّر JSON للحفظ النهائي.', false);
 }
 
 function addPackage(){
@@ -342,10 +358,10 @@ function addBot(){
   persist('تمت إضافة البوت: ' + title);
 }
 
-function persist(msg){
+function persist(msg, rerender=true){
   DATA.updatedAt = new Date().toISOString();
   saveData(DATA);
-  renderAdmin();
+  if(rerender) renderAdmin();
   confirmSave(msg || 'تم الحفظ مؤقتًا.');
 }
 
@@ -396,25 +412,34 @@ function previewImagePath(id){
     old.outerHTML = `<div id="${id}Preview" class="${cls}">مسار Windows لن يعمل بعد النشر</div>`; return;
   }
   if(!value){ old.outerHTML = `<div id="${id}Preview" class="${cls}">لا توجد صورة</div>`; return; }
-  const sessionSrc = sessionPreviewSrc(value);
-  const cacheSrc = sessionSrc.startsWith('blob:') || sessionSrc.startsWith('data:') || /^https?:\/\//.test(sessionSrc) ? sessionSrc : sessionSrc + (sessionSrc.includes('?') ? '&' : '?') + 'v=' + encodeURIComponent(DATA?.updatedAt || Date.now());
+  const previewSrc = adminPreviewSrc(value);
+  const cacheSrc = previewSrc.startsWith('data:') || /^https?:\/\//.test(previewSrc) ? previewSrc : previewSrc + (previewSrc.includes('?') ? '&' : '?') + 'v=' + encodeURIComponent(DATA?.updatedAt || Date.now());
   old.outerHTML = `<img id="${id}Preview" class="${cls}" src="${escapeHtml(cacheSrc)}" alt="معاينة الصورة" onerror="this.outerHTML='<div id=&quot;${id}Preview&quot; class=&quot;${cls}&quot;>لم تظهر الصورة؛ تحقق من وجود الملف في المسار<br><small>${escapeHtml(value)}</small></div>'">`;
 }
 async function pickImage(event,id,ratioClass){
   const file = event.target.files?.[0]; if(!file) return;
   const folder = folderForInput(id);
-  const path = `${folder}/${file.name}`;
+  const path = normalizeImagePathValue(`${folder}/${file.name}`);
   const input = document.getElementById(id);
-  if(input) input.value = normalizeImagePathValue(path);
+  if(input) input.value = path;
+
+  let dataUrl = '';
+  try{
+    dataUrl = await resizeImage(file, ratioClass === 'wide' ? 1600 : 1200, ratioClass === 'wide' ? 900 : 1200);
+    cacheAdminPreview(path, dataUrl);
+  }catch(e){
+    console.warn('تعذر ضغط الصورة للمعاينة؛ سيتم استخدام رابط مؤقت.', e);
+  }
+
   const old = document.getElementById(id+'Preview');
-  const url = URL.createObjectURL(file);
-  SESSION_IMAGE_URLS.set(normalizeImagePathValue(path), url);
   if(old){
-    old.outerHTML = `<img id="${id}Preview" class="${ratioClass==='wide'?'admin-preview wide':'admin-preview square'}" src="${url}" alt="معاينة الصورة">`;
+    const src = dataUrl || URL.createObjectURL(file);
+    old.outerHTML = `<img id="${id}Preview" class="${ratioClass==='wide'?'admin-preview wide':'admin-preview square'}" src="${src}" alt="معاينة الصورة">`;
   }
   persistImagePathFromInput(id);
-  confirmSave('تم حفظ مسار الصورة للعنصر الحالي. ستبقى المعاينة ظاهرة أثناء الجلسة، وللظهور بعد التحديث ضع الملف داخل: ' + folder);
+  confirmSave('تم حفظ مسار الصورة، وستبقى المعاينة ظاهرة بعد الحفظ والتحديث المحلي. للظهور في الموقع النهائي ضع الملف نفسه داخل: ' + folder);
 }
+
 function resizeImage(file,maxW,maxH){
   return new Promise((resolve,reject)=>{
     const reader = new FileReader();
@@ -445,8 +470,8 @@ function testImagePath(id){
   const value = input.value;
   if(!value) return showStatus('لا يوجد مسار صورة لاختباره.', true);
   const img = new Image();
-  const sessionSrc = sessionPreviewSrc(value);
-  const src = sessionSrc.startsWith('blob:') || sessionSrc.startsWith('data:') || /^https?:\/\//.test(sessionSrc) ? sessionSrc : sessionSrc + (sessionSrc.includes('?') ? '&' : '?') + 'v=' + encodeURIComponent(Date.now());
+  const previewSrc = adminPreviewSrc(value);
+  const src = previewSrc.startsWith('data:') || /^https?:\/\//.test(previewSrc) ? previewSrc : previewSrc + (previewSrc.includes('?') ? '&' : '?') + 'v=' + encodeURIComponent(Date.now());
   img.onload = () => confirmSave('الصورة موجودة وتظهر من هذا المسار: ' + value);
   img.onerror = () => showStatus('الصورة لا تظهر. تأكد أن الملف موجود فعليًا هنا: ' + value, true);
   img.src = src;
