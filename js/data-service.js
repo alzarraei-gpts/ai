@@ -1,17 +1,58 @@
+const STORAGE_KEY = 'researchPackageData.v1';
 
-const STORAGE_KEY = 'smartModelsPortalData.v1';
+function isAdminPage(){
+  return /(^|\/)admin\.html$/i.test(location.pathname) || location.pathname.endsWith('/admin.html');
+}
+
 async function loadData(){
-  const saved = localStorage.getItem(STORAGE_KEY);
-  if(saved){ try { return JSON.parse(saved); } catch(e){} }
-  if(window.RESEARCH_DATA) return JSON.parse(JSON.stringify(window.RESEARCH_DATA));
+  // مهم: صفحات الزائر لا تقرأ الحفظ المؤقت من localStorage.
+  // هذا يمنع ظهور صور/مسارات قديمة بعد تصدير JSON أو JS واستبدال الملفات.
+  if(isAdminPage()){
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if(saved){
+      try { return JSON.parse(saved); } catch(e){ console.warn('تعذر قراءة الحفظ المؤقت، سيتم تجاهله.', e); }
+    }
+  }
+
+  // المصدر الأفضل للعرض المنشور: ملف JS الجاهز
+  // data/research-dynamic-data.js يجب أن يحتوي: window.RESEARCH_DATA = {...};
+  if(window.RESEARCH_DATA){
+    return JSON.parse(JSON.stringify(window.RESEARCH_DATA));
+  }
+
+  // بديل عند التشغيل عبر سيرفر محلي أو GitHub Pages
   const res = await fetch('data/research-dynamic-data.json', {cache:'no-store'});
+  if(!res.ok) throw new Error('تعذر تحميل data/research-dynamic-data.json');
   return await res.json();
 }
-function saveData(data){ localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); }
-function resetData(){ localStorage.removeItem(STORAGE_KEY); location.reload(); }
-function slugify(text){
-  return String(text||'item').trim().toLowerCase().replace(/[\s_]+/g,'-').replace(/[^\u0600-\u06FFa-z0-9-]/g,'').replace(/-+/g,'-').replace(/^-+|-+$/g,'').slice(0,60) || ('item-'+Date.now());
+
+function saveData(data){
+  // الحفظ المؤقت خاص بلوحة التحكم فقط. الحفظ الدائم يكون بتصدير JSON/JS واستبدال ملفات data.
+  if(isAdminPage()){
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  }
 }
+
+function resetData(){
+  localStorage.removeItem(STORAGE_KEY);
+  location.reload();
+}
+
+function clearTemporaryAdminData(){
+  localStorage.removeItem(STORAGE_KEY);
+}
+
+function slugify(text){
+  return String(text||'item')
+    .trim()
+    .toLowerCase()
+    .replace(/[\s_]+/g,'-')
+    .replace(/[^\u0600-\u06FFa-z0-9-]/g,'')
+    .replace(/-+/g,'-')
+    .replace(/^-+|-+$/g,'')
+    .slice(0,60) || ('item-'+Date.now());
+}
+
 function normalizeImagePath(src){
   let value = String(src || '').trim();
   if(!value) return '';
@@ -19,14 +60,15 @@ function normalizeImagePath(src){
   value = value.replace(/^\.\//, '');
   return value;
 }
+
 function versionedImageSrc(src){
   const value = normalizeImagePath(src);
   if(!value || /^([a-zA-Z]:\\|[a-zA-Z]:\/|file:)/.test(value)) return '';
-  // لا نضيف رقم إصدار للصور المضمّنة أو الروابط الخارجية الطويلة.
   if(value.startsWith('data:') || /^https?:\/\//.test(value)) return value;
   const v = encodeURIComponent(window.__DATA_VERSION__ || '1');
   return value + (value.includes('?') ? '&' : '?') + 'v=' + v;
 }
+
 function imageOrPlaceholder(src, label, cls='media-square'){
   const clean = normalizeImagePath(src);
   const finalSrc = versionedImageSrc(clean);
@@ -36,16 +78,51 @@ function imageOrPlaceholder(src, label, cls='media-square'){
   }
   return `<div class="${cls}"><div class="placeholder">${safeLabel}</div></div>`;
 }
-function escapeHtml(s){return String(s??'').replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));}
+
+function escapeHtml(s){
+  return String(s??'').replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+}
+
 function getPackage(data,id){
   const packages = data?.packages || [];
   if(id) return packages.find(p=>p.id===id) || packages[0];
   return packages[0];
 }
-function findSection(data,id,pkgId){ return getPackage(data,pkgId)?.sections?.find(s=>s.id===id); }
+
+function findSection(data,id,pkgId){
+  return getPackage(data,pkgId)?.sections?.find(s=>s.id===id);
+}
+
 function downloadJSON(data, filename='research-dynamic-data.json'){
   if(!data){ alert('لا توجد بيانات جاهزة للتصدير.'); return; }
   const blob = new Blob([JSON.stringify(data,null,2)], {type:'application/json;charset=utf-8'});
-  const url = URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download=filename; a.click(); URL.revokeObjectURL(url); if(window.confirmSave) window.confirmSave('تم تصدير ملف JSON. استبدل به data/research-dynamic-data.json للحفظ النهائي.');
+  const url = URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=url;
+  a.download=filename;
+  a.click();
+  URL.revokeObjectURL(url);
+  if(window.confirmSave) window.confirmSave('تم تصدير ملف JSON. استبدل به data/research-dynamic-data.json للحفظ النهائي.');
 }
-function readJSONFile(file){ return new Promise((resolve,reject)=>{ const r=new FileReader(); r.onload=()=>{try{resolve(JSON.parse(r.result))}catch(e){reject(e)}}; r.onerror=reject; r.readAsText(file,'utf-8'); }); }
+
+function downloadJS(data, filename='research-dynamic-data.js'){
+  if(!data){ alert('لا توجد بيانات جاهزة للتصدير.'); return; }
+  const content = 'window.RESEARCH_DATA = ' + JSON.stringify(data, null, 2) + ';\n';
+  const blob = new Blob([content], {type:'application/javascript;charset=utf-8'});
+  const url = URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=url;
+  a.download=filename;
+  a.click();
+  URL.revokeObjectURL(url);
+  if(window.confirmSave) window.confirmSave('تم تصدير ملف JS. استبدل به data/research-dynamic-data.js للحفظ النهائي.');
+}
+
+function readJSONFile(file){
+  return new Promise((resolve,reject)=>{
+    const r=new FileReader();
+    r.onload=()=>{try{resolve(JSON.parse(r.result))}catch(e){reject(e)}};
+    r.onerror=reject;
+    r.readAsText(file,'utf-8');
+  });
+}
