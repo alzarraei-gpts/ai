@@ -46,7 +46,7 @@ function renderHome(){
       <div class="section-head">
         <div>
           <h2>الباقات</h2>
-          <p>اختر الباقة المطلوبة. زر الدخول للتقسيمات ينقلك إلى تقسيمات الباقة المختارة، ثم تختار التقسيم للوصول إلى بوتاته.</p>
+          <p>اختر الباقة المطلوبة. اختر الباقة المطلوبة، ثم ادخل إلى تقسيماتها، وبعدها اختر التقسيم للوصول إلى البوتات التابعة له.</p>
         </div>
       </div>
       <div class="toolbar"><input class="search" id="pkgSearch" placeholder="ابحث في الباقات..."></div>
@@ -61,10 +61,8 @@ function renderHome(){
         <div class="card-body">
           <h3>${escapeHtml(p.title)}</h3>
           <p>${escapeHtml(p.description||'')}</p>
-          <div class="card-footer-row">
-            <div class="chips"><span class="chip">${(p.sections||[]).length} تقسيم</span><span class="chip">${packageBotCount(p)} بوت</span></div>
-            <div class="card-cta"><span class="btn primary">الدخول للتقسيمات</span></div>
-          </div>
+          <div class="chips"><span class="chip">${(p.sections||[]).length} تقسيم</span><span class="chip">${packageBotCount(p)} بوت</span></div>
+          <div class="card-cta"><span class="btn primary">الدخول للتقسيمات</span></div>
         </div>
       </article>`).join(''):`<div class="empty">لا توجد باقات مطابقة.</div>`;
   };
@@ -102,10 +100,8 @@ function renderSections(){
         <div class="card-body">
           <h3>${escapeHtml(s.title)}</h3>
           <p>${escapeHtml(s.description||'')}</p>
-          <div class="card-footer-row">
-            <div class="chips"><span class="chip">${(s.bots||[]).length} بوت</span></div>
-            <div class="card-cta"><span class="btn primary">الدخول للبوتات</span></div>
-          </div>
+          <div class="chips"><span class="chip">${(s.bots||[]).length} بوت</span></div>
+          <div class="card-cta"><span class="btn primary">الدخول للبوتات</span></div>
         </div>
       </article>`).join(''):`<div class="empty">لم تُدرج تقسيمات هذه الباقة بعد. يمكن إضافتها لاحقًا من ملف البيانات أو من أداة الإدارة المستقلة.</div>`;
   };

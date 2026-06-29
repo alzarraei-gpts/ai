@@ -349,3 +349,24 @@ body.save-confirm::after{
     text-align: center !important;
   }
 }
+
+/* Patch: make image picker button visually match save buttons */
+.image-row .upload-btn,
+label.upload-btn.btn,
+.asset-box .upload-btn,
+.asset-editor .upload-btn {
+  background: linear-gradient(135deg, #d6af68, #8e6427) !important;
+  color: #150f07 !important;
+  border-color: rgba(255,255,255,.10) !important;
+  font-weight: 900 !important;
+  box-shadow: 0 12px 28px rgba(201, 161, 91, .18) !important;
+}
+
+.image-row .upload-btn:hover,
+label.upload-btn.btn:hover,
+.asset-box .upload-btn:hover,
+.asset-editor .upload-btn:hover {
+  background: linear-gradient(135deg, #f0cf84, #a9782e) !important;
+  color: #100a03 !important;
+  transform: translateY(-1px);
+}
