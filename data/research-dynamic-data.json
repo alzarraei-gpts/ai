@@ -1,6 +1,6 @@
 {
   "version": "all-packages-from-docm-v1",
-  "updatedAt": "2026-06-29T04:47:35.498Z",
+  "updatedAt": "2026-06-29T05:14:39.274Z",
   "source": "كل الباقات.docm",
   "policy": {
     "media": "الصور تُحفظ داخل مجلد images مع السماح بأسماء الصور الأصلية دون فرض أسماء ثابتة.",
@@ -1731,7 +1731,7 @@
         {
           "id": "pkg05-sec01",
           "title": "الكتابة على الوجه",
-          "image": "images/sections/pkg05-sec01.webp",
+          "image": "images/sections/pkg01-sec32.png",
           "description": "قسم يضم 4 بوتات ضمن باقة الفن والأزياء.",
           "bots": [
             {
@@ -1779,7 +1779,7 @@
         {
           "id": "pkg05-sec02",
           "title": "الأغلفة والقوالب",
-          "image": "images/sections/pkg05-sec02.webp",
+          "image": "images/sections/pkg01-sec33.png",
           "description": "قسم يضم 6 بوتات ضمن باقة الفن والأزياء.",
           "bots": [
             {
@@ -1847,7 +1847,7 @@
         {
           "id": "pkg05-sec03",
           "title": "تصميم الزخارف",
-          "image": "images/sections/pkg05-sec03.webp",
+          "image": "images/sections/pkg01-sec35.png",
           "description": "قسم يضم 2 بوتات ضمن باقة الفن والأزياء.",
           "bots": [
             {
@@ -1875,7 +1875,7 @@
         {
           "id": "pkg05-sec04",
           "title": "التصميم بالرسم",
-          "image": "images/sections/pkg05-sec04.webp",
+          "image": "images/sections/pkg01-sec44.png",
           "description": "قسم يضم 6 بوتات ضمن باقة الفن والأزياء.",
           "bots": [
             {
@@ -1943,7 +1943,7 @@
         {
           "id": "pkg05-sec05",
           "title": "الأزياء والإكسسوارات",
-          "image": "images/sections/pkg05-sec05.webp",
+          "image": "images/sections/pkg01-sec42.png",
           "description": "قسم يضم 4 بوتات ضمن باقة الفن والأزياء.",
           "bots": [
             {
@@ -1991,7 +1991,7 @@
         {
           "id": "pkg05-sec06",
           "title": "الفنون السريالية",
-          "image": "images/sections/pkg05-sec06.webp",
+          "image": "images/sections/pkg01-sec37.png",
           "description": "قسم يضم 2 بوتات ضمن باقة الفن والأزياء.",
           "bots": [
             {
@@ -2019,7 +2019,7 @@
         {
           "id": "pkg05-sec07",
           "title": "التصميم الضوئي",
-          "image": "images/sections/pkg05-sec07.webp",
+          "image": "images/sections/pkg01-sec38.png",
           "description": "قسم يضم 6 بوتات ضمن باقة الفن والأزياء.",
           "bots": [
             {
@@ -2087,7 +2087,7 @@
         {
           "id": "pkg05-sec08",
           "title": "تصميم التراث الإفريقي",
-          "image": "images/sections/pkg05-sec08.webp",
+          "image": "images/sections/pkg01-sec39.png",
           "description": "قسم يضم 2 بوتات ضمن باقة الفن والأزياء.",
           "bots": [
             {
@@ -2115,7 +2115,7 @@
         {
           "id": "pkg05-sec09",
           "title": "تصميم الخامات",
-          "image": "images/sections/pkg05-sec09.webp",
+          "image": "images/sections/pkg01-sec40.png",
           "description": "قسم يضم 5 بوتات ضمن باقة الفن والأزياء.",
           "bots": [
             {
