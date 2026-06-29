@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>بوابة النماذج الذكية</title>
   <link rel="stylesheet" href="css/style.css?v=2026-06-29-08">
-<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=hp3-jvZ91CIB9b28qhZi_H1Q45VA70yXmLfepMZejMfK2OpwAV4GO7xWrZPYzHDXU_jweQA1K7ccLlwkapihmOjS5_bbDgqrN06D1GNFKEefcpIEBJvYmYk8SZ1PdNjEfao46tmP_eKGlsvtmjhC9i6vHC_khh_wEx1OuuHv72Dc-yBjE-RPfzmNDJEeghdjgxVcp3MwH677AcMFLv5eEsKk0w1V0TD0idRccMn-rdL3xjbc6EKsl5tMyrwzNOiGPlyJc8g5YGL1A_yY9sP-unDXKZZ9Ip-6xI-Ymnr4fS-5z5oXFikkdGOLXA0uNuOYFJlQWs51Czss0jb0I-VhKw" charset="UTF-8"></script><style>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=vnsWPnEvR5DLZTx-wN7YvrwhS8juxdsLZVMsYpdai5Wj-26CpdhgcYfUlOLfjcWqxKlWvQNVbYyVkgR1y0HSsCjpuHhpbyFGNHTTLueSeqcoXf_kAD_HEwgQOfhLE3leIZhBHzHmx7gtw1ChLZWqvk04OHPaPx0cDTgnMnlynoyRmwxOpQ70bLOOg5U8FZu2XYofCLt3w1a3b9ZSoj9PCNw3RPaBmYNJ6gP-b-Hus_LhmzeG4i_-4bcoOgQuZl8DtTJPr_uCr9FySwTrShaYtyJae0A8bq07YxwLUXQEy9Co8bdVw7-D69k0I3O2pR0ltzhoeCrUxfyVPI1ZdR8yKA" charset="UTF-8"></script><style>
     .brand .brand-logo {
       display: inline-flex;
       align-items: center;
@@ -301,8 +301,8 @@
     @media(max-width:420px){.cg-social-links{grid-template-columns:1fr}}
   </style>
 
-  <style id="chatgpt-compact-hero-v2">
-    /* واجهة رئيسية مضغوطة: تقليص الهيرو، تقليل الفراغات، وبدء الباقات مباشرة */
+  <style id="chatgpt-compact-hero-v3">
+    /* تنظيم الهيرو وتقليل الارتفاع مع منع الإطارات الداخلية المزدحمة */
     body[data-page="public-home"] {
       --cg-hero-gold: #d2a53d;
       --cg-hero-gold-2: #f0dc9b;
@@ -312,7 +312,7 @@
     }
 
     body[data-page="public-home"] #app {
-      padding-top: 8px !important;
+      padding-top: 6px !important;
     }
 
     body[data-page="public-home"] #app .cg-compact-hero,
@@ -320,24 +320,24 @@
       box-sizing: border-box !important;
       width: min(1180px, calc(100% - 32px)) !important;
       min-height: 0 !important;
-      margin: 10px auto 14px !important;
-      padding: clamp(18px, 2.2vw, 28px) clamp(20px, 3vw, 34px) !important;
+      margin: 8px auto 10px !important;
+      padding: clamp(16px, 2vw, 24px) clamp(20px, 3vw, 34px) !important;
       display: grid !important;
       grid-template-columns: minmax(0, 1fr) auto !important;
       grid-template-areas:
         "copy badge"
         "actions actions" !important;
       align-items: center !important;
-      gap: 12px clamp(18px, 3vw, 34px) !important;
+      gap: 10px clamp(18px, 3vw, 34px) !important;
       position: relative !important;
       overflow: hidden !important;
       border: 1px solid rgba(210, 165, 61, .34) !important;
-      border-radius: clamp(20px, 2.2vw, 30px) !important;
+      border-radius: 24px !important;
       background:
-        radial-gradient(circle at 14% 12%, rgba(210, 165, 61, .10), transparent 30%),
-        radial-gradient(circle at 82% 18%, rgba(240, 220, 155, .055), transparent 28%),
+        radial-gradient(circle at 12% 10%, rgba(210, 165, 61, .09), transparent 30%),
+        radial-gradient(circle at 84% 18%, rgba(240, 220, 155, .05), transparent 28%),
         linear-gradient(135deg, rgba(13, 31, 20, .97), rgba(3, 16, 12, .98)) !important;
-      box-shadow: 0 18px 46px rgba(0, 0, 0, .24) !important;
+      box-shadow: 0 16px 42px rgba(0, 0, 0, .24) !important;
     }
 
     body[data-page="public-home"] #app .cg-compact-hero::before {
@@ -346,14 +346,22 @@
       inset: 0 !important;
       pointer-events: none !important;
       background:
-        linear-gradient(90deg, transparent, rgba(210, 165, 61, .05), transparent),
-        repeating-radial-gradient(circle at 10% 8%, rgba(210, 165, 61, .12) 0 1px, transparent 1px 42px) !important;
-      opacity: .55 !important;
+        linear-gradient(90deg, transparent, rgba(210, 165, 61, .035), transparent),
+        repeating-radial-gradient(circle at 10% 8%, rgba(210, 165, 61, .10) 0 1px, transparent 1px 48px) !important;
+      opacity: .40 !important;
     }
 
     body[data-page="public-home"] #app .cg-compact-hero > * {
       position: relative !important;
       z-index: 1 !important;
+    }
+
+    /* إزالة الإطارات/الكبسولات الداخلية التي كانت تُربك العنوان والوصف */
+    body[data-page="public-home"] #app .cg-compact-hero :is(.card,.panel,.box,.hero-card,.glass,.surface,[class*="card"],[class*="panel"],[class*="box"]):not(.cg-hero-badge):not(.cg-hero-stats):not(.cg-hero-actions):not(.cg-hero-button-wrap) {
+      background: transparent !important;
+      border: 0 !important;
+      box-shadow: none !important;
+      outline: 0 !important;
     }
 
     body[data-page="public-home"] #app .cg-hero-copy {
@@ -362,95 +370,120 @@
       flex-direction: column !important;
       align-items: flex-start !important;
       justify-content: center !important;
-      gap: 8px !important;
-      max-width: 850px !important;
+      gap: 7px !important;
+      max-width: 820px !important;
       min-width: 0 !important;
       padding: 0 !important;
       margin: 0 !important;
       text-align: right !important;
+      background: transparent !important;
+      border: 0 !important;
+      box-shadow: none !important;
     }
 
     body[data-page="public-home"] #app .cg-compact-hero h1,
     body[data-page="public-home"] #app .cg-compact-hero h2 {
+      display: block !important;
       margin: 0 !important;
+      padding: 0 !important;
       max-width: 820px !important;
-      font-size: clamp(2.45rem, 4.8vw, 4.15rem) !important;
-      line-height: 1.05 !important;
+      border: 0 !important;
+      border-radius: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      font-size: clamp(2.25rem, 4.2vw, 3.75rem) !important;
+      line-height: 1.04 !important;
       letter-spacing: -.035em !important;
       color: var(--cg-hero-text) !important;
       text-shadow: 0 8px 24px rgba(0, 0, 0, .30) !important;
     }
 
     body[data-page="public-home"] #app .cg-compact-hero p {
+      display: block !important;
       margin: 0 !important;
+      padding: 0 !important;
       max-width: 820px !important;
+      border: 0 !important;
+      border-radius: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
       color: var(--cg-hero-muted) !important;
-      font-size: clamp(.95rem, 1.15vw, 1.08rem) !important;
-      line-height: 1.75 !important;
+      font-size: clamp(.93rem, 1.08vw, 1.04rem) !important;
+      line-height: 1.65 !important;
+      font-weight: 650 !important;
     }
 
     body[data-page="public-home"] #app .cg-hero-badge {
       grid-area: badge !important;
       align-self: start !important;
       justify-self: end !important;
-      min-height: 32px !important;
-      padding: 7px 13px !important;
+      min-height: 30px !important;
+      padding: 6px 12px !important;
       border-radius: 999px !important;
       border: 1px solid rgba(210, 165, 61, .44) !important;
       background: rgba(8, 22, 15, .62) !important;
       color: #f0dc9b !important;
-      font-size: .82rem !important;
-      font-weight: 800 !important;
+      font-size: .80rem !important;
+      font-weight: 850 !important;
       line-height: 1 !important;
       white-space: nowrap !important;
+      box-shadow: none !important;
     }
 
     body[data-page="public-home"] #app .cg-hero-actions,
     body[data-page="public-home"] #app .chatgpt-hero-actions.cg-hero-actions {
       grid-area: actions !important;
       width: 100% !important;
-      margin: 8px 0 0 !important;
-      padding: 0 !important;
-      display: flex !important;
+      margin: 6px 0 0 !important;
+      padding: 10px 0 0 !important;
+      display: grid !important;
+      grid-template-columns: 1fr auto !important;
       align-items: center !important;
-      justify-content: space-between !important;
-      flex-wrap: wrap !important;
-      gap: 12px 18px !important;
+      gap: 10px 18px !important;
+      border-top: 1px solid rgba(210, 165, 61, .16) !important;
+      background: transparent !important;
+      box-shadow: none !important;
     }
 
     body[data-page="public-home"] #app .cg-hero-stats,
     body[data-page="public-home"] #app .chatgpt-stats-row.cg-hero-stats {
+      grid-column: 1 !important;
       display: flex !important;
       flex-wrap: wrap !important;
       align-items: center !important;
       justify-content: flex-start !important;
-      gap: 9px !important;
+      gap: 8px !important;
       margin: 0 !important;
       padding: 0 !important;
-      order: 1 !important;
+      background: transparent !important;
+      border: 0 !important;
+      box-shadow: none !important;
     }
 
     body[data-page="public-home"] #app .cg-hero-button-wrap {
+      grid-column: 2 !important;
       display: flex !important;
       align-items: center !important;
       justify-content: flex-start !important;
       margin: 0 !important;
       padding: 0 !important;
-      order: 2 !important;
+      background: transparent !important;
+      border: 0 !important;
+      box-shadow: none !important;
     }
 
     body[data-page="public-home"] #app .cg-hero-stats > *,
     body[data-page="public-home"] #app .cg-compact-hero [class*="stat"],
     body[data-page="public-home"] #app .cg-compact-hero [class*="pill"],
     body[data-page="public-home"] #app .cg-compact-hero [class*="badge"]:not(.cg-hero-badge) {
-      min-height: 34px !important;
-      padding: 7px 12px !important;
+      min-height: 32px !important;
+      padding: 7px 11px !important;
       border-radius: 999px !important;
-      border: 1px solid rgba(210, 165, 61, .36) !important;
-      background: rgba(7, 22, 15, .55) !important;
+      border: 1px solid rgba(210, 165, 61, .34) !important;
+      background: rgba(7, 22, 15, .54) !important;
       color: #f0dc9b !important;
-      font-size: .82rem !important;
-      font-weight: 800 !important;
+      font-size: .80rem !important;
+      font-weight: 850 !important;
       line-height: 1 !important;
       box-shadow: none !important;
       white-space: nowrap !important;
@@ -458,14 +491,15 @@
 
     body[data-page="public-home"] #app .cg-hero-cta,
     body[data-page="public-home"] #app .chatgpt-btn.primary.cg-hero-cta {
-      min-height: 46px !important;
-      padding: 12px 24px !important;
+      min-height: 42px !important;
+      padding: 10px 22px !important;
       border-radius: 999px !important;
       border: 1px solid rgba(240, 220, 155, .55) !important;
       color: #07130d !important;
       background: linear-gradient(135deg, #efd177 0%, #d3a33d 56%, #bd8425 100%) !important;
-      box-shadow: 0 12px 28px rgba(210, 165, 61, .18), 0 10px 22px rgba(0, 0, 0, .25) !important;
+      box-shadow: 0 10px 24px rgba(210, 165, 61, .16), 0 8px 18px rgba(0, 0, 0, .22) !important;
       font-weight: 900 !important;
+      font-size: .92rem !important;
       text-decoration: none !important;
       white-space: nowrap !important;
     }
@@ -473,24 +507,34 @@
     body[data-page="public-home"] #app .cg-packages-start {
       width: min(1180px, calc(100% - 32px)) !important;
       margin: 0 auto !important;
-      padding-top: 8px !important;
+      padding-top: 4px !important;
     }
 
     body[data-page="public-home"] #app .cg-packages-start h1,
     body[data-page="public-home"] #app .cg-packages-start h2,
     body[data-page="public-home"] #app .cg-packages-start h3 {
       margin-top: 0 !important;
+      margin-bottom: 6px !important;
+      line-height: 1.2 !important;
     }
 
     body[data-page="public-home"] #app .cg-packages-start p {
-      margin-top: 6px !important;
-      margin-bottom: 14px !important;
+      margin-top: 4px !important;
+      margin-bottom: 12px !important;
+      line-height: 1.65 !important;
     }
 
     body[data-page="public-home"] #app .cg-packages-start input,
     body[data-page="public-home"] #app .cg-packages-start [role="searchbox"],
     body[data-page="public-home"] #app .cg-packages-start [class*="search"] {
-      min-height: 46px !important;
+      min-height: 44px !important;
+    }
+
+    @media (min-width: 980px) {
+      body[data-page="public-home"] #app .cg-compact-hero,
+      body[data-page="public-home"] #app [data-chatgpt-hero].cg-compact-hero {
+        max-height: 240px !important;
+      }
     }
 
     @media (max-width: 860px) {
@@ -502,8 +546,8 @@
           "badge"
           "copy"
           "actions" !important;
-        padding: 18px !important;
-        gap: 10px !important;
+        padding: 16px !important;
+        gap: 9px !important;
       }
 
       body[data-page="public-home"] #app .cg-hero-badge {
@@ -512,16 +556,20 @@
 
       body[data-page="public-home"] #app .cg-compact-hero h1,
       body[data-page="public-home"] #app .cg-compact-hero h2 {
-        font-size: clamp(2rem, 9.5vw, 3rem) !important;
+        font-size: clamp(1.9rem, 9vw, 2.85rem) !important;
       }
 
       body[data-page="public-home"] #app .cg-hero-actions,
       body[data-page="public-home"] #app .chatgpt-hero-actions.cg-hero-actions {
+        grid-template-columns: 1fr !important;
         align-items: stretch !important;
       }
 
+      body[data-page="public-home"] #app .cg-hero-stats,
+      body[data-page="public-home"] #app .chatgpt-stats-row.cg-hero-stats,
       body[data-page="public-home"] #app .cg-hero-button-wrap,
       body[data-page="public-home"] #app .cg-hero-cta {
+        grid-column: 1 !important;
         width: 100% !important;
       }
 
@@ -821,7 +869,7 @@
     })();
   </script>
 
-  <script id="chatgpt-compact-hero-v2-script">
+  <script id="chatgpt-compact-hero-v3-script">
     (function() {
       function cleanText(el) {
         return (el && el.textContent || '').replace(/\s+/g, ' ').trim();
