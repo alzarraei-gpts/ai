@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>بوابة النماذج الذكية</title>
-  <link rel="stylesheet" href="css/style.css?v=2026-06-30-01">
+  <link rel="stylesheet" href="css/style.css?v=2026-06-30-02">
 
   <style id="site-enhancements-v10">
     :root{--cg-bg:#06130d;--cg-panel:#0a1d14;--cg-gold:#d1a13a;--cg-gold2:#f0d98c;--cg-text:#f7efd8;--cg-muted:#d8c892;--cg-line:rgba(209,161,58,.42)}
@@ -34,10 +34,10 @@
   <main id="app"></main>
   <div id="modal" class="modal" onclick="if(event.target.id==='modal')this.classList.remove('open')"></div>
   <footer class="footer"><div class="shell">بوابة قابلة للتوسع: الباقات ← التقسيمات ← البوتات.</div></footer>
-  <script>window.__DATA_VERSION__="2026-06-30-01";</script>
-  <script defer src="data/research-dynamic-data.js?v=2026-06-30-01"></script>
-  <script defer src="js/data-service.js?v=2026-06-30-01"></script>
-  <script defer src="js/app.js?v=2026-06-30-01"></script>
+  <script>window.__DATA_VERSION__="2026-06-30-02";</script>
+  <script defer src="data/research-dynamic-data.js?v=2026-06-30-02"></script>
+  <script defer src="js/data-service.js?v=2026-06-30-02"></script>
+  <script defer src="js/app.js?v=2026-06-30-02"></script>
 
   <script id="site-enhancements-v10-script" defer>
   (function(){
@@ -51,7 +51,7 @@
     function modalBox(){var m=qs('#modal.open,.modal.open');if(!m)return null;return qsa(':scope > *',m).find(function(x){return x.nodeType===1})||m}
     function modalText(box){var items=qsa('p,li,blockquote,.description,.desc,.content,.body,.text',box).filter(function(x){return !x.closest('.cg-copy-description-btn')&&norm(x.innerText||x.textContent)});var t=items.map(function(x){return norm(x.innerText||x.textContent)}).join('\n\n');return t||norm((box.innerText||box.textContent||'').replace(/نسخ الوصف|وصف البوت|ChatGPT|Gemini/g,''));}
     function modalCopy(){var b=modalBox();if(!b)return;fixLabels(b);if(qs('.cg-copy-description-btn',b))return;var btn=c('button','cg-copy-description-btn','نسخ الوصف');btn.type='button';btn.onclick=function(e){e.stopPropagation();var old=btn.textContent;copyText(modalText(b)).then(function(){btn.textContent='تم النسخ';setTimeout(function(){btn.textContent=old},1300);});};b.appendChild(btn)}
-    function footer(){var f=qs('footer.footer');if(!f)return;var sh=qs('.shell',f)||f;if(sh.dataset.readySocial)return;sh.textContent='';var wrap=c('div','cg-social-footer');var head=c('div','cg-social-head');var div=c('div');var h=c('h2','cg-social-title','تواصل معنا عبر القنوات الرسمية');var p=c('p','cg-social-note','روابط موحّدة للوصول إلى منصات بوابة النماذج الذكية وخدماتها.');div.append(h,p);head.append(div,c('div','cg-social-brand','بوابة النماذج الذكية'));var nav=c('nav','cg-social-links');nav.setAttribute('aria-label','روابط وسائل التواصل');socials.forEach(function(s){var a=c('a','cg-social-link');a.href=s[1];if(!s[1].startsWith('mailto:')){a.target='_blank';a.rel='noopener noreferrer'}a.setAttribute('aria-label',s[0]);a.append(c('span','cg-social-icon',s[2]),c('span','',s[0]));nav.appendChild(a)});var bot=c('div','cg-social-bottom');bot.append(c('span','', '© بوابة النماذج الذكية'),c('span','', 'تصميم خفيف متوافق مع الجوال والهوية الذهبية.'));wrap.append(head,nav,bot);sh.appendChild(wrap);sh.dataset.readySocial='1'}
+    function footer(){var f=qs('footer.footer');if(!f)return;var sh=qs('.shell',f)||f;if(sh.dataset.readySocial)return;sh.textContent='';var wrap=c('div','cg-social-footer');var head=c('div','cg-social-head');var div=c('div');var h=c('h2','cg-social-title','تواصل معنا عبر القنوات الرسمية');var p=c('p','cg-social-note','روابط موحّدة للوصول إلى منصات بوابة النماذج الذكية وخدماتها.');div.append(h,p);head.append(div,c('div','cg-social-brand','بوابة النماذج الذكية'));var nav=c('nav','cg-social-links');nav.setAttribute('aria-label','روابط وسائل التواصل');socials.forEach(function(s){var a=c('a','cg-social-link');a.href=s[1];if(!s[1].startsWith('mailto:')){a.target='_blank';a.rel='noopener noreferrer'}a.setAttribute('aria-label',s[0]);a.append(c('span','cg-social-icon',s[2]),c('span','',s[0]));nav.appendChild(a)});var bot=c('div','cg-social-bottom');bot.append(c('span','', '© بوابة النماذج الذكية 2026 - جميع الحقوق الفكرية محفوظة'));wrap.append(head,nav,bot);sh.appendChild(wrap);sh.dataset.readySocial='1'}
     function dataItems(){var roots=[window.DATA,window.RESEARCH_DATA,window.researchData,window.APP_DATA].filter(Boolean),out=[];function walk(x){if(!x||out.length>400)return;if(Array.isArray(x))return x.forEach(walk);if(typeof x==='object'){var title=x.title||x.name||x.label||x.botTitle||x.packageTitle||x.sectionTitle;var desc=x.description||x.desc||x.summary||x.text||x.prompt||'';var href=x.chatgpt||x.chatGPT||x.chatgptUrl||x.gptUrl||x.url||x.link||x.gemini||x.geminiUrl||'';if(title||desc)out.push({title:String(title||'عنصر'),desc:String(desc||''),href:String(href||'')});Object.keys(x).forEach(function(k){if(typeof x[k]==='object')walk(x[k])});}} roots.forEach(walk); if(!out.length)qsa('#app article,#app [class*="card"],#app [class*="bot"],#app [class*="package"]').forEach(function(el){var t=norm((qs('h1,h2,h3,h4',el)||el).textContent),d=norm((qs('p',el)||{}).textContent),a=qs('a[href]',el);if(t||d)out.push({title:t||'عنصر',desc:d,href:a?a.href:''})});return out;}
     function assistantSearch(q,box){var res=qs('.cg-assistant-results',box);res.textContent='';q=norm(q).toLowerCase();if(!q){res.appendChild(c('p','','اكتب اسم البوت أو جزءًا من وصفه، وسأعرض أقرب النتائج والروابط المتاحة.'));return}var arr=dataItems().filter(function(it){return (it.title+' '+it.desc).toLowerCase().indexOf(q)>-1}).slice(0,6);if(!arr.length){res.appendChild(c('p','','لم أجد نتيجة مباشرة. جرّب كلمة أقصر من اسم البوت أو القسم.'));return}arr.forEach(function(it){var card=c('div','cg-assistant-card');card.append(c('b','',it.title),c('span','',it.desc.slice(0,180)));if(it.href&&/^https?:/.test(it.href)){var a=c('a','', 'فتح الرابط');a.href=it.href;a.target='_blank';a.rel='noopener noreferrer';card.appendChild(a)}res.appendChild(card)});}
     function floating(){if(qs('.cg-float-stack'))return;var stack=c('div','cg-float-stack');var ai=c('button','cg-float-btn secondary');ai.type='button';ai.innerHTML='<span class="cg-social-icon">AI</span><span>المساعد الذكي</span>';var wa=c('a','cg-float-btn');wa.href=WA;wa.target='_blank';wa.rel='noopener noreferrer';wa.setAttribute('aria-label','الدعم المباشر عبر واتساب');wa.innerHTML='<span class="cg-social-icon">☏</span><span>الدعم المباشر</span>';stack.append(ai,wa);document.body.appendChild(stack);var panel=c('section','cg-assistant-panel');panel.innerHTML='<button class="cg-assistant-close" type="button" aria-label="إغلاق">×</button><h3>المساعد الذكي</h3><p>اكتب اسم البوت أو القسم للبحث السريع عن الوصف والروابط المتاحة داخل البوابة.</p><input type="search" placeholder="مثال: خطة البحث، الترجمة، التحليل"><div class="cg-assistant-results"></div>';document.body.appendChild(panel);var input=qs('input',panel);ai.onclick=function(){panel.classList.toggle('open');if(panel.classList.contains('open')){input.focus();assistantSearch(input.value,panel)}};qs('.cg-assistant-close',panel).onclick=function(){panel.classList.remove('open')};input.oninput=function(){assistantSearch(input.value,panel)};}
@@ -60,5 +60,47 @@
     if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();new MutationObserver(run).observe(document.documentElement,{childList:true,subtree:true});
   })();
   </script>
+
+  <script id="site-text-cleanup-v11" defer>
+  (function(){
+    'use strict';
+    var p1=['وفق المحتوى المستخرج من ملف كل',' الباقات'].join('');
+    var p2=['10 باقات',' قابلة للتوسع'].join('');
+    var p3=['تصميم خفيف متوافق مع الجوال',' والهوية الذهبية.'].join('');
+    function norm(t){return (t||'').replace(/\s+/g,' ').trim()}
+    function cleanTextValue(v){
+      if(!v)return v;
+      v=v.split(p1).join('');
+      v=v.split(p3).join('');
+      v=v.replace(/اختر الباقة المطلوبة[\.،]?\s*اختر الباقة المطلوبة[\.،]?/g,'اختر الباقة المطلوبة.');
+      v=v.replace(/اختر الباقة المطلوبة\.\s*،/g,'اختر الباقة المطلوبة.');
+      v=v.replace(/\s+([،.])/g,'$1').replace(/[ \t]{2,}/g,' ');
+      return v;
+    }
+    function cleanTextNodes(root){
+      var walker=document.createTreeWalker(root||document.body,NodeFilter.SHOW_TEXT,null);
+      var nodes=[]; while(walker.nextNode())nodes.push(walker.currentNode);
+      nodes.forEach(function(n){var v=cleanTextValue(n.nodeValue); if(v!==n.nodeValue)n.nodeValue=v;});
+    }
+    function removeExpandableBadge(root){
+      Array.prototype.slice.call((root||document).querySelectorAll('a,button,span,div,small,strong,b,[class*="badge"],[class*="pill"],[class*="chip"]')).forEach(function(el){
+        var t=norm(el.textContent);
+        if(t===p2){el.remove();}
+      });
+    }
+    function normalizeFooter(){
+      Array.prototype.slice.call(document.querySelectorAll('.cg-social-bottom')).forEach(function(bot){
+        bot.textContent='';
+        var s=document.createElement('span');
+        s.textContent='© بوابة النماذج الذكية 2026 - جميع الحقوق الفكرية محفوظة';
+        bot.appendChild(s);
+      });
+    }
+    function run(){cleanTextNodes(document.body);removeExpandableBadge(document);normalizeFooter();}
+    if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();
+    new MutationObserver(function(){requestAnimationFrame(run)}).observe(document.documentElement,{childList:true,subtree:true,characterData:true});
+  })();
+  </script>
+
 </body>
 </html>
