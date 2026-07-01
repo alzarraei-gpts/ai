@@ -610,6 +610,88 @@
     }
   </style>
 
+
+
+<style id="package-card-taxonomy-footer-v8">
+  /* توحيد أزرار بطاقات الباقات: الزر يساراً، وعدد التصنيفات والبوتات يميناً */
+  #app .package-card .card-body,
+  #app .cg-package-card-fixed .card-body{
+    display:flex!important;
+    flex-direction:column!important;
+    min-height:0!important;
+    height:100%!important;
+  }
+  #app .package-card,
+  #app .cg-package-card-fixed{
+    display:flex!important;
+    flex-direction:column!important;
+    height:100%!important;
+  }
+  #app .cg-package-footer-balanced,
+  #app .package-card .card-footer-row.cg-package-footer-balanced{
+    margin-top:auto!important;
+    padding-top:16px!important;
+    display:grid!important;
+    grid-template-columns:auto minmax(0,1fr)!important;
+    align-items:center!important;
+    gap:12px!important;
+    width:100%!important;
+    border-top:1px solid rgba(201,161,91,.18)!important;
+    direction:ltr!important;
+  }
+  #app .cg-package-footer-balanced .cg-package-cta{
+    grid-column:1!important;
+    justify-self:start!important;
+    direction:rtl!important;
+    margin:0!important;
+    display:flex!important;
+  }
+  #app .cg-package-footer-balanced .cg-package-chips{
+    grid-column:2!important;
+    justify-self:end!important;
+    direction:rtl!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:8px!important;
+    flex-wrap:wrap!important;
+    margin:0!important;
+    min-width:0!important;
+  }
+  #app .cg-package-footer-balanced .chip,
+  #app .cg-package-footer-balanced [class*="chip"]{
+    white-space:nowrap!important;
+  }
+  #app .cg-package-footer-balanced .cg-package-cta .btn,
+  #app .cg-package-footer-balanced .cg-package-cta a,
+  #app .cg-package-footer-balanced .cg-package-cta button{
+    white-space:nowrap!important;
+    min-height:44px!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+  }
+  @media(max-width:620px){
+    #app .cg-package-footer-balanced,
+    #app .package-card .card-footer-row.cg-package-footer-balanced{
+      grid-template-columns:1fr!important;
+      direction:rtl!important;
+      align-items:stretch!important;
+    }
+    #app .cg-package-footer-balanced .cg-package-cta,
+    #app .cg-package-footer-balanced .cg-package-chips{
+      grid-column:1!important;
+      justify-self:stretch!important;
+      justify-content:flex-start!important;
+    }
+    #app .cg-package-footer-balanced .cg-package-cta .btn,
+    #app .cg-package-footer-balanced .cg-package-cta a,
+    #app .cg-package-footer-balanced .cg-package-cta button{
+      width:100%!important;
+    }
+  }
+</style>
+
 </head>
 <body data-page="public-bots">
   <header class="topbar public-topbar">
@@ -850,6 +932,99 @@
     if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
     new MutationObserver(function(){requestAnimationFrame(compact);}).observe(document.documentElement,{childList:true,subtree:true,characterData:true});
   })();
+</script>
+
+
+
+<script id="package-card-taxonomy-footer-v8-script">
+(function(){
+  'use strict';
+  function norm(t){return (t||'').replace(/\s+/g,' ').trim();}
+  function all(root,sel){return Array.prototype.slice.call((root||document).querySelectorAll(sel));}
+  function fixArabicText(s){
+    if(!s)return s;
+    return s
+      .replace(/الدخول للتقسيمات/g,'الدخول للتصنيفات')
+      .replace(/الدخول إلى التقسيمات/g,'الدخول إلى التصنيفات')
+      .replace(/التقسيمات/g,'التصنيفات')
+      .replace(/التقسيم/g,'التصنيف')
+      .replace(/(\d+)\s+تصنيفات/g,'$1 تصنيفاً')
+      .replace(/قسم يضم/g,'تصنيف يضم')
+      .replace(/(\d+)\s+بوتات/g,'$1 بوتًا');
+  }
+  function cleanTextNodes(root){
+    var walker=document.createTreeWalker(root||document.body,NodeFilter.SHOW_TEXT,null), nodes=[];
+    while(walker.nextNode())nodes.push(walker.currentNode);
+    nodes.forEach(function(n){var v=fixArabicText(n.nodeValue); if(v!==n.nodeValue)n.nodeValue=v;});
+  }
+  function packages(){
+    var roots=[window.RESEARCH_DATA,window.DATA,window.researchData,window.APP_DATA].filter(Boolean);
+    var arr=[];
+    roots.forEach(function(r){ if(r && Array.isArray(r.packages)) arr=arr.concat(r.packages); });
+    return arr;
+  }
+  function packageByTitle(title){
+    title=norm(title);
+    return packages().find(function(p){return norm(p.title)===title;});
+  }
+  function makeChip(text){var s=document.createElement('span');s.className='chip cg-package-chip';s.textContent=text;return s;}
+  function likelyPackageCard(card){
+    var h=card.querySelector('h2,h3,h4');
+    if(!h)return false;
+    var t=norm(h.textContent);
+    return /^باقة\s+/.test(t) || !!packageByTitle(t);
+  }
+  function ensurePackageFooter(card){
+    if(!likelyPackageCard(card))return;
+    card.classList.add('cg-package-card-fixed');
+    var h=card.querySelector('h2,h3,h4');
+    var pkg=packageByTitle(h ? h.textContent : '');
+    var sec=pkg && Array.isArray(pkg.sections) ? pkg.sections.length : null;
+    var bots=pkg && Array.isArray(pkg.sections) ? pkg.sections.reduce(function(n,s){return n+((s.bots||[]).length);},0) : null;
+    var body=card.querySelector('.card-body') || card;
+    var btn=all(body,'a,button').find(function(a){
+      var t=norm(a.textContent);
+      return /الدخول|التقسيمات|التصنيفات|استعراض/.test(t) || /package\.html|bots\.html/.test(a.getAttribute('href')||'');
+    });
+    if(btn){
+      btn.textContent='الدخول للتصنيفات';
+      if(btn.classList && !btn.classList.contains('btn'))btn.classList.add('btn');
+      if(btn.classList)btn.classList.add('primary');
+    }
+    var footer=body.querySelector('.cg-package-footer-balanced') || body.querySelector('.card-footer-row');
+    if(!footer){footer=document.createElement('div');body.appendChild(footer);} 
+    footer.classList.add('card-footer-row','cg-package-footer-balanced');
+    var cta=footer.querySelector('.cg-package-cta');
+    if(!cta){cta=document.createElement('div');cta.className='card-cta cg-package-cta';footer.appendChild(cta);} 
+    if(btn && btn.parentElement!==cta)cta.appendChild(btn);
+    var chips=footer.querySelector('.cg-package-chips');
+    if(!chips){chips=document.createElement('div');chips.className='chips cg-package-chips';footer.appendChild(chips);} 
+    all(body,'.chips,[class*="chips"]').forEach(function(ch){
+      if(ch!==chips && !ch.closest('.cg-package-footer-balanced')){
+        all(ch,'.chip,[class*="chip"],span').forEach(function(x){
+          var tx=norm(x.textContent); if(/تصنيف|بوت|قسم|تقسيم|\d/.test(tx)) x.remove();
+        });
+        if(!norm(ch.textContent))ch.remove();
+      }
+    });
+    if(sec!==null && bots!==null){
+      chips.textContent='';
+      chips.appendChild(makeChip(sec+' تصنيفاً'));
+      chips.appendChild(makeChip(bots+' بوتًا'));
+    }else{
+      all(chips,'.chip,[class*="chip"],span').forEach(function(x){x.textContent=fixArabicText(norm(x.textContent));});
+    }
+  }
+  function run(){
+    var app=document.getElementById('app');
+    if(!app)return;
+    cleanTextNodes(app);
+    all(app,'.package-card,.card,article,[class*="card"]').forEach(ensurePackageFooter);
+  }
+  function boot(){run();setTimeout(run,80);setTimeout(run,250);setTimeout(run,700);setTimeout(run,1400);}
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
+  new MutationObserver(function(){requestAnimationFrame(run);}).observe(document.documentElement,{childList:true,subtree:true,characterData:true});
+})();
 </script>
 
 </body>
