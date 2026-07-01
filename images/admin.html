@@ -6,7 +6,7 @@
   <title>لوحة تحكم باقة الباحث العلمي</title>
   <link rel="stylesheet" href="css/style.css?v=2026-06-30-03">
 
-  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Z4Kc7i96RjomNcL-VMPb1X8IpvhBz3_e7b33yKMnH-jhbvb3IiPzxMkCZ9JIvvyvQLe-e14mIjUKnrZY_yj9uPU3GvinltLcuatx4wHt_N22MFq1Up4NWXL4rrpeujTy8h9-4lw9a7REu-4Ayl0-ASDuHCCTQBxmbSfnGo0L8X0VmKlAYxzoZtJjs2qpJJEWzjR7hMxt0GET4TPiFC42j9-DeazUQ6UsIYMyhrnR9Y0a8rIO_enYsQxGnvfEScJBVdLsX6YFSthPKT_SIAIA-Q" charset="UTF-8"></script><style id="site-enhancements-v10">
+  <style id="site-enhancements-v10">
     :root{--cg-bg:#06130d;--cg-panel:#0a1d14;--cg-gold:#d1a13a;--cg-gold2:#f0d98c;--cg-text:#f7efd8;--cg-muted:#d8c892;--cg-line:rgba(209,161,58,.42)}
     html[dir="rtl"],body{direction:rtl} body{overflow-x:hidden} img{max-width:100%;height:auto} #app,#app *:not(svg):not(path){text-align:right}
     .brand{display:inline-flex!important;align-items:center!important;gap:12px!important}.brand-mark{width:58px!important;height:58px!important;min-width:58px!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;overflow:visible!important;display:inline-flex!important;align-items:center!important;justify-content:center!important}.brand-mark::before{content:"";display:block;width:100%;height:100%;background:url('images/logo-transparent.png') center/contain no-repeat;filter:drop-shadow(0 4px 10px rgba(0,0,0,.22))}.brand-mark>*{display:none!important}.brand h1,.brand p{margin:0!important}
@@ -23,7 +23,7 @@
     <div class="shell">
       <a class="brand" href="index.html" aria-label="لوحة التحكم">
         <span class="brand-mark" aria-hidden="true"></span>
-        <span><h1>لوحة التحكم</h1><p>إدارة موحّدة للباقة والتصنيفات والبوتات</p></span>
+        <span><h1>لوحة التحكم</h1><p>إدارة موحّدة للباقة والتقسيمات والبوتات</p></span>
       </a>
       <nav class="nav" aria-label="أدوات لوحة التحكم">
         <a href="index.html">عرض الواجهة</a>
@@ -36,7 +36,7 @@
     </div>
   </header>
   <main class="shell admin-main">
-    <section class="panel unified-intro"><div><h2>لوحة إدراج موحّدة</h2><p>ابدأ عند الحاجة بزر استيراد JSON، ثم استخدم نفس طريقة الإدراج في الباقة والتصنيف والبوت: صورة + عنوان + وصف + حفظ + تأكيد أخضر. الإضافة تتم من البطاقة نفسها دون تشتت.</p></div><div class="unified-rule"><b>قاعدة الصور:</b> الباقة 16:9، التصنيف 1:1، البوت 1:1. الأفضل للموقع النهائي استخدام المسارات الدائمة داخل مجلد <code>images</code>.</div></section>
+    <section class="panel unified-intro"><div><h2>لوحة إدراج موحّدة</h2><p>ابدأ عند الحاجة بزر استيراد JSON، ثم استخدم نفس طريقة الإدراج في الباقة والتقسيم والبوت: صورة + عنوان + وصف + حفظ + تأكيد أخضر. الإضافة تتم من البطاقة نفسها دون تشتت.</p></div><div class="unified-rule"><b>قاعدة الصور:</b> الباقة 16:9، التقسيم 1:1، البوت 1:1. الأفضل للموقع النهائي استخدام المسارات الدائمة داخل مجلد <code>images</code>.</div></section>
     <section class="panel admin-control-panel"><div id="adminControl"></div></section>
     <section id="editor"></section>
   </main>
@@ -54,7 +54,7 @@
     var socials=[['لينكدين','https://www.linkedin.com/in/ArabAIModels','in'],['يوتيوب','https://www.youtube.com/@ArabAIModels','▶'],['فيس بوك','https://www.facebook.com/ArabAIModels','f'],['منصة X','https://x.com/arabaimodels','𝕏'],['انستغرام','https://www.instagram.com/ArabAIModels','◎'],['تيك توك','https://www.tiktok.com/@ArabAIModels','♪'],['تليغرام','https://t.me/ArabAIModels','✈'],['سناب شات','https://www.snapchat.com/@arabaimodels','◌'],['واتساب',WA,'☏'],['البريد','mailto:zraieee@gmail.com','✉'],['باي بال','https://www.paypal.com/paypalme/zraiee','$'],['سكول','https://www.skool.com/zraiee-3956/about','S']];
     function qs(s,r){return (r||document).querySelector(s)} function qsa(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))} function norm(t){return (t||'').replace(/\s+/g,' ').trim()}
     function c(tag,cls,text){var e=document.createElement(tag); if(cls)e.className=cls; if(text!=null)e.textContent=text; return e}
-    function fixLabels(root){qsa('a,button,[role="button"],.btn,.cta,.action',root||document).forEach(function(el){var t=norm(el.textContent); if(t==='نسخ وصف البوت')el.textContent='وصف البوت'; if(document.body.dataset.page==='public-sections'&&t==='الدخول للتصنيفات')el.remove();});}
+    function fixLabels(root){qsa('a,button,[role="button"],.btn,.cta,.action',root||document).forEach(function(el){var t=norm(el.textContent); if(t==='نسخ وصف البوت')el.textContent='وصف البوت'; if(document.body.dataset.page==='public-sections'&&t==='الدخول للتقسيمات')el.remove();});}
     function copyText(t){if(navigator.clipboard&&navigator.clipboard.writeText)return navigator.clipboard.writeText(t);var a=c('textarea');a.value=t;Object.assign(a.style,{position:'fixed',opacity:'0'});document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}a.remove();return Promise.resolve();}
     function modalBox(){var m=qs('#modal.open,.modal.open');if(!m)return null;return qsa(':scope > *',m).find(function(x){return x.nodeType===1})||m}
     function modalText(box){var items=qsa('p,li,blockquote,.description,.desc,.content,.body,.text',box).filter(function(x){return !x.closest('.cg-copy-description-btn')&&norm(x.innerText||x.textContent)});var t=items.map(function(x){return norm(x.innerText||x.textContent)}).join('\n\n');return t||norm((box.innerText||box.textContent||'').replace(/نسخ الوصف|وصف البوت|ChatGPT|Gemini/g,''));}
