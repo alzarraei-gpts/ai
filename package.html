@@ -17,6 +17,104 @@
     .cg-float-stack{position:fixed;left:16px;bottom:16px;z-index:9999;display:grid;gap:10px}.cg-float-btn{display:flex;align-items:center;justify-content:center;gap:9px;min-height:52px;padding:11px 17px;border-radius:999px;border:1px solid rgba(240,217,140,.70);background:linear-gradient(135deg,#d8ad48,#bd8425);color:#07130d!important;text-decoration:none!important;font-weight:900;box-shadow:0 16px 36px rgba(0,0,0,.32);cursor:pointer}.cg-float-btn.secondary{background:rgba(9,24,16,.94);color:var(--cg-text)!important;border-color:var(--cg-line)}.cg-float-btn .cg-social-icon{background:rgba(7,19,13,.96);color:var(--cg-gold2);border-radius:50%}.cg-assistant-panel{position:fixed;left:16px;bottom:142px;z-index:9998;width:min(360px,calc(100vw - 32px));max-height:min(520px,calc(100vh - 172px));overflow:auto;border:1px solid var(--cg-line);border-radius:22px;background:rgba(6,19,13,.98);box-shadow:0 24px 60px rgba(0,0,0,.42);padding:16px;display:none}.cg-assistant-panel.open{display:block}.cg-assistant-panel h3{margin:0 0 8px;color:var(--cg-text)}.cg-assistant-panel p{margin:0 0 12px;color:var(--cg-muted);line-height:1.7}.cg-assistant-panel input{width:100%;box-sizing:border-box;border:1px solid var(--cg-line);border-radius:14px;background:#07140e;color:var(--cg-text);padding:12px 14px;outline:0}.cg-assistant-results{display:grid;gap:10px;margin-top:12px}.cg-assistant-card{border:1px solid rgba(209,161,58,.24);border-radius:14px;padding:10px;background:rgba(255,255,255,.03)}.cg-assistant-card b{display:block;color:var(--cg-text);margin-bottom:5px}.cg-assistant-card span{display:block;color:var(--cg-muted);font-size:.9rem;line-height:1.55}.cg-assistant-card a{display:inline-flex;margin-top:8px;color:var(--cg-gold2);text-decoration:none;font-weight:800}.cg-assistant-close{float:left;border:0;background:transparent;color:var(--cg-gold2);font-size:20px;cursor:pointer}
     @media(max-width:720px){.brand-mark{width:50px!important;height:50px!important;min-width:50px!important}.footer .shell{width:min(100% - 24px,1180px);padding-bottom:128px!important}.cg-social-head,.cg-social-bottom{flex-direction:column;align-items:flex-start}.cg-social-links{grid-template-columns:repeat(2,minmax(0,1fr))}.cg-social-link{font-size:.9rem;padding:8px 10px}.cg-float-stack{left:12px;bottom:12px}.cg-float-btn{min-height:48px;padding:10px 14px}.cg-assistant-panel{left:12px;bottom:132px;width:calc(100vw - 24px)}}@media(max-width:420px){.cg-social-links{grid-template-columns:1fr}}
   </style>
+
+  <style id="discount-banner-v1">
+    .discount-banner-v1{
+      position:relative;
+      isolation:isolate;
+      overflow:hidden;
+      background:#020d08;
+      border-block:1px solid rgba(209,161,58,.58);
+      box-shadow:0 18px 55px rgba(0,0,0,.30), inset 0 1px 0 rgba(240,217,140,.20);
+    }
+    .discount-banner-v1::before{
+      content:"";
+      position:absolute;
+      inset:-48% -22%;
+      z-index:3;
+      pointer-events:none;
+      background:linear-gradient(105deg,transparent 34%,rgba(255,236,170,.06) 44%,rgba(255,236,170,.34) 50%,rgba(30,255,145,.12) 54%,transparent 66%);
+      transform:translateX(76%);
+      animation:discountBannerShineV3 5.4s ease-in-out infinite;
+      mix-blend-mode:screen;
+    }
+    .discount-banner-v1::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:2;
+      pointer-events:none;
+      background:
+        radial-gradient(circle at 78% 42%,rgba(240,217,140,.20),transparent 15%),
+        radial-gradient(circle at 88% 36%,rgba(30,255,145,.24),transparent 22%),
+        radial-gradient(circle at 18% 48%,rgba(240,217,140,.16),transparent 20%),
+        linear-gradient(180deg,rgba(255,255,255,.07),transparent 30%,rgba(0,0,0,.18));
+      opacity:.72;
+      animation:discountBannerGlowV3 3.8s ease-in-out infinite alternate;
+    }
+    .discount-banner-link-v1{
+      position:relative;
+      z-index:1;
+      display:block;
+      width:100%;
+      min-height:88px;
+      line-height:0;
+      text-decoration:none!important;
+      background:#020d08;
+    }
+    .discount-banner-link-v1::before,
+    .discount-banner-link-v1::after{
+      content:"";
+      position:absolute;
+      z-index:4;
+      pointer-events:none;
+      width:9px;
+      height:9px;
+      border-radius:50%;
+      background:rgba(240,217,140,.96);
+      box-shadow:0 0 18px rgba(240,217,140,.78),0 0 28px rgba(30,255,145,.36);
+      opacity:0;
+      animation:discountSparkV3 2.9s ease-in-out infinite;
+    }
+    .discount-banner-link-v1::before{top:24%;right:70%;animation-delay:.25s}
+    .discount-banner-link-v1::after{top:32%;right:23%;animation-delay:1.15s}
+    .discount-banner-img-v1{
+      display:block;
+      width:100%;
+      height:auto;
+      max-height:190px;
+      object-fit:cover;
+      object-position:center;
+      filter:saturate(1.10) contrast(1.06) drop-shadow(0 14px 36px rgba(0,0,0,.30));
+      transform:scale(1.003);
+      animation:discountBannerFloatV3 6.8s ease-in-out infinite;
+    }
+    .discount-banner-v1:hover .discount-banner-img-v1{
+      filter:saturate(1.20) contrast(1.10) brightness(1.045) drop-shadow(0 18px 44px rgba(0,0,0,.36));
+      transform:scale(1.012);
+    }
+    .discount-banner-pulse-v1{
+      position:absolute;
+      z-index:5;
+      inset:auto 14.2% 16% auto;
+      width:128px;
+      height:128px;
+      border-radius:999px;
+      pointer-events:none;
+      border:1px solid rgba(240,217,140,.28);
+      box-shadow:0 0 0 0 rgba(240,217,140,.24),0 0 38px rgba(30,255,145,.16);
+      animation:discountPulseV3 2.45s ease-out infinite;
+      opacity:.58;
+    }
+    @keyframes discountBannerShineV3{0%,38%{transform:translateX(78%);opacity:0}50%{opacity:.95}76%,100%{transform:translateX(-78%);opacity:0}}
+    @keyframes discountBannerGlowV3{from{opacity:.48;filter:saturate(1)}to{opacity:.88;filter:saturate(1.15)}}
+    @keyframes discountBannerFloatV3{0%,100%{transform:scale(1.003) translateY(0)}50%{transform:scale(1.009) translateY(-2px)}}
+    @keyframes discountPulseV3{0%{transform:scale(.74);opacity:0;box-shadow:0 0 0 0 rgba(240,217,140,.24)}30%{opacity:.62}100%{transform:scale(1.22);opacity:0;box-shadow:0 0 0 30px rgba(240,217,140,0)}}
+    @keyframes discountSparkV3{0%,100%{opacity:0;transform:scale(.4)}18%{opacity:.95;transform:scale(1.2)}38%{opacity:.20;transform:scale(.82)}}
+    @media(max-width:720px){.discount-banner-link-v1{min-height:70px}.discount-banner-img-v1{min-height:84px;object-fit:cover;object-position:center}.discount-banner-pulse-v1{display:none}.discount-banner-link-v1::before,.discount-banner-link-v1::after{display:none}}
+    @media(max-width:460px){.discount-banner-img-v1{min-height:76px;object-position:center}.discount-banner-v1{border-block-color:rgba(209,161,58,.42)}}
+    @media(prefers-reduced-motion:reduce){.discount-banner-v1::before,.discount-banner-v1::after,.discount-banner-img-v1,.discount-banner-pulse-v1,.discount-banner-link-v1::before,.discount-banner-link-v1::after{animation:none!important}.discount-banner-v1:hover .discount-banner-img-v1{transform:none}}
+  </style>
 </head>
 <body data-page="public-sections">
   <header class="topbar public-topbar">
@@ -31,6 +129,13 @@
       </nav>
     </div>
   </header>
+
+  <section class="discount-banner-v1" aria-label="بانر عرض تخفيض على جميع الباقات">
+    <a class="discount-banner-link-v1" href="package.html" aria-label="استعراض الباقات المشمولة بالخصم">
+      <img class="discount-banner-img-v1" src="images/discount-80-banner.png" alt="عرض تخفيض على جميع الباقات - رحلتك البحثية تبدأ من هنا" loading="eager" decoding="async">
+      <span class="discount-banner-pulse-v1" aria-hidden="true"></span>
+    </a>
+  </section>
   <main id="app"></main>
   <div id="modal" class="modal" onclick="if(event.target.id==='modal')this.classList.remove('open')"></div>
   <footer class="footer"><div class="shell">اختر تقسيمًا للوصول إلى البوتات التابعة له.</div></footer>
