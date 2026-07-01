@@ -1,143 +1,23 @@
-
-let DATA;
-document.addEventListener('DOMContentLoaded', async()=>{
-  DATA=await loadData();
-  window.__DATA_VERSION__ = DATA?.updatedAt || Date.now();
-  route();
-  window.addEventListener('hashchange', route);
-});
-
-function currentPackageId(){
-  const id = new URLSearchParams(location.search).get('package');
-  return id || getPackage(DATA)?.id;
-}
-
-function route(){
-  if(location.pathname.endsWith('package.html')) return renderSections();
-  if(location.pathname.endsWith('bots.html')) return renderBots();
-  renderHome();
-}
-
-function packageBotCount(pkg){
-  return (pkg.sections||[]).reduce((n,s)=>n+(s.bots||[]).length,0);
-}
-
-function renderHome(){
-  const root=document.getElementById('app');
-  const packages=DATA.packages||[];
-  const totalSections = packages.reduce((n,p)=>n+(p.sections||[]).length,0);
-  const totalBots = packages.reduce((n,p)=>n+packageBotCount(p),0);
-  root.innerHTML=`
-    <section class="hero portal-hero">
-      <div class="shell">
-        <div class="portal-title">
-          <span class="chip">${packages.length} باقات قابلة للتوسع</span>
-          <h2>بوابة النماذج الذكية</h2>
-          <p>واجهة عامة لتنظيم الباقات، ثم الانتقال إلى تقسيمات كل باقة، ثم الوصول إلى البوتات التابعة لها.</p>
-          <div class="portal-summary">
-            <span class="chip">الباقات: ${packages.length}</span>
-            <span class="chip">التقسيمات الحالية: ${totalSections}</span>
-            <span class="chip">البوتات الحالية: ${totalBots}</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="shell">
-      <div class="section-head">
-        <div>
-          <h2>الباقات</h2>
-          <p>اختر الباقة المطلوبة. اختر الباقة المطلوبة، ثم ادخل إلى تقسيماتها، وبعدها اختر التقسيم للوصول إلى البوتات التابعة له.</p>
-        </div>
-      </div>
-      <div class="toolbar"><input class="search" id="pkgSearch" placeholder="ابحث في الباقات..."></div>
-      <div id="packagesGrid" class="grid"></div>
-    </section>`;
-  const draw=()=>{
-    const q=(document.getElementById('pkgSearch')?.value||'').trim();
-    const items=packages.filter(p=>!q||p.title.includes(q)||String(p.description||'').includes(q));
-    document.getElementById('packagesGrid').innerHTML=items.length?items.map(p=>`
-      <article class="card package-card" onclick="location.href='package.html?package=${encodeURIComponent(p.id)}'">
-        ${imageOrPlaceholder(p.image,p.title,'media-wide')}
-        <div class="card-body">
-          <h3>${escapeHtml(p.title)}</h3>
-          <p>${escapeHtml(p.description||'')}</p>
-          <div class="chips"><span class="chip">${(p.sections||[]).length} تقسيم</span><span class="chip">${packageBotCount(p)} بوت</span></div>
-          <div class="card-cta"><span class="btn primary">الدخول للتقسيمات</span></div>
-        </div>
-      </article>`).join(''):`<div class="empty">لا توجد باقات مطابقة.</div>`;
-  };
-  document.getElementById('pkgSearch').addEventListener('input',draw);
-  draw();
-}
-
-function renderSections(){
-  const pkg=getPackage(DATA,currentPackageId());
-  const root=document.getElementById('app');
-  if(!pkg){
-    root.innerHTML=`<section class="shell"><div class="empty">لم يتم العثور على الباقة. <a class="btn" href="index.html">العودة للباقات</a></div></section>`;
-    return;
-  }
-  root.innerHTML=`
-    <section class="shell">
-      <div class="section-head">
-        <div>
-          <span class="chip">الباقة المختارة</span>
-          <h2>${escapeHtml(pkg.title)}</h2>
-          <p>${escapeHtml(pkg.description||'اختر تقسيمًا للوصول إلى البوتات التابعة له.')}</p>
-        </div>
-        <div class="toolbar"><a class="btn" href="index.html">العودة للباقات</a><span class="btn primary no-pointer">الدخول للتقسيمات</span></div>
-      </div>
-      <div class="toolbar"><input class="search" id="q" placeholder="ابحث في التقسيمات..."></div>
-      <div id="sections" class="grid"></div>
-    </section>`;
-  const draw=()=>{
-    const q=document.getElementById('q').value.trim();
-    const sections=(pkg.sections||[]);
-    const items=sections.filter(s=>!q||s.title.includes(q)||String(s.description||'').includes(q));
-    document.getElementById('sections').innerHTML=items.length?items.map(s=>`
-      <article class="card" onclick="location.href='bots.html?package=${encodeURIComponent(pkg.id)}&section=${encodeURIComponent(s.id)}'">
-        ${imageOrPlaceholder(s.image,s.title,'media-square')}
-        <div class="card-body">
-          <h3>${escapeHtml(s.title)}</h3>
-          <p>${escapeHtml(s.description||'')}</p>
-          <div class="chips"><span class="chip">${(s.bots||[]).length} بوت</span></div>
-          <div class="card-cta"><span class="btn primary">الدخول للبوتات</span></div>
-        </div>
-      </article>`).join(''):`<div class="empty">لم تُدرج تقسيمات هذه الباقة بعد. يمكن إضافتها لاحقًا من ملف البيانات أو من أداة الإدارة المستقلة.</div>`;
-  };
-  document.getElementById('q').addEventListener('input',draw);
-  draw();
-}
-
-function renderBots(){
-  const params=new URLSearchParams(location.search);
-  const pkgId=params.get('package') || currentPackageId();
-  const id=params.get('section');
-  const pkg=getPackage(DATA,pkgId);
-  const section=findSection(DATA,id,pkgId);
-  const root=document.getElementById('app');
-  if(!section){
-    root.innerHTML=`<section class="shell"><div class="empty">لم يتم العثور على التقسيم. <a class="btn" href="package.html?package=${encodeURIComponent(pkgId||'')}">العودة للتقسيمات</a></div></section>`;
-    return;
-  }
-  root.innerHTML=`<section class="shell"><div class="section-head"><div><span class="chip">${escapeHtml(pkg?.title||'')}</span><h2>${escapeHtml(section.title)}</h2><p>${escapeHtml(section.description||'')}</p></div><a class="btn" href="package.html?package=${encodeURIComponent(pkgId||'')}">العودة للتقسيمات</a></div><div class="toolbar"><input class="search" id="q" placeholder="ابحث في البوتات..."><select class="btn" id="limit"><option value="6">6 بوتات</option><option value="9">9 بوتات</option><option value="12">12 بوتًا</option><option value="999">الكل</option></select></div><div id="bots" class="grid"></div><div class="toolbar" id="pager"></div></section>`;
-  let page=1;
-  const draw=()=>{
-    const q=document.getElementById('q').value.trim();
-    const limit=+document.getElementById('limit').value;
-    const all=(section.bots||[]).filter(b=>!q||b.title.includes(q)||String(b.description||'').includes(q));
-    const pages=Math.max(1,Math.ceil(all.length/limit)); page=Math.min(page,pages);
-    const slice=all.slice((page-1)*limit,page*limit);
-    document.getElementById('bots').innerHTML=slice.length?slice.map(b=>`<article class="card bot-card">${imageOrPlaceholder(b.image,b.title,'media-square')}<div class="card-body"><h3>${escapeHtml(b.title)}</h3><p>${escapeHtml(b.description||'')}</p><div class="bot-actions"><button onclick='showDetails(${JSON.stringify(b).replace(/'/g,"&#039;")})'>وصف البوت</button>${b.chatgpt?`<a class="primary" target="_blank" rel="noopener" href="${escapeHtml(b.chatgpt)}">ChatGPT</a>`:''}${b.gemini?`<a target="_blank" rel="noopener" href="${escapeHtml(b.gemini)}">Gemini</a>`:''}</div></div></article>`).join(''):`<div class="empty">لا توجد بوتات مطابقة.</div>`;
-    document.getElementById('pager').innerHTML=pages>1?`<button class="btn" ${page<=1?'disabled':''} onclick="page--;(${draw})()">السابق</button><span class="chip">صفحة ${page} من ${pages}</span><button class="btn" ${page>=pages?'disabled':''} onclick="page++;(${draw})()">التالي</button>`:'';
-  };
-  document.getElementById('q').addEventListener('input',()=>{page=1;draw()});
-  document.getElementById('limit').addEventListener('change',()=>{page=1;draw()});
-  draw();
-}
-
-function showDetails(b){
-  const m=document.getElementById('modal');
-  m.classList.add('open');
-  m.innerHTML=`<div class="modal-box"><button class="btn" onclick="document.getElementById('modal').classList.remove('open')">إغلاق</button><h2>${escapeHtml(b.title)}</h2><p>${escapeHtml(b.description||'')}</p><h3>الحدود</h3><p>${escapeHtml(b.limits||'غير مدرج.')}</p><h3>مثال الاستخدام</h3><p>${escapeHtml(b.example||'غير مدرج.')}</p></div>`;
-}
+(function(){'use strict';
+const D=window.DataService; if(!D) return;
+const $=(s,r=document)=>r.querySelector(s); const el=(tag,cls,text)=>{const x=document.createElement(tag); if(cls)x.className=cls; if(text!=null)x.textContent=text; return x};
+function img(src,alt,square){const m=el('div','card-media'+(square?' square':'')); if(src){const im=el('img'); im.src=src; im.alt=alt||''; im.loading='lazy'; im.decoding='async'; im.onerror=function(){m.classList.add('image-missing'); im.remove()}; m.appendChild(im)} return m}
+function linkBtn(text,href,primary){const a=el('a','btn small'+(primary?' primary':''),text); a.href=href||'#'; if(/^https:\/\//i.test(a.href)){a.target='_blank';a.rel='noopener noreferrer'} return a}
+function stats(){const s=el('div','stats'); s.append(chip('الباقات: '+D.packages().length),chip('التصنيفات الحالية: '+D.countSections()),chip('البوتات الحالية: '+D.countBots())); return s}
+function chip(t){return el('span','chip',t)}
+function banner(){const wrap=el('div','discount-wrap'); const a=el('a','discount-banner'); a.href='index.html#packages'; a.setAttribute('aria-label','عرض الباقات المتاحة'); const im=el('img'); im.src='images/discount-80-banner.png'; im.alt='عرض تخفيض على جميع الباقات'; im.loading='eager'; im.decoding='async'; im.fetchPriority='high'; im.width=1906; im.height=189; a.append(im,el('span','fx-a'),el('span','fx-b'),el('span','fx-c')); wrap.appendChild(a); return wrap}
+function head(title,sub,withStats=true){const sec=el('section','page-head shell'); const row=el('div','inline-heading'); row.append(el('h2','',title),el('span','sep','|'),el('p','',sub)); sec.appendChild(row); if(withStats)sec.appendChild(stats()); return sec}
+function cardPackage(p){const c=el('article','card package-card'); c.appendChild(img(p.image,p.title,false)); const b=el('div','card-body'); b.append(el('h3','',p.title),el('p','',p.description||'')); const footer=el('div','card-footer'); const actions=el('div','card-actions'); actions.appendChild(linkBtn('الدخول للتصنيفات','package.html?package='+encodeURIComponent(p.id),true)); const chips=el('div','stats'); const sc=(p.sections||[]).length; const bc=(p.sections||[]).reduce((n,s)=>n+((s.bots||[]).length),0); chips.append(chip(sc+' تصنيفاً'),chip(bc+' بوتًا')); footer.append(actions,chips); b.appendChild(footer); c.appendChild(b); return c}
+function cardSection(s,p){const c=el('article','card section-card'); c.appendChild(img(s.image,s.title,true)); const b=el('div','card-body'); b.append(el('h3','',s.title),el('p','',s.description||'')); const footer=el('div','card-footer'); const actions=el('div','card-actions'); actions.appendChild(linkBtn('الدخول للبوتات','bots.html?package='+encodeURIComponent(p.id)+'&section='+encodeURIComponent(s.id),true)); const chips=el('div','stats'); chips.append(chip(((s.bots||[]).length)+' بوتًا')); footer.append(actions,chips); b.appendChild(footer); c.appendChild(b); return c}
+function cardBot(b){const c=el('article','card bot-card'); c.appendChild(img(b.image,b.title,true)); const body=el('div','card-body'); body.append(el('h3','',b.title),el('p','',b.description||'')); const footer=el('div','card-footer'); const actions=el('div','card-actions'); actions.appendChild(linkBtn('الوصف','#',false)); if(b.chatgpt) actions.appendChild(linkBtn('ChatGPT',D.safeUrl(b.chatgpt),true)); if(b.gemini) actions.appendChild(linkBtn('Gemini',D.safeUrl(b.gemini),false)); actions.querySelector('a[href="#"]').addEventListener('click',e=>{e.preventDefault(); modal(b.title,b.description,b.limits,b.example)}); footer.appendChild(actions); body.appendChild(footer); c.appendChild(body); return c}
+function grid(items,renderer){const g=el('section','grid shell'); if(!items.length){g.className='shell'; g.appendChild(el('div','empty','لا توجد عناصر مطابقة.')); return g} items.forEach(x=>g.appendChild(renderer(x))); return g}
+function toolbar(onInput){const t=el('div','toolbar shell'); const input=el('input','search'); input.type='search'; input.placeholder='ابحث هنا...'; input.autocomplete='off'; input.addEventListener('input',()=>onInput(input.value)); t.appendChild(input); return t}
+function filter(items,q,get){q=D.norm(q).toLowerCase(); return !q?items:items.filter(x=>D.norm(get(x)).toLowerCase().includes(q))}
+function modal(title,desc,limits,example){const m=$('#modal'); m.textContent=''; const box=el('div','modal-box'); const mh=el('div','modal-head'); mh.append(el('h2','',title),el('button','modal-close','إغلاق')); box.appendChild(mh); if(desc)box.appendChild(el('p','',desc)); if(limits){box.appendChild(el('h3','','الحدود')); box.appendChild(el('p','',limits))} if(example){box.appendChild(el('h3','','مثال')); box.appendChild(el('p','',example))} mh.querySelector('button').addEventListener('click',()=>m.classList.remove('open')); m.appendChild(box); m.classList.add('open')}
+function pageHome(app){app.append(banner(),head('الباقات','اختر الباقة المطلوبة، ثم ادخل إلى تصنيفاتها، وبعدها اختر التصنيف للوصول إلى البوتات التابعة له.')); let items=D.packages(); const holder=el('div'); const render=q=>{holder.textContent=''; holder.appendChild(grid(filter(items,q,p=>p.title+' '+p.description),cardPackage))}; app.append(toolbar(render),holder); render('')}
+function pageSections(app){const p=D.findPackage(); app.append(banner(),head('التصنيفات',p?'اختر التصنيف المناسب من '+p.title+' للوصول إلى البوتات التابعة له.':'اختر التصنيف للوصول إلى البوتات التابعة له.')); let items=p?(p.sections||[]):[]; const holder=el('div'); const render=q=>{holder.textContent=''; holder.appendChild(grid(filter(items,q,s=>s.title+' '+s.description),s=>cardSection(s,p)))}; app.append(toolbar(render),holder); render('')}
+function pageBots(app){const found=D.findSection(); const sec=found&&found.section; app.append(banner(),head('البوتات',sec?'البوتات التابعة لتصنيف: '+sec.title:'اختر البوت المناسب وافتح وصفه أو رابط تشغيله.')); let items=sec?(sec.bots||[]):D.botItems().map(x=>x.bot); const holder=el('div'); const render=q=>{holder.textContent=''; holder.appendChild(grid(filter(items,q,b=>b.title+' '+b.description),cardBot))}; app.append(toolbar(render),holder); render('')}
+function floating(){if($('.float-stack'))return; const stack=el('div','float-stack'); const ai=el('button','float-btn secondary','المساعد الذكي'); ai.type='button'; const wa=el('a','float-btn','الدعم المباشر'); wa.href='https://wa.me/966552191598'; wa.target='_blank'; wa.rel='noopener noreferrer'; stack.append(ai,wa); document.body.appendChild(stack); const panel=el('section','assistant-panel'); const close=el('button','modal-close','×'); const title=el('h3','','المساعد الذكي'); const p=el('p','','اكتب اسم البوت أو التصنيف للبحث السريع داخل البوابة.'); const input=el('input'); input.type='search'; input.placeholder='مثال: خطة البحث، الترجمة، التحليل'; const res=el('div','assistant-results'); panel.append(close,title,p,input,res); document.body.appendChild(panel); function run(q){res.textContent=''; const arr=D.botItems().filter(x=>D.norm(x.bot.title+' '+x.bot.description+' '+x.section.title).includes(D.norm(q))).slice(0,6); if(!q){res.appendChild(el('div','assistant-card','ابدأ بكتابة كلمة للبحث.')); return} arr.forEach(x=>{const c=el('div','assistant-card'); c.append(el('b','',x.bot.title),el('span','',x.section.title)); if(x.bot.chatgpt)c.appendChild(linkBtn('فتح ChatGPT',D.safeUrl(x.bot.chatgpt),false)); res.appendChild(c)}); if(q&&!arr.length)res.appendChild(el('div','assistant-card','لا توجد نتيجة مطابقة.'))} ai.addEventListener('click',()=>{panel.classList.toggle('open'); if(panel.classList.contains('open')){input.focus(); run(input.value)}}); close.addEventListener('click',()=>panel.classList.remove('open')); input.addEventListener('input',()=>run(input.value))}
+function boot(){const app=$('#app'); if(!app)return; app.textContent=''; const page=document.body.dataset.page; if(page==='public-sections')pageSections(app); else if(page==='public-bots')pageBots(app); else pageHome(app); floating(); const modalEl=$('#modal'); if(modalEl)modalEl.addEventListener('click',e=>{if(e.target===modalEl)modalEl.classList.remove('open')});}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true}); else boot();
+})();
