@@ -20,7 +20,7 @@ window.RESEARCH_DATA = {
           "id": "pkg01-sec01",
           "title": "اقتراح عنوان البحث",
           "image": "images/sections/اقتراح عنوان البحث.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة الباحث العلمي.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة الباحث العلمي.",
           "bots": [
             {
               "id": "pkg01-sec01-bot01",
@@ -58,7 +58,7 @@ window.RESEARCH_DATA = {
           "id": "pkg01-sec02",
           "title": "صناعة خطة البحث",
           "image": "images/sections/صناعة خطة البحث.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة الباحث العلمي.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة الباحث العلمي.",
           "bots": [
             {
               "id": "pkg01-sec02-bot01",
@@ -96,7 +96,7 @@ window.RESEARCH_DATA = {
           "id": "pkg01-sec03",
           "title": "دعم خطة البحث",
           "image": "images/sections/دعم خطة البحث.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة الباحث العلمي.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة الباحث العلمي.",
           "bots": [
             {
               "id": "pkg01-sec03-bot01",
@@ -134,7 +134,7 @@ window.RESEARCH_DATA = {
           "id": "pkg01-sec04",
           "title": "خطة البحث الشاملة",
           "image": "images/sections/خطة البحث الشاملة.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة الباحث العلمي.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة الباحث العلمي.",
           "bots": [
             {
               "id": "pkg01-sec04-bot01",
@@ -172,7 +172,7 @@ window.RESEARCH_DATA = {
           "id": "pkg01-sec05",
           "title": "كتابة البحث غير الميداني",
           "image": "images/sections/كتابة البحث غير الميداني.png",
-          "description": "قسم يضم 4 بوتات ضمن باقة الباحث العلمي.",
+          "description": "تصنيف يضم 4 بوتات ضمن باقة الباحث العلمي.",
           "bots": [
             {
               "id": "pkg01-sec05-bot01",
@@ -220,7 +220,7 @@ window.RESEARCH_DATA = {
           "id": "pkg01-sec06",
           "title": "التوثيق والتحرير العلمي",
           "image": "images/sections/التوثيق والتحرير العلمي.png",
-          "description": "قسم يضم 6 بوتات ضمن باقة الباحث العلمي.",
+          "description": "تصنيف يضم 6 بوتات ضمن باقة الباحث العلمي.",
           "bots": [
             {
               "id": "pkg01-sec06-bot01",
@@ -288,7 +288,7 @@ window.RESEARCH_DATA = {
           "id": "pkg01-sec07",
           "title": "تحليل البحث الميداني",
           "image": "images/sections/تحليل البحث الميداني.png",
-          "description": "قسم يضم 5 بوتات ضمن باقة الباحث العلمي.",
+          "description": "تصنيف يضم 5 بوتات ضمن باقة الباحث العلمي.",
           "bots": [
             {
               "id": "pkg01-sec07-bot01",
@@ -346,7 +346,7 @@ window.RESEARCH_DATA = {
           "id": "pkg01-sec08",
           "title": "التحرير اللغوي للنصوص",
           "image": "images/sections/التحرير اللغوي للنصوص.png",
-          "description": "قسم يضم 4 بوتات ضمن باقة الباحث العلمي.",
+          "description": "تصنيف يضم 4 بوتات ضمن باقة الباحث العلمي.",
           "bots": [
             {
               "id": "pkg01-sec08-bot01",
@@ -394,7 +394,7 @@ window.RESEARCH_DATA = {
           "id": "pkg01-sec09",
           "title": "التراجم والمعاجم",
           "image": "images/sections/التراجم والمعاجم.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة الباحث العلمي.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة الباحث العلمي.",
           "bots": [
             {
               "id": "pkg01-sec09-bot01",
@@ -432,7 +432,7 @@ window.RESEARCH_DATA = {
           "id": "pkg01-sec10",
           "title": "الجودة والإخراج",
           "image": "images/sections/الجودة والإخراج.png",
-          "description": "قسم يضم 4 بوتات ضمن باقة الباحث العلمي.",
+          "description": "تصنيف يضم 4 بوتات ضمن باقة الباحث العلمي.",
           "bots": [
             {
               "id": "pkg01-sec10-bot01",
@@ -488,7 +488,7 @@ window.RESEARCH_DATA = {
           "id": "pkg02-sec01",
           "title": "المراجعة والفحص",
           "image": "images/sections/pkg01-sec16.png",
-          "description": "قسم يضم 5 بوتات ضمن باقة ملحقات الباحث.",
+          "description": "تصنيف يضم 5 بوتات ضمن باقة ملحقات الباحث.",
           "bots": [
             {
               "id": "pkg02-sec01-bot01",
@@ -546,7 +546,7 @@ window.RESEARCH_DATA = {
           "id": "pkg02-sec02",
           "title": "الفحص والتنسيق الأكاديمي",
           "image": "images/sections/pkg01-sec02.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة ملحقات الباحث.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة ملحقات الباحث.",
           "bots": [
             {
               "id": "pkg02-sec02-bot01",
@@ -574,7 +574,7 @@ window.RESEARCH_DATA = {
           "id": "pkg02-sec03",
           "title": "الأدلة المرجعية للبحث",
           "image": "images/sections/pkg01-sec03.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة ملحقات الباحث.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة ملحقات الباحث.",
           "bots": [
             {
               "id": "pkg02-sec03-bot01",
@@ -612,7 +612,7 @@ window.RESEARCH_DATA = {
           "id": "pkg02-sec04",
           "title": "الأدوات المساعدة",
           "image": "images/sections/pkg01-sec17.png",
-          "description": "قسم يضم 5 بوتات ضمن باقة ملحقات الباحث.",
+          "description": "تصنيف يضم 5 بوتات ضمن باقة ملحقات الباحث.",
           "bots": [
             {
               "id": "pkg02-sec04-bot01",
@@ -670,7 +670,7 @@ window.RESEARCH_DATA = {
           "id": "pkg02-sec05",
           "title": "الترجمة للإنجليزية",
           "image": "images/sections/pkg01-sec18.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة ملحقات الباحث.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة ملحقات الباحث.",
           "bots": [
             {
               "id": "pkg02-sec05-bot01",
@@ -698,7 +698,7 @@ window.RESEARCH_DATA = {
           "id": "pkg02-sec06",
           "title": "القرآن وعلومه",
           "image": "images/sections/pkg01-sec04.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة ملحقات الباحث.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة ملحقات الباحث.",
           "bots": [
             {
               "id": "pkg02-sec06-bot01",
@@ -736,7 +736,7 @@ window.RESEARCH_DATA = {
           "id": "pkg02-sec07",
           "title": "علوم الحديث",
           "image": "images/sections/pkg01-sec05.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة ملحقات الباحث.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة ملحقات الباحث.",
           "bots": [
             {
               "id": "pkg02-sec07-bot01",
@@ -774,7 +774,7 @@ window.RESEARCH_DATA = {
           "id": "pkg02-sec08",
           "title": "الفقه وأصوله",
           "image": "images/sections/pkg01-sec06.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة ملحقات الباحث.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة ملحقات الباحث.",
           "bots": [
             {
               "id": "pkg02-sec08-bot01",
@@ -812,7 +812,7 @@ window.RESEARCH_DATA = {
           "id": "pkg02-sec09",
           "title": "الفتوى والتوجيه الشرعي",
           "image": "images/sections/pkg01-sec07.png",
-          "description": "قسم يضم 1 بوتات ضمن باقة ملحقات الباحث.",
+          "description": "تصنيف يضم 1 بوتات ضمن باقة ملحقات الباحث.",
           "bots": [
             {
               "id": "pkg02-sec09-bot01",
@@ -830,7 +830,7 @@ window.RESEARCH_DATA = {
           "id": "pkg02-sec10",
           "title": "أدوات الإنتاج المعرفي",
           "image": "images/sections/pkg01-sec08.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة ملحقات الباحث.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة ملحقات الباحث.",
           "bots": [
             {
               "id": "pkg02-sec10-bot01",
@@ -876,7 +876,7 @@ window.RESEARCH_DATA = {
           "id": "pkg03-sec01",
           "title": "التعليم التفاعلي",
           "image": "images/sections/pkg01-sec49.png",
-          "description": "قسم يضم 5 بوتات ضمن باقة التعليم والتدريب.",
+          "description": "تصنيف يضم 5 بوتات ضمن باقة التعليم والتدريب.",
           "bots": [
             {
               "id": "pkg03-sec01-bot01",
@@ -934,7 +934,7 @@ window.RESEARCH_DATA = {
           "id": "pkg03-sec02",
           "title": "الدعوة والخطاب الشرعي",
           "image": "images/sections/pkg01-sec10.png",
-          "description": "قسم يضم 1 بوتات ضمن باقة التعليم والتدريب.",
+          "description": "تصنيف يضم 1 بوتات ضمن باقة التعليم والتدريب.",
           "bots": [
             {
               "id": "pkg03-sec02-bot01",
@@ -952,7 +952,7 @@ window.RESEARCH_DATA = {
           "id": "pkg03-sec03",
           "title": "القدرات والإلهام",
           "image": "images/sections/pkg01-sec11.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة التعليم والتدريب.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة التعليم والتدريب.",
           "bots": [
             {
               "id": "pkg03-sec03-bot01",
@@ -990,7 +990,7 @@ window.RESEARCH_DATA = {
           "id": "pkg03-sec04",
           "title": "التدريب والتصميم",
           "image": "images/sections/pkg01-sec12.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة التعليم والتدريب.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة التعليم والتدريب.",
           "bots": [
             {
               "id": "pkg03-sec04-bot01",
@@ -1028,7 +1028,7 @@ window.RESEARCH_DATA = {
           "id": "pkg03-sec05",
           "title": "التصميم التعليمي",
           "image": "images/sections/pkg01-sec13.png",
-          "description": "قسم يضم 5 بوتات ضمن باقة التعليم والتدريب.",
+          "description": "تصنيف يضم 5 بوتات ضمن باقة التعليم والتدريب.",
           "bots": [
             {
               "id": "pkg03-sec05-bot01",
@@ -1086,7 +1086,7 @@ window.RESEARCH_DATA = {
           "id": "pkg03-sec06",
           "title": "البرامج المساعدة",
           "image": "images/sections/pkg01-sec14.png",
-          "description": "قسم يضم 1 بوتات ضمن باقة التعليم والتدريب.",
+          "description": "تصنيف يضم 1 بوتات ضمن باقة التعليم والتدريب.",
           "bots": [
             {
               "id": "pkg03-sec06-bot01",
@@ -1104,7 +1104,7 @@ window.RESEARCH_DATA = {
           "id": "pkg03-sec07",
           "title": "النظام والقانون",
           "image": "images/sections/pkg01-sec15.png",
-          "description": "قسم يضم 4 بوتات ضمن باقة التعليم والتدريب.",
+          "description": "تصنيف يضم 4 بوتات ضمن باقة التعليم والتدريب.",
           "bots": [
             {
               "id": "pkg03-sec07-bot01",
@@ -1154,13 +1154,13 @@ window.RESEARCH_DATA = {
       "id": "pkg04",
       "title": "باقة التصميم الذكي",
       "image": "images/packages/pkg04.png",
-      "description": "تضم باقة التصميم الذكي 13 تصنيفات و46 بوتًا، وفق المحتوى المستخرج من ملف كل الباقات.",
+      "description": "تضم باقة التصميم الذكي 13 تصنيفاً و46 بوتًا، وفق المحتوى المستخرج من ملف كل الباقات.",
       "sections": [
         {
           "id": "pkg04-sec01",
           "title": "النصوص والصور",
           "image": "images/sections/pkg01-sec19.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة التصميم الذكي.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة التصميم الذكي.",
           "bots": [
             {
               "id": "pkg04-sec01-bot01",
@@ -1198,7 +1198,7 @@ window.RESEARCH_DATA = {
           "id": "pkg04-sec02",
           "title": "تحرير الصور",
           "image": "images/sections/pkg01-sec20.png",
-          "description": "قسم يضم 5 بوتات ضمن باقة التصميم الذكي.",
+          "description": "تصنيف يضم 5 بوتات ضمن باقة التصميم الذكي.",
           "bots": [
             {
               "id": "pkg04-sec02-bot01",
@@ -1256,7 +1256,7 @@ window.RESEARCH_DATA = {
           "id": "pkg04-sec03",
           "title": "وصف وتحليل الصور",
           "image": "images/sections/pkg01-sec21.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة التصميم الذكي.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة التصميم الذكي.",
           "bots": [
             {
               "id": "pkg04-sec03-bot01",
@@ -1284,7 +1284,7 @@ window.RESEARCH_DATA = {
           "id": "pkg04-sec04",
           "title": "تصميم وتطبيق الشعارات",
           "image": "images/sections/pkg01-sec22.png",
-          "description": "قسم يضم 4 بوتات ضمن باقة التصميم الذكي.",
+          "description": "تصنيف يضم 4 بوتات ضمن باقة التصميم الذكي.",
           "bots": [
             {
               "id": "pkg04-sec04-bot01",
@@ -1332,7 +1332,7 @@ window.RESEARCH_DATA = {
           "id": "pkg04-sec05",
           "title": "الهوية البصرية",
           "image": "images/sections/pkg01-sec23.png",
-          "description": "قسم يضم 5 بوتات ضمن باقة التصميم الذكي.",
+          "description": "تصنيف يضم 5 بوتات ضمن باقة التصميم الذكي.",
           "bots": [
             {
               "id": "pkg04-sec05-bot01",
@@ -1390,7 +1390,7 @@ window.RESEARCH_DATA = {
           "id": "pkg04-sec06",
           "title": "المنتج الإعلاني",
           "image": "images/sections/pkg01-sec45.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة التصميم الذكي.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة التصميم الذكي.",
           "bots": [
             {
               "id": "pkg04-sec06-bot01",
@@ -1418,7 +1418,7 @@ window.RESEARCH_DATA = {
           "id": "pkg04-sec07",
           "title": "بناء الصورة والهيكل البصري",
           "image": "images/sections/pkg01-sec46.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة التصميم الذكي.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة التصميم الذكي.",
           "bots": [
             {
               "id": "pkg04-sec07-bot01",
@@ -1446,7 +1446,7 @@ window.RESEARCH_DATA = {
           "id": "pkg04-sec08",
           "title": "تفكيك المنتج وتحليل مكوناته",
           "image": "images/sections/pkg01-sec26.png",
-          "description": "قسم يضم 4 بوتات ضمن باقة التصميم الذكي.",
+          "description": "تصنيف يضم 4 بوتات ضمن باقة التصميم الذكي.",
           "bots": [
             {
               "id": "pkg04-sec08-bot01",
@@ -1494,7 +1494,7 @@ window.RESEARCH_DATA = {
           "id": "pkg04-sec09",
           "title": "انفوغرافي وهولوغرافي",
           "image": "images/sections/pkg01-sec27.png",
-          "description": "قسم يضم 4 بوتات ضمن باقة التصميم الذكي.",
+          "description": "تصنيف يضم 4 بوتات ضمن باقة التصميم الذكي.",
           "bots": [
             {
               "id": "pkg04-sec09-bot01",
@@ -1542,7 +1542,7 @@ window.RESEARCH_DATA = {
           "id": "pkg04-sec10",
           "title": "التحويل الفني وإعادة التشكيل",
           "image": "images/sections/pkg01-sec28.png",
-          "description": "قسم يضم 4 بوتات ضمن باقة التصميم الذكي.",
+          "description": "تصنيف يضم 4 بوتات ضمن باقة التصميم الذكي.",
           "bots": [
             {
               "id": "pkg04-sec10-bot01",
@@ -1590,7 +1590,7 @@ window.RESEARCH_DATA = {
           "id": "pkg04-sec11",
           "title": "الدمج والتركيب البصري",
           "image": "images/sections/pkg01-sec29.png",
-          "description": "قسم يضم 4 بوتات ضمن باقة التصميم الذكي.",
+          "description": "تصنيف يضم 4 بوتات ضمن باقة التصميم الذكي.",
           "bots": [
             {
               "id": "pkg04-sec11-bot01",
@@ -1638,7 +1638,7 @@ window.RESEARCH_DATA = {
           "id": "pkg04-sec12",
           "title": "إضفاء الطابع التعبيري والتأثيرات",
           "image": "images/sections/pkg01-sec47.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة التصميم الذكي.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة التصميم الذكي.",
           "bots": [
             {
               "id": "pkg04-sec12-bot01",
@@ -1666,7 +1666,7 @@ window.RESEARCH_DATA = {
           "id": "pkg04-sec13",
           "title": "الخطوط والكتابات العربية",
           "image": "images/sections/pkg01-sec31.png",
-          "description": "قسم يضم 5 بوتات ضمن باقة التصميم الذكي.",
+          "description": "تصنيف يضم 5 بوتات ضمن باقة التصميم الذكي.",
           "bots": [
             {
               "id": "pkg04-sec13-bot01",
@@ -1732,7 +1732,7 @@ window.RESEARCH_DATA = {
           "id": "pkg05-sec01",
           "title": "الكتابة على الوجه",
           "image": "images/sections/pkg01-sec32.png",
-          "description": "قسم يضم 4 بوتات ضمن باقة الفن والأزياء.",
+          "description": "تصنيف يضم 4 بوتات ضمن باقة الفن والأزياء.",
           "bots": [
             {
               "id": "pkg05-sec01-bot01",
@@ -1780,7 +1780,7 @@ window.RESEARCH_DATA = {
           "id": "pkg05-sec02",
           "title": "الأغلفة والقوالب",
           "image": "images/sections/pkg01-sec33.png",
-          "description": "قسم يضم 6 بوتات ضمن باقة الفن والأزياء.",
+          "description": "تصنيف يضم 6 بوتات ضمن باقة الفن والأزياء.",
           "bots": [
             {
               "id": "pkg05-sec02-bot01",
@@ -1848,7 +1848,7 @@ window.RESEARCH_DATA = {
           "id": "pkg05-sec03",
           "title": "تصميم الزخارف",
           "image": "images/sections/pkg01-sec35.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة الفن والأزياء.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة الفن والأزياء.",
           "bots": [
             {
               "id": "pkg05-sec03-bot01",
@@ -1876,7 +1876,7 @@ window.RESEARCH_DATA = {
           "id": "pkg05-sec04",
           "title": "التصميم بالرسم",
           "image": "images/sections/pkg01-sec48.png",
-          "description": "قسم يضم 6 بوتات ضمن باقة الفن والأزياء.",
+          "description": "تصنيف يضم 6 بوتات ضمن باقة الفن والأزياء.",
           "bots": [
             {
               "id": "pkg05-sec04-bot01",
@@ -1944,7 +1944,7 @@ window.RESEARCH_DATA = {
           "id": "pkg05-sec05",
           "title": "الأزياء والإكسسوارات",
           "image": "images/sections/pkg01-sec42.png",
-          "description": "قسم يضم 4 بوتات ضمن باقة الفن والأزياء.",
+          "description": "تصنيف يضم 4 بوتات ضمن باقة الفن والأزياء.",
           "bots": [
             {
               "id": "pkg05-sec05-bot01",
@@ -1992,7 +1992,7 @@ window.RESEARCH_DATA = {
           "id": "pkg05-sec06",
           "title": "الفنون السريالية",
           "image": "images/sections/pkg01-sec37.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة الفن والأزياء.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة الفن والأزياء.",
           "bots": [
             {
               "id": "pkg05-sec06-bot01",
@@ -2020,7 +2020,7 @@ window.RESEARCH_DATA = {
           "id": "pkg05-sec07",
           "title": "التصميم الضوئي",
           "image": "images/sections/pkg01-sec38.png",
-          "description": "قسم يضم 6 بوتات ضمن باقة الفن والأزياء.",
+          "description": "تصنيف يضم 6 بوتات ضمن باقة الفن والأزياء.",
           "bots": [
             {
               "id": "pkg05-sec07-bot01",
@@ -2088,7 +2088,7 @@ window.RESEARCH_DATA = {
           "id": "pkg05-sec08",
           "title": "تصميم التراث الإفريقي",
           "image": "images/sections/pkg01-sec39.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة الفن والأزياء.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة الفن والأزياء.",
           "bots": [
             {
               "id": "pkg05-sec08-bot01",
@@ -2116,7 +2116,7 @@ window.RESEARCH_DATA = {
           "id": "pkg05-sec09",
           "title": "تصميم الخامات",
           "image": "images/sections/pkg01-sec40.png",
-          "description": "قسم يضم 5 بوتات ضمن باقة الفن والأزياء.",
+          "description": "تصنيف يضم 5 بوتات ضمن باقة الفن والأزياء.",
           "bots": [
             {
               "id": "pkg05-sec09-bot01",
@@ -2182,7 +2182,7 @@ window.RESEARCH_DATA = {
           "id": "pkg06-sec01",
           "title": "التحويل الهندسي",
           "image": "images/sections/pkg01-sec50.png",
-          "description": "قسم يضم 6 بوتات ضمن باقة تصميم ثري دي.",
+          "description": "تصنيف يضم 6 بوتات ضمن باقة تصميم ثري دي.",
           "bots": [
             {
               "id": "pkg06-sec01-bot01",
@@ -2250,7 +2250,7 @@ window.RESEARCH_DATA = {
           "id": "pkg06-sec02",
           "title": "التصميم الإنشائي",
           "image": "images/sections/pkg01-sec51.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة تصميم ثري دي.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة تصميم ثري دي.",
           "bots": [
             {
               "id": "pkg06-sec02-bot01",
@@ -2278,7 +2278,7 @@ window.RESEARCH_DATA = {
           "id": "pkg06-sec03",
           "title": "التصميم والتخطيط",
           "image": "images/sections/pkg01-sec52.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة تصميم ثري دي.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة تصميم ثري دي.",
           "bots": [
             {
               "id": "pkg06-sec03-bot01",
@@ -2306,7 +2306,7 @@ window.RESEARCH_DATA = {
           "id": "pkg06-sec04",
           "title": "الإخراج المعماري",
           "image": "images/sections/pkg01-sec53.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة تصميم ثري دي.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة تصميم ثري دي.",
           "bots": [
             {
               "id": "pkg06-sec04-bot01",
@@ -2344,7 +2344,7 @@ window.RESEARCH_DATA = {
           "id": "pkg06-sec05",
           "title": "تصميم موديل ثري دي",
           "image": "images/sections/pkg01-sec54.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة تصميم ثري دي.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة تصميم ثري دي.",
           "bots": [
             {
               "id": "pkg06-sec05-bot01",
@@ -2382,7 +2382,7 @@ window.RESEARCH_DATA = {
           "id": "pkg06-sec06",
           "title": "تجهيز المشاهد",
           "image": "images/sections/pkg01-sec55.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة تصميم ثري دي.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة تصميم ثري دي.",
           "bots": [
             {
               "id": "pkg06-sec06-bot01",
@@ -2420,7 +2420,7 @@ window.RESEARCH_DATA = {
           "id": "pkg06-sec07",
           "title": "الحركة والإنتاج",
           "image": "images/sections/pkg01-sec56.png",
-          "description": "قسم يضم 5 بوتات ضمن باقة تصميم ثري دي.",
+          "description": "تصنيف يضم 5 بوتات ضمن باقة تصميم ثري دي.",
           "bots": [
             {
               "id": "pkg06-sec07-bot01",
@@ -2478,7 +2478,7 @@ window.RESEARCH_DATA = {
           "id": "pkg06-sec08",
           "title": "الألوان والأنماط",
           "image": "images/sections/pkg01-sec57.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة تصميم ثري دي.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة تصميم ثري دي.",
           "bots": [
             {
               "id": "pkg06-sec08-bot01",
@@ -2508,13 +2508,13 @@ window.RESEARCH_DATA = {
       "id": "pkg07",
       "title": "باقة صناعة الأفلام",
       "image": "images/packages/pkg10.png",
-      "description": "تضم باقة صناعة الأفلام 12 تصنيفات و40 بوتًا، وفق المحتوى المستخرج من ملف كل الباقات.",
+      "description": "تضم باقة صناعة الأفلام 12 تصنيفاً و40 بوتًا، وفق المحتوى المستخرج من ملف كل الباقات.",
       "sections": [
         {
           "id": "pkg07-sec01",
           "title": "توليد الصور",
           "image": "images/sections/pkg01-sec71.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة صناعة الأفلام.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة صناعة الأفلام.",
           "bots": [
             {
               "id": "pkg07-sec01-bot01",
@@ -2542,7 +2542,7 @@ window.RESEARCH_DATA = {
           "id": "pkg07-sec02",
           "title": "فكرة الفيلم وهويته",
           "image": "images/sections/pkg01-sec73.png",
-          "description": "قسم يضم 6 بوتات ضمن باقة صناعة الأفلام.",
+          "description": "تصنيف يضم 6 بوتات ضمن باقة صناعة الأفلام.",
           "bots": [
             {
               "id": "pkg07-sec02-bot01",
@@ -2610,7 +2610,7 @@ window.RESEARCH_DATA = {
           "id": "pkg07-sec03",
           "title": "التأسيس والمرجعية",
           "image": "images/sections/pkg01-sec75.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة صناعة الأفلام.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة صناعة الأفلام.",
           "bots": [
             {
               "id": "pkg07-sec03-bot01",
@@ -2638,7 +2638,7 @@ window.RESEARCH_DATA = {
           "id": "pkg07-sec04",
           "title": "التحريك والإخراج",
           "image": "images/sections/pkg01-sec76.png",
-          "description": "قسم يضم 6 بوتات ضمن باقة صناعة الأفلام.",
+          "description": "تصنيف يضم 6 بوتات ضمن باقة صناعة الأفلام.",
           "bots": [
             {
               "id": "pkg07-sec04-bot01",
@@ -2706,7 +2706,7 @@ window.RESEARCH_DATA = {
           "id": "pkg07-sec05",
           "title": "توليد الفيديو",
           "image": "images/sections/pkg01-sec70.png",
-          "description": "قسم يضم 4 بوتات ضمن باقة صناعة الأفلام.",
+          "description": "تصنيف يضم 4 بوتات ضمن باقة صناعة الأفلام.",
           "bots": [
             {
               "id": "pkg07-sec05-bot01",
@@ -2754,7 +2754,7 @@ window.RESEARCH_DATA = {
           "id": "pkg07-sec06",
           "title": "منصات توليد الفيديو",
           "image": "images/sections/pkg01-sec72.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة صناعة الأفلام.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة صناعة الأفلام.",
           "bots": [
             {
               "id": "pkg07-sec06-bot01",
@@ -2782,7 +2782,7 @@ window.RESEARCH_DATA = {
           "id": "pkg07-sec07",
           "title": "الإنتاج والإخراج",
           "image": "images/sections/pkg01-sec75.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة صناعة الأفلام.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة صناعة الأفلام.",
           "bots": [
             {
               "id": "pkg07-sec07-bot01",
@@ -2820,7 +2820,7 @@ window.RESEARCH_DATA = {
           "id": "pkg07-sec08",
           "title": "التفكيك والتحليل البصري",
           "image": "images/sections/pkg01-sec65.webp",
-          "description": "قسم يضم 3 بوتات ضمن باقة صناعة الأفلام.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة صناعة الأفلام.",
           "bots": [
             {
               "id": "pkg07-sec08-bot01",
@@ -2858,7 +2858,7 @@ window.RESEARCH_DATA = {
           "id": "pkg07-sec09",
           "title": "الإعلانات والهوية البصرية",
           "image": "images/sections/pkg01-sec74.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة صناعة الأفلام.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة صناعة الأفلام.",
           "bots": [
             {
               "id": "pkg07-sec09-bot01",
@@ -2896,7 +2896,7 @@ window.RESEARCH_DATA = {
           "id": "pkg07-sec10",
           "title": "الصوت والمقامات",
           "image": "images/sections/pkg01-sec67.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة صناعة الأفلام.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة صناعة الأفلام.",
           "bots": [
             {
               "id": "pkg07-sec10-bot01",
@@ -2934,7 +2934,7 @@ window.RESEARCH_DATA = {
           "id": "pkg07-sec11",
           "title": "الموسيقى والمؤثرات",
           "image": "images/sections/pkg01-sec69.png",
-          "description": "قسم يضم 4 بوتات ضمن باقة صناعة الأفلام.",
+          "description": "تصنيف يضم 4 بوتات ضمن باقة صناعة الأفلام.",
           "bots": [
             {
               "id": "pkg07-sec11-bot01",
@@ -2982,7 +2982,7 @@ window.RESEARCH_DATA = {
           "id": "pkg07-sec12",
           "title": "الفصاحة والخطابة",
           "image": "images/sections/pkg01-sec68.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة صناعة الأفلام.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة صناعة الأفلام.",
           "bots": [
             {
               "id": "pkg07-sec12-bot01",
@@ -3012,13 +3012,13 @@ window.RESEARCH_DATA = {
       "id": "pkg08",
       "title": "باقة الإدارة والتسويق",
       "image": "images/packages/pkg08.png",
-      "description": "تضم باقة الإدارة والتسويق 12 تصنيفات و40 بوتًا، وفق المحتوى المستخرج من ملف كل الباقات.",
+      "description": "تضم باقة الإدارة والتسويق 12 تصنيفاً و40 بوتًا، وفق المحتوى المستخرج من ملف كل الباقات.",
       "sections": [
         {
           "id": "pkg08-sec01",
           "title": "المشاريع وريادة الأعمال",
           "image": "images/sections/pkg01-sec77.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة الإدارة والتسويق.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة الإدارة والتسويق.",
           "bots": [
             {
               "id": "pkg08-sec01-bot01",
@@ -3056,7 +3056,7 @@ window.RESEARCH_DATA = {
           "id": "pkg08-sec02",
           "title": "توليد الأفكار",
           "image": "images/sections/pkg01-sec78.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة الإدارة والتسويق.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة الإدارة والتسويق.",
           "bots": [
             {
               "id": "pkg08-sec02-bot01",
@@ -3094,7 +3094,7 @@ window.RESEARCH_DATA = {
           "id": "pkg08-sec03",
           "title": "الدعم النفسي",
           "image": "images/sections/pkg01-sec79.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة الإدارة والتسويق.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة الإدارة والتسويق.",
           "bots": [
             {
               "id": "pkg08-sec03-bot01",
@@ -3122,7 +3122,7 @@ window.RESEARCH_DATA = {
           "id": "pkg08-sec04",
           "title": "الإعلان والحملات",
           "image": "images/sections/pkg01-sec80.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة الإدارة والتسويق.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة الإدارة والتسويق.",
           "bots": [
             {
               "id": "pkg08-sec04-bot01",
@@ -3160,7 +3160,7 @@ window.RESEARCH_DATA = {
           "id": "pkg08-sec05",
           "title": "تحسين الظهور",
           "image": "images/sections/pkg01-sec81.png",
-          "description": "قسم يضم 5 بوتات ضمن باقة الإدارة والتسويق.",
+          "description": "تصنيف يضم 5 بوتات ضمن باقة الإدارة والتسويق.",
           "bots": [
             {
               "id": "pkg08-sec05-bot01",
@@ -3218,7 +3218,7 @@ window.RESEARCH_DATA = {
           "id": "pkg08-sec06",
           "title": "تجهيز أصول الموقع",
           "image": "images/sections/pkg01-sec82.png",
-          "description": "قسم يضم 4 بوتات ضمن باقة الإدارة والتسويق.",
+          "description": "تصنيف يضم 4 بوتات ضمن باقة الإدارة والتسويق.",
           "bots": [
             {
               "id": "pkg08-sec06-bot01",
@@ -3266,7 +3266,7 @@ window.RESEARCH_DATA = {
           "id": "pkg08-sec07",
           "title": "الويب وتصميم المواقع",
           "image": "images/sections/pkg01-sec83.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة الإدارة والتسويق.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة الإدارة والتسويق.",
           "bots": [
             {
               "id": "pkg08-sec07-bot01",
@@ -3294,7 +3294,7 @@ window.RESEARCH_DATA = {
           "id": "pkg08-sec08",
           "title": "التسويق الرقمي والتحويل",
           "image": "images/sections/pkg01-sec85.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة الإدارة والتسويق.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة الإدارة والتسويق.",
           "bots": [
             {
               "id": "pkg08-sec08-bot01",
@@ -3322,7 +3322,7 @@ window.RESEARCH_DATA = {
           "id": "pkg08-sec09",
           "title": "الإدارة المهنية والتشغيل",
           "image": "images/sections/pkg01-sec86.png",
-          "description": "قسم يضم 6 بوتات ضمن باقة الإدارة والتسويق.",
+          "description": "تصنيف يضم 6 بوتات ضمن باقة الإدارة والتسويق.",
           "bots": [
             {
               "id": "pkg08-sec09-bot01",
@@ -3390,7 +3390,7 @@ window.RESEARCH_DATA = {
           "id": "pkg08-sec10",
           "title": "الاستثمار والتمويل",
           "image": "images/sections/pkg01-sec87.png",
-          "description": "قسم يضم 4 بوتات ضمن باقة الإدارة والتسويق.",
+          "description": "تصنيف يضم 4 بوتات ضمن باقة الإدارة والتسويق.",
           "bots": [
             {
               "id": "pkg08-sec10-bot01",
@@ -3438,7 +3438,7 @@ window.RESEARCH_DATA = {
           "id": "pkg08-sec11",
           "title": "الحوكمة والأسواق",
           "image": "images/sections/pkg01-sec88.png",
-          "description": "قسم يضم 4 بوتات ضمن باقة الإدارة والتسويق.",
+          "description": "تصنيف يضم 4 بوتات ضمن باقة الإدارة والتسويق.",
           "bots": [
             {
               "id": "pkg08-sec11-bot01",
@@ -3486,7 +3486,7 @@ window.RESEARCH_DATA = {
           "id": "pkg08-sec12",
           "title": "المنصات والأتمتة",
           "image": "images/sections/pkg01-sec89.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة الإدارة والتسويق.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة الإدارة والتسويق.",
           "bots": [
             {
               "id": "pkg08-sec12-bot01",
@@ -3522,7 +3522,7 @@ window.RESEARCH_DATA = {
           "id": "pkg09-sec01",
           "title": "القياس النفسي",
           "image": "images/sections/pkg01-sec90.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة الصحة والمجتمع.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة الصحة والمجتمع.",
           "bots": [
             {
               "id": "pkg09-sec01-bot01",
@@ -3560,7 +3560,7 @@ window.RESEARCH_DATA = {
           "id": "pkg09-sec02",
           "title": "الوعي الصحي",
           "image": "images/sections/pkg01-sec91.png",
-          "description": "قسم يضم 1 بوتات ضمن باقة الصحة والمجتمع.",
+          "description": "تصنيف يضم 1 بوتات ضمن باقة الصحة والمجتمع.",
           "bots": [
             {
               "id": "pkg09-sec02-bot01",
@@ -3578,7 +3578,7 @@ window.RESEARCH_DATA = {
           "id": "pkg09-sec03",
           "title": "التواصل والتفاعل",
           "image": "images/sections/pkg01-sec92.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة الصحة والمجتمع.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة الصحة والمجتمع.",
           "bots": [
             {
               "id": "pkg09-sec03-bot01",
@@ -3606,7 +3606,7 @@ window.RESEARCH_DATA = {
           "id": "pkg09-sec04",
           "title": "الصحة الاجتماعية",
           "image": "images/sections/pkg01-sec93.png",
-          "description": "قسم يضم 2 بوتات ضمن باقة الصحة والمجتمع.",
+          "description": "تصنيف يضم 2 بوتات ضمن باقة الصحة والمجتمع.",
           "bots": [
             {
               "id": "pkg09-sec04-bot01",
@@ -3642,7 +3642,7 @@ window.RESEARCH_DATA = {
           "id": "pkg10-sec01",
           "title": "أساسيات التكوين",
           "image": "images/sections/pkg01-sec94.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة صناعة البوتات.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة صناعة البوتات.",
           "bots": [
             {
               "id": "pkg10-sec01-bot01",
@@ -3680,7 +3680,7 @@ window.RESEARCH_DATA = {
           "id": "pkg10-sec02",
           "title": "هندسة التعليمات",
           "image": "images/sections/pkg01-sec95.png",
-          "description": "قسم يضم 3 بوتات ضمن باقة صناعة البوتات.",
+          "description": "تصنيف يضم 3 بوتات ضمن باقة صناعة البوتات.",
           "bots": [
             {
               "id": "pkg10-sec02-bot01",
@@ -3718,7 +3718,7 @@ window.RESEARCH_DATA = {
           "id": "pkg10-sec03",
           "title": "تعليمات التكوين",
           "image": "images/sections/pkg01-sec96.png",
-          "description": "قسم يضم 4 بوتات ضمن باقة صناعة البوتات.",
+          "description": "تصنيف يضم 4 بوتات ضمن باقة صناعة البوتات.",
           "bots": [
             {
               "id": "pkg10-sec03-bot01",

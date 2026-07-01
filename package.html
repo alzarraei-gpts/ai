@@ -491,6 +491,125 @@
     }
   </style>
 
+
+
+  <style id="banner-halo-motion-v6">
+    /* لمعان وهالات وحركة متجاوبة للبانر على جميع الشاشات */
+    .discount-banner-v1{
+      position:relative!important;
+      isolation:isolate!important;
+      overflow:hidden!important;
+      border-color:rgba(240,217,140,.38)!important;
+      box-shadow:
+        0 18px 46px rgba(0,0,0,.36),
+        0 0 0 1px rgba(64,255,168,.10),
+        0 0 34px rgba(43,210,133,.12),
+        inset 0 0 34px rgba(48,221,142,.13),
+        inset 0 -1px 0 rgba(240,217,140,.34)!important;
+    }
+    .discount-banner-v1::before{
+      content:""!important;
+      position:absolute!important;
+      inset:-18% -8%!important;
+      z-index:2!important;
+      pointer-events:none!important;
+      background:
+        radial-gradient(circle at 78% 42%,rgba(66,255,169,.34),transparent 22%),
+        radial-gradient(circle at 60% 58%,rgba(240,217,140,.22),transparent 24%),
+        radial-gradient(circle at 36% 50%,rgba(66,255,169,.14),transparent 24%),
+        linear-gradient(90deg,transparent 0%,rgba(240,217,140,.08) 46%,rgba(75,255,178,.10) 58%,transparent 100%)!important;
+      mix-blend-mode:screen!important;
+      opacity:.82!important;
+      filter:blur(.3px)!important;
+      animation:bannerHaloTravelV6 6.2s ease-in-out infinite alternate!important;
+    }
+    .discount-banner-v1::after{
+      content:""!important;
+      position:absolute!important;
+      inset:-16% auto -16% -28%!important;
+      width:34%!important;
+      z-index:3!important;
+      pointer-events:none!important;
+      background:linear-gradient(104deg,transparent 0%,rgba(255,238,180,0) 28%,rgba(255,238,180,.30) 47%,rgba(68,255,174,.20) 58%,transparent 76%)!important;
+      transform:translateX(0) skewX(-10deg)!important;
+      filter:blur(1.2px)!important;
+      opacity:.50!important;
+      animation:bannerShinePassV6 5.8s cubic-bezier(.42,0,.2,1) infinite!important;
+    }
+    .discount-banner-link-v1::before{
+      content:""!important;
+      position:absolute!important;
+      inset:0!important;
+      z-index:4!important;
+      pointer-events:none!important;
+      background:
+        linear-gradient(180deg,rgba(255,255,255,.055),transparent 42%,rgba(0,0,0,.12)),
+        radial-gradient(circle at 82% 30%,rgba(255,231,154,.14),transparent 18%)!important;
+      opacity:.78!important;
+      animation:bannerSoftPulseV6 4.8s ease-in-out infinite alternate!important;
+    }
+    .discount-banner-link-v1::after{
+      content:""!important;
+      position:absolute!important;
+      inset:auto 0 0 0!important;
+      z-index:5!important;
+      height:2px!important;
+      pointer-events:none!important;
+      background:linear-gradient(90deg,transparent 0%,rgba(240,217,140,.82) 30%,rgba(63,255,166,.72) 52%,rgba(240,217,140,.70) 70%,transparent 100%)!important;
+      opacity:.82!important;
+      animation:bannerBottomGlowV6 3.6s ease-in-out infinite alternate!important;
+    }
+    .discount-banner-img-v1{
+      will-change:transform,filter!important;
+      animation:bannerImageDriftV6 7.2s ease-in-out infinite!important;
+      filter:saturate(1.17) contrast(1.09) brightness(1.035)!important;
+    }
+    .discount-banner-v1:hover .discount-banner-img-v1,
+    .discount-banner-v1:focus-within .discount-banner-img-v1{
+      transform:scale(1.026) translate3d(-2px,-1px,0)!important;
+      filter:saturate(1.24) contrast(1.13) brightness(1.07)!important;
+    }
+    .discount-banner-v1:hover,
+    .discount-banner-v1:focus-within{
+      box-shadow:
+        0 22px 58px rgba(0,0,0,.42),
+        0 0 44px rgba(48,221,142,.24),
+        0 0 24px rgba(240,217,140,.13),
+        inset 0 0 46px rgba(27,177,105,.18),
+        inset 0 -1px 0 rgba(240,217,140,.42)!important;
+    }
+    @keyframes bannerImageDriftV6{
+      0%,100%{transform:scale(1.006) translate3d(0,0,0)}
+      50%{transform:scale(1.017) translate3d(-2px,-1px,0)}
+    }
+    @keyframes bannerHaloTravelV6{
+      0%{opacity:.58;transform:scale(1) translate3d(1.4%,0,0)}
+      50%{opacity:.88;transform:scale(1.035) translate3d(-.4%,-.6%,0)}
+      100%{opacity:.70;transform:scale(1.055) translate3d(-1.4%,.4%,0)}
+    }
+    @keyframes bannerShinePassV6{
+      0%{left:-32%;opacity:0}
+      16%{opacity:.28}
+      46%{opacity:.56}
+      100%{left:112%;opacity:0}
+    }
+    @keyframes bannerSoftPulseV6{0%{opacity:.56}100%{opacity:.86}}
+    @keyframes bannerBottomGlowV6{0%{transform:translateX(14%);opacity:.42}100%{transform:translateX(-14%);opacity:.88}}
+    @media(max-width:900px){
+      .discount-banner-v1::before{inset:-22% -16%!important;opacity:.76!important}
+      .discount-banner-v1::after{width:48%!important;animation-duration:6.2s!important}
+    }
+    @media(max-width:640px){
+      .discount-banner-v1::before{background:radial-gradient(circle at 80% 45%,rgba(66,255,169,.28),transparent 28%),radial-gradient(circle at 58% 58%,rgba(240,217,140,.16),transparent 26%),linear-gradient(90deg,transparent,rgba(240,217,140,.07),transparent)!important}
+      .discount-banner-v1::after{width:62%!important;filter:blur(1px)!important;opacity:.38!important}
+      .discount-banner-link-v1::after{height:1px!important}
+    }
+    @media(max-width:440px){
+      .discount-banner-v1::after{width:74%!important;animation-duration:6.8s!important}
+      .discount-banner-img-v1{animation-duration:8.4s!important}
+    }
+  </style>
+
 </head>
 <body data-page="public-sections">
   <header class="topbar public-topbar">
