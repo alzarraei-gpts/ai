@@ -221,6 +221,148 @@
     }
   </style>
 
+
+  <style id="final-banner-alignment-motion-v4">
+    /* ضبط نهائي: حذف اسكيتش بوابة النماذج الذكية أسفل البانر + محاذاة البانر مع مساحة المحتوى + حركة وتوهج متجاوبان */
+    #app .cg-remove-portal-intro,
+    #app .cg-force-hide-portal-intro,
+    #app [data-cg-portal-intro-hidden="true"]{
+      display:none!important;
+      visibility:hidden!important;
+      height:0!important;
+      min-height:0!important;
+      max-height:0!important;
+      padding:0!important;
+      margin:0!important;
+      overflow:hidden!important;
+      border:0!important;
+    }
+
+    .discount-banner-v1{
+      --banner-shell:min(1180px,calc(100% - 32px));
+      --banner-h:clamp(92px,9.2vw,154px);
+      width:var(--banner-shell)!important;
+      max-width:var(--banner-shell)!important;
+      min-height:var(--banner-h)!important;
+      height:var(--banner-h)!important;
+      margin:14px auto 8px!important;
+      border:1px solid rgba(209,161,58,.32)!important;
+      border-radius:22px!important;
+      overflow:hidden!important;
+      background:#03140f!important;
+      box-shadow:
+        0 18px 46px rgba(0,0,0,.34),
+        0 0 0 1px rgba(45,220,140,.08),
+        inset 0 0 36px rgba(27,177,105,.12),
+        inset 0 -1px 0 rgba(240,217,140,.26)!important;
+      transform:translateZ(0);
+    }
+    .discount-banner-link-v1{
+      min-height:var(--banner-h)!important;
+      height:var(--banner-h)!important;
+      border-radius:22px!important;
+      display:block!important;
+    }
+    .discount-banner-img-v1{
+      height:var(--banner-h)!important;
+      width:100%!important;
+      object-fit:cover!important;
+      object-position:center center!important;
+      filter:saturate(1.12) contrast(1.08) brightness(1.025)!important;
+      transform-origin:center center!important;
+      will-change:transform,filter!important;
+      animation:cgBannerImageMotionV4 8.2s ease-in-out infinite!important;
+    }
+    .discount-banner-v1::before{
+      background:
+        radial-gradient(circle at 74% 45%,rgba(55,255,168,.24),transparent 28%),
+        radial-gradient(circle at 48% 58%,rgba(240,217,140,.15),transparent 24%),
+        linear-gradient(90deg,transparent 0%,rgba(64,255,168,.06) 43%,rgba(240,217,140,.08) 56%,transparent 100%)!important;
+      mix-blend-mode:screen!important;
+      opacity:.68!important;
+      animation:cgBannerGlowMotionV4 6.8s ease-in-out infinite alternate!important;
+    }
+    .discount-banner-v1::after{
+      width:38%!important;
+      right:-42%!important;
+      left:auto!important;
+      background:linear-gradient(102deg,transparent 0%,rgba(255,238,178,0) 34%,rgba(255,238,178,.18) 48%,rgba(54,242,156,.12) 58%,transparent 74%)!important;
+      filter:blur(1.4px)!important;
+      opacity:.36!important;
+      animation:cgBannerSweepMotionV4 8.8s ease-in-out infinite!important;
+    }
+    .discount-banner-link-v1::before{
+      background:linear-gradient(180deg,rgba(255,255,255,.045),transparent 44%,rgba(0,0,0,.12))!important;
+      opacity:.72!important;
+      animation:cgBannerBreathMotionV4 5.8s ease-in-out infinite alternate!important;
+    }
+    .discount-banner-link-v1::after{
+      inset:auto 0 0 0!important;
+      height:2px!important;
+      background:linear-gradient(90deg,transparent,rgba(240,217,140,.74),rgba(53,232,149,.58),transparent)!important;
+      opacity:.72!important;
+      animation:cgBannerLineMotionV4 4.6s ease-in-out infinite alternate!important;
+    }
+    .discount-banner-v1:hover .discount-banner-img-v1,
+    .discount-banner-v1:focus-within .discount-banner-img-v1{
+      transform:scale(1.022) translateY(-1px)!important;
+      filter:saturate(1.18) contrast(1.1) brightness(1.055)!important;
+    }
+    .discount-banner-v1:hover,
+    .discount-banner-v1:focus-within{
+      box-shadow:
+        0 22px 58px rgba(0,0,0,.38),
+        0 0 34px rgba(48,221,142,.20),
+        inset 0 0 42px rgba(27,177,105,.16),
+        inset 0 -1px 0 rgba(240,217,140,.34)!important;
+    }
+
+    @keyframes cgBannerImageMotionV4{
+      0%,100%{transform:scale(1.006) translate3d(0,0,0)}
+      50%{transform:scale(1.016) translate3d(-2px,-1px,0)}
+    }
+    @keyframes cgBannerGlowMotionV4{
+      0%{opacity:.48;transform:scale(1) translateX(1.2%)}
+      50%{opacity:.74;transform:scale(1.028) translateX(-.2%)}
+      100%{opacity:.58;transform:scale(1.045) translateX(-1%)}
+    }
+    @keyframes cgBannerSweepMotionV4{
+      0%{transform:translateX(0);opacity:0}
+      20%{opacity:.22}
+      52%{opacity:.40}
+      100%{transform:translateX(-330%);opacity:0}
+    }
+    @keyframes cgBannerBreathMotionV4{0%{opacity:.50}100%{opacity:.80}}
+    @keyframes cgBannerLineMotionV4{0%{transform:translateX(18%);opacity:.36}100%{transform:translateX(-18%);opacity:.82}}
+
+    @media(min-width:1600px){
+      .discount-banner-v1{--banner-shell:min(1280px,calc(100% - 48px));--banner-h:clamp(130px,8.2vw,166px)}
+    }
+    @media(max-width:1180px){
+      .discount-banner-v1{--banner-shell:calc(100% - 28px);--banner-h:clamp(92px,11vw,132px)}
+      .discount-banner-img-v1{object-position:58% center!important}
+    }
+    @media(max-width:900px){
+      .discount-banner-v1{--banner-shell:calc(100% - 24px);--banner-h:clamp(88px,14vw,122px);border-radius:18px!important;margin-top:12px!important}
+      .discount-banner-link-v1{border-radius:18px!important}
+      .discount-banner-img-v1{object-position:65% center!important}
+      .discount-banner-v1::after{width:50%!important;right:-55%!important}
+    }
+    @media(max-width:640px){
+      .discount-banner-v1{--banner-shell:calc(100% - 20px);--banner-h:clamp(84px,20vw,112px);border-radius:16px!important;margin-block:10px 6px!important}
+      .discount-banner-link-v1{border-radius:16px!important}
+      .discount-banner-img-v1{object-position:72% center!important}
+      .discount-banner-v1::before{opacity:.66!important;background:radial-gradient(circle at 78% 46%,rgba(55,255,168,.23),transparent 34%),linear-gradient(90deg,transparent,rgba(240,217,140,.07),transparent)!important}
+      .discount-banner-link-v1::after{height:1px!important}
+    }
+    @media(max-width:440px){
+      .discount-banner-v1{--banner-shell:calc(100% - 16px);--banner-h:clamp(78px,24vw,98px);border-radius:14px!important}
+      .discount-banner-link-v1{border-radius:14px!important}
+      .discount-banner-img-v1{object-position:79% center!important}
+      .discount-banner-v1::after{width:66%!important;right:-72%!important}
+    }
+  </style>
+
 </head>
 <body data-page="public-bots">
   <header class="topbar public-topbar">
@@ -389,6 +531,52 @@
     function boot(){enhance(); setTimeout(enhance,80); setTimeout(enhance,250); setTimeout(enhance,700); setTimeout(enhance,1400);}
     if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
     new MutationObserver(function(){enhance();}).observe(document.documentElement,{childList:true,subtree:true});
+  })();
+</script>
+
+
+<script id="final-remove-portal-intro-v4">
+  (function(){
+    'use strict';
+    function norm(t){return (t||'').replace(/\s+/g,' ').trim();}
+    function all(root,sel){return Array.prototype.slice.call((root||document).querySelectorAll(sel));}
+    function hidePortalIntro(){
+      var app=document.getElementById('app');
+      if(!app)return;
+      all(app,'h1,h2,.hero h1,.hero h2,[class*="hero"] h1,[class*="hero"] h2').forEach(function(h){
+        if(norm(h.textContent)==='بوابة النماذج الذكية'){
+          var block=h.closest('section,header,.hero,.hero-grid,.shell,[class*="hero"],[class*="intro"],[class*="header"]') || h.parentElement;
+          if(block){
+            block.classList.add('cg-force-hide-portal-intro');
+            block.setAttribute('data-cg-portal-intro-hidden','true');
+          }else{
+            h.classList.add('cg-force-hide-portal-intro');
+            h.setAttribute('data-cg-portal-intro-hidden','true');
+          }
+        }
+      });
+      /* توحيد رؤوس الباقات/التقسيمات/البوتات في سطر واحد متى ظهرت */
+      all(app,'h1,h2').forEach(function(h){
+        var t=norm(h.textContent);
+        if(!/^(الباقات|التقسيمات|البوتات)$/.test(t) || h.dataset.cgInlineFinal==='1')return;
+        var p=h.nextElementSibling;
+        while(p && p.tagName!=='P')p=p.nextElementSibling;
+        if(!p || norm(p.textContent).length<5)return;
+        var row=document.createElement('div');
+        row.className='cg-inline-heading-row';
+        var sep=document.createElement('span');
+        sep.className='cg-inline-heading-sep';
+        sep.textContent='|';
+        h.classList.add('cg-inline-heading-title');
+        p.classList.add('cg-inline-heading-subtitle');
+        h.parentNode.insertBefore(row,h);
+        row.appendChild(h); row.appendChild(sep); row.appendChild(p);
+        h.dataset.cgInlineFinal='1';
+      });
+    }
+    function boot(){hidePortalIntro();setTimeout(hidePortalIntro,80);setTimeout(hidePortalIntro,250);setTimeout(hidePortalIntro,700);setTimeout(hidePortalIntro,1400);}
+    if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
+    new MutationObserver(function(){requestAnimationFrame(hidePortalIntro);}).observe(document.documentElement,{childList:true,subtree:true,characterData:true});
   })();
 </script>
 
