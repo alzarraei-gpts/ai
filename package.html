@@ -128,6 +128,99 @@
     @media(max-width:340px){.discount-banner-v1{--banner-h:92px}.discount-banner-img-v1{object-position:85% center}}
     @media(prefers-reduced-motion:reduce){.discount-banner-v1::before,.discount-banner-v1::after,.discount-banner-link-v1::before,.discount-banner-link-v1::after,.discount-banner-img-v1{animation-duration:18s!important;animation-iteration-count:infinite!important}}
   </style>
+
+  <style id="compact-portal-hero-v3">
+    /* حذف مقدمة البوابة تحت البانر، وتوحيد عنوان الصفحة مع الوصف في سطر واحد */
+    #app .cg-remove-portal-intro{
+      display:none!important;
+      height:0!important;
+      min-height:0!important;
+      max-height:0!important;
+      padding:0!important;
+      margin:0!important;
+      overflow:hidden!important;
+      border:0!important;
+    }
+    #app .cg-heading-section{
+      padding-block:clamp(14px,2.2vw,28px)!important;
+      min-height:0!important;
+    }
+    #app .cg-heading-section .section-head,
+    #app .cg-heading-section [class*="section-head"]{
+      margin-block:0 clamp(8px,1.4vw,16px)!important;
+    }
+    #app .cg-inline-heading-row{
+      display:flex!important;
+      align-items:baseline!important;
+      justify-content:flex-start!important;
+      gap:8px 12px!important;
+      flex-wrap:wrap!important;
+      width:100%!important;
+      margin:0 0 clamp(8px,1vw,12px)!important;
+      text-align:right!important;
+    }
+    #app .cg-inline-heading-title{
+      margin:0!important;
+      font-size:clamp(1.65rem,3.2vw,3rem)!important;
+      line-height:1.1!important;
+      letter-spacing:-.025em!important;
+      font-weight:950!important;
+      color:var(--cg-text,#f7efd8)!important;
+      white-space:nowrap!important;
+    }
+    #app .cg-inline-heading-sep{
+      color:rgba(240,217,140,.74)!important;
+      font-weight:900!important;
+      font-size:clamp(1rem,1.55vw,1.5rem)!important;
+      transform:translateY(-.04em);
+    }
+    #app .cg-inline-heading-subtitle{
+      margin:0!important;
+      font-size:clamp(.82rem,1.15vw,1.05rem)!important;
+      line-height:1.65!important;
+      color:var(--cg-muted,#d8c892)!important;
+      max-width:min(760px,100%)!important;
+    }
+    #app .cg-title-chips{
+      display:flex!important;
+      align-items:center!important;
+      gap:7px!important;
+      flex-wrap:wrap!important;
+      margin:0!important;
+      margin-inline-start:auto!important;
+    }
+    #app .cg-title-chips .chip,
+    #app .cg-title-chips [class*="chip"],
+    #app .cg-title-chips [class*="badge"],
+    #app .cg-title-chips [class*="stat"]{
+      margin:0!important;
+      white-space:nowrap!important;
+    }
+    #app .toolbar,
+    #app [class*="toolbar"]{
+      margin-top:clamp(8px,1.1vw,14px)!important;
+    }
+    #app input[type="search"],
+    #app input.search,
+    #app .search{
+      min-height:42px!important;
+      padding-block:9px!important;
+    }
+    @media(max-width:900px){
+      #app .cg-inline-heading-row{align-items:flex-start!important;gap:6px 9px!important}
+      #app .cg-title-chips{margin-inline-start:0!important;width:100%!important}
+      #app .cg-inline-heading-title{font-size:clamp(1.45rem,5.8vw,2.2rem)!important}
+      #app .cg-inline-heading-subtitle{font-size:clamp(.78rem,2.8vw,.95rem)!important;max-width:100%!important}
+    }
+    @media(max-width:560px){
+      #app .cg-heading-section{padding-block:12px 14px!important}
+      #app .cg-inline-heading-row{display:grid!important;grid-template-columns:auto auto 1fr;align-items:baseline!important;gap:5px 7px!important}
+      #app .cg-title-chips{grid-column:1/-1!important;width:100%!important;justify-content:flex-start!important;margin-top:2px!important}
+      #app .cg-inline-heading-title{font-size:clamp(1.28rem,7.5vw,1.9rem)!important;white-space:normal!important}
+      #app .cg-inline-heading-subtitle{font-size:.76rem!important;line-height:1.55!important}
+    }
+  </style>
+
 </head>
 <body data-page="public-sections">
   <header class="topbar public-topbar">
@@ -218,6 +311,86 @@
     new MutationObserver(function(){requestAnimationFrame(run)}).observe(document.documentElement,{childList:true,subtree:true,characterData:true});
   })();
   </script>
+
+
+<script id="compact-portal-hero-v3-script">
+  (function(){
+    'use strict';
+    function norm(t){return (t||'').replace(/\s+/g,' ').trim();}
+    function all(root,sel){return [].slice.call((root||document).querySelectorAll(sel));}
+    function findText(root,sel,texts){return all(root,sel).find(function(x){return texts.indexOf(norm(x.textContent))>-1;});}
+    function nearestContentBlock(el){return el && (el.closest('section,[class*="hero"],[class*="intro"],[class*="header"],.shell') || el.parentElement);}
+    function findNearbyParagraph(h){
+      var n=h.nextElementSibling;
+      while(n){ if(n.tagName==='P')return n; if(/^(H1|H2|H3|SECTION)$/i.test(n.tagName))break; n=n.nextElementSibling; }
+      var parent=h.parentElement;
+      if(parent){
+        var ps=all(parent,'p').filter(function(p){return p!==h && norm(p.textContent).length>6;});
+        if(ps.length)return ps[0];
+      }
+      var sec=h.closest('section,.section-head,[class*="section"],.shell') || document.getElementById('app');
+      return all(sec,'p').filter(function(p){return norm(p.textContent).length>6;})[0]||null;
+    }
+    function extractPortalChips(app){
+      var h=all(app,'h1').find(function(x){return norm(x.textContent)==='بوابة النماذج الذكية';});
+      if(!h)return null;
+      var block=nearestContentBlock(h);
+      var chips=[];
+      if(block){
+        chips=all(block,'.chips,[class*="chips"],[class*="stats"],[class*="badges"]').filter(function(x){return norm(x.textContent).match(/الباقات|التقسيمات|البوتات|الحالية|\d/);});
+        if(!chips.length){
+          var chipItems=all(block,'.chip,[class*="chip"],[class*="badge"],[class*="stat"]').filter(function(x){return norm(x.textContent).match(/الباقات|التقسيمات|البوتات|الحالية|\d/);});
+          if(chipItems.length){
+            var wrap=document.createElement('div');
+            wrap.className='cg-title-chips';
+            chipItems.forEach(function(x){wrap.appendChild(x);});
+            chips=[wrap];
+          }
+        }
+        block.classList.add('cg-remove-portal-intro');
+      }else if(h.parentElement){
+        h.parentElement.classList.add('cg-remove-portal-intro');
+      }
+      if(chips.length){
+        chips[0].classList.add('cg-title-chips');
+        return chips[0];
+      }
+      return null;
+    }
+    function compactHeading(app, movedChips){
+      var h=findText(app,'h2',['الباقات','التقسيمات','البوتات']) || findText(app,'h1',['الباقات','التقسيمات','البوتات']);
+      if(!h || h.dataset.inlineHeadingReady)return;
+      var p=findNearbyParagraph(h);
+      if(!p)return;
+      var row=document.createElement('div');
+      row.className='cg-inline-heading-row';
+      var sep=document.createElement('span');
+      sep.className='cg-inline-heading-sep';
+      sep.textContent='|';
+      h.classList.add('cg-inline-heading-title');
+      p.classList.add('cg-inline-heading-subtitle');
+      h.parentNode.insertBefore(row,h);
+      row.appendChild(h);
+      row.appendChild(sep);
+      row.appendChild(p);
+      var localChips=all(app,'.chips,[class*="chips"],[class*="stats"],[class*="badges"]').find(function(x){return !x.closest('.cg-remove-portal-intro') && norm(x.textContent).match(/الباقات|التقسيمات|البوتات|الحالية|\d/);});
+      var chips=movedChips || localChips;
+      if(chips && !chips.closest('.cg-inline-heading-row')){chips.classList.add('cg-title-chips'); row.appendChild(chips);}
+      var block=h.closest('section,.section-head,[class*="section"],.shell') || row.parentElement;
+      if(block)block.classList.add('cg-heading-section');
+      h.dataset.inlineHeadingReady='1';
+    }
+    function enhance(){
+      var app=document.getElementById('app');
+      if(!app)return;
+      var chips=extractPortalChips(app);
+      compactHeading(app,chips);
+    }
+    function boot(){enhance(); setTimeout(enhance,80); setTimeout(enhance,250); setTimeout(enhance,700); setTimeout(enhance,1400);}
+    if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
+    new MutationObserver(function(){enhance();}).observe(document.documentElement,{childList:true,subtree:true});
+  })();
+</script>
 
 </body>
 </html>
