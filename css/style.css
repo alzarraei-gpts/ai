@@ -40,3 +40,81 @@
 @media(max-width:420px){
   .brand-mark{width:38px!important;height:38px!important;min-width:38px!important}
 }
+
+
+/* Final polish v2026-07-01-banner-logo-search-fast: visible right logo, aligned search, responsive animated banner, faster mobile interaction */
+:root{--banner-h:clamp(82px,9.9vw,189px)}
+.topbar .shell{width:var(--shell)!important;margin-inline:auto!important;overflow:visible!important}
+.brand{padding-inline-start:clamp(8px,1.1vw,16px)!important;overflow:visible!important;max-width:100%!important}
+.brand-mark{
+  margin-inline-start:clamp(6px,1vw,14px)!important;
+  margin-inline-end:0!important;
+  transform:translateX(-6px)!important;
+  overflow:visible!important;
+  background-size:contain!important;
+  background-repeat:no-repeat!important;
+  background-position:center!important;
+}
+.discount-wrap{width:var(--shell)!important;margin:8px auto 8px!important;padding:0!important;contain:layout paint style!important}
+.discount-banner{
+  width:100%!important;
+  height:var(--banner-h)!important;
+  min-height:var(--banner-h)!important;
+  border-radius:18px!important;
+  overflow:hidden!important;
+  display:block!important;
+  background:#002d22!important;
+  box-shadow:0 16px 42px rgba(0,0,0,.26),0 0 0 1px rgba(201,161,91,.24),0 0 42px rgba(47,176,109,.16),inset 0 0 36px rgba(240,217,140,.07)!important;
+  transform:translateZ(0)!important;
+}
+.discount-banner img{
+  width:100%!important;
+  height:100%!important;
+  min-height:100%!important;
+  object-fit:cover!important;
+  object-position:center!important;
+  display:block!important;
+  filter:saturate(1.12) contrast(1.06) brightness(1.035)!important;
+  transform-origin:center!important;
+  animation:finalBannerFloat 7s ease-in-out infinite!important;
+  will-change:transform!important;
+}
+.discount-banner:before{
+  background:radial-gradient(circle at 80% 42%,rgba(72,255,181,.30),transparent 22%),radial-gradient(circle at 62% 50%,rgba(242,212,138,.21),transparent 20%),radial-gradient(circle at 31% 50%,rgba(72,255,181,.105),transparent 25%)!important;
+  opacity:.74!important;
+  animation:finalBannerHalo 5.6s ease-in-out infinite alternate!important;
+  will-change:opacity,transform!important;
+}
+.discount-banner:after{
+  width:30%!important;right:-34%!important;left:auto!important;
+  background:linear-gradient(105deg,transparent 0%,rgba(255,236,170,.08) 28%,rgba(255,236,170,.25) 50%,rgba(62,255,169,.13) 60%,transparent 79%)!important;
+  filter:none!important;opacity:.32!important;
+  animation:finalBannerShine 7.2s ease-in-out infinite!important;
+  will-change:transform,opacity!important;
+}
+.discount-banner .fx-a{height:2px!important;background:linear-gradient(90deg,transparent,rgba(242,212,138,.94),rgba(47,176,109,.66),transparent)!important;animation:finalBannerLine 4.2s ease-in-out infinite alternate!important}
+.discount-banner .fx-b{background:linear-gradient(180deg,rgba(255,255,255,.052),transparent 45%,rgba(0,0,0,.105))!important;animation:finalBannerBreath 5.8s ease-in-out infinite alternate!important}
+.discount-banner .fx-c{position:absolute;inset:0;pointer-events:none;z-index:3;background:radial-gradient(circle at 70% 45%,rgba(240,217,140,.16),transparent 18%),radial-gradient(circle at 85% 35%,rgba(70,255,175,.15),transparent 13%);mix-blend-mode:screen;opacity:.46;animation:finalBannerSpark 5.4s ease-in-out infinite alternate!important;will-change:opacity,transform!important}
+.toolbar.shell{width:var(--shell)!important;margin:8px auto 14px!important;padding:0!important;display:flex!important;align-items:center!important;box-sizing:border-box!important}
+.search{width:100%!important;max-width:100%!important;margin:0!important;display:block!important;box-sizing:border-box!important}
+.modal.open,.assistant-panel.open{animation:fastOpen .12s ease-out both}
+.modal-close,.float-btn,.nav a,.btn{touch-action:manipulation}
+@keyframes finalBannerFloat{0%,100%{transform:scale(1) translate3d(0,0,0)}50%{transform:scale(1.008) translate3d(0,-1px,0)}}
+@keyframes finalBannerHalo{0%{opacity:.56;transform:translate3d(-1.1%,0,0) scale(1)}100%{opacity:.88;transform:translate3d(1.1%,0,0) scale(1.01)}}
+@keyframes finalBannerShine{0%,26%{transform:translate3d(0,0,0);opacity:.04}58%{transform:translate3d(-330%,0,0);opacity:.36}100%{transform:translate3d(-330%,0,0);opacity:.05}}
+@keyframes finalBannerLine{0%{opacity:.44;transform:scaleX(.76)}100%{opacity:.94;transform:scaleX(1)}}
+@keyframes finalBannerBreath{0%{opacity:.46}100%{opacity:.78}}
+@keyframes finalBannerSpark{0%{opacity:.30;transform:translate3d(-.7%,0,0) scale(.996)}100%{opacity:.62;transform:translate3d(.7%,-.35%,0) scale(1.006)}}
+@keyframes fastOpen{from{opacity:.82;transform:translateY(2px)}to{opacity:1;transform:none}}
+@media(max-width:980px){:root{--banner-h:clamp(82px,16.5vw,150px)}.brand-mark{transform:translateX(-8px)!important}.discount-banner img{object-position:center!important}}
+@media(max-width:620px){
+  :root{--shell:min(100% - 20px,1180px);--banner-h:clamp(76px,23vw,118px)}
+  .topbar .shell{padding-inline:0!important}
+  .brand{padding-inline-start:14px!important}
+  .brand-mark{transform:translateX(-10px)!important;margin-inline-start:8px!important}
+  .discount-wrap{margin:7px auto 7px!important}
+  .discount-banner{border-radius:14px!important}
+  .discount-banner img{object-position:58% center!important}
+  .toolbar.shell{margin:7px auto 12px!important}
+}
+@media(max-width:420px){:root{--banner-h:clamp(72px,25vw,104px)}.brand{padding-inline-start:16px!important}.brand-mark{transform:translateX(-12px)!important}.discount-banner img{object-position:62% center!important}}
