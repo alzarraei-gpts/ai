@@ -20,33 +20,50 @@
 
   <style id="discount-banner-v1">
     .discount-banner-v1{
+      --banner-h:clamp(92px,9.92vw,189px);
       position:relative;
       isolation:isolate;
       overflow:hidden;
-      background:#020d08;
-      border-block:1px solid rgba(209,161,58,.54);
-      box-shadow:0 18px 55px rgba(0,0,0,.30), inset 0 1px 0 rgba(240,217,140,.18);
+      width:100%;
+      margin:0;
+      background:
+        radial-gradient(circle at 74% 48%,rgba(29,201,118,.18),transparent 25%),
+        linear-gradient(180deg,#02140d,#020c08 68%,#03140c);
+      border-block:1px solid rgba(209,161,58,.46);
+      box-shadow:0 18px 55px rgba(0,0,0,.30), inset 0 1px 0 rgba(240,217,140,.16);
     }
+    .discount-banner-v1::before,
     .discount-banner-v1::after{
       content:"";
       position:absolute;
       inset:0;
-      z-index:2;
       pointer-events:none;
+    }
+    .discount-banner-v1::before{
+      z-index:2;
       background:
-        radial-gradient(circle at 76% 42%,rgba(240,217,140,.14),transparent 16%),
-        radial-gradient(circle at 89% 36%,rgba(30,255,145,.16),transparent 24%),
-        radial-gradient(circle at 18% 48%,rgba(240,217,140,.10),transparent 22%),
-        linear-gradient(180deg,rgba(255,255,255,.045),transparent 34%,rgba(0,0,0,.18));
-      opacity:.62;
-      animation:discountBannerGlowV4 5.6s ease-in-out infinite alternate;
+        radial-gradient(circle at 78% 42%,rgba(240,217,140,.12),transparent 18%),
+        radial-gradient(circle at 90% 42%,rgba(30,255,145,.11),transparent 25%),
+        linear-gradient(180deg,rgba(255,255,255,.026),transparent 38%,rgba(0,0,0,.14));
+      opacity:.54;
+      animation:discountBannerGlowV6 7.5s ease-in-out infinite alternate;
+    }
+    .discount-banner-v1::after{
+      z-index:3;
+      background:linear-gradient(90deg,transparent,rgba(240,217,140,.045),transparent);
+      opacity:.34;
+      transform:translateX(22%);
+      animation:discountBannerDriftV6 12s ease-in-out infinite alternate;
+      mix-blend-mode:screen;
     }
     .discount-banner-link-v1{
       position:relative;
       z-index:1;
       display:block;
       width:100%;
-      min-height:88px;
+      height:var(--banner-h);
+      min-height:92px;
+      max-height:189px;
       line-height:0;
       text-decoration:none!important;
       background:#020d08;
@@ -54,29 +71,35 @@
     .discount-banner-img-v1{
       display:block;
       width:100%;
-      height:auto;
-      max-height:190px;
+      height:100%;
       object-fit:cover;
-      object-position:center;
-      filter:saturate(1.09) contrast(1.055) drop-shadow(0 14px 36px rgba(0,0,0,.30));
-      transform:scale(1.003);
-      animation:discountBannerFloatV4 7.2s ease-in-out infinite;
-      transition:filter .35s ease, transform .35s ease;
+      object-position:center center;
+      filter:saturate(1.08) contrast(1.05) drop-shadow(0 14px 36px rgba(0,0,0,.30));
+      transform:scale(1.002);
+      animation:discountBannerFloatV6 8.5s ease-in-out infinite;
+      transition:filter .35s ease, transform .35s ease, object-position .35s ease;
+      will-change:transform;
     }
     .discount-banner-v1:hover .discount-banner-img-v1{
-      filter:saturate(1.18) contrast(1.09) brightness(1.035) drop-shadow(0 18px 44px rgba(0,0,0,.36));
-      transform:scale(1.012);
+      filter:saturate(1.15) contrast(1.08) brightness(1.025) drop-shadow(0 18px 44px rgba(0,0,0,.36));
+      transform:scale(1.008);
     }
     .discount-banner-v1:hover{
-      border-block-color:rgba(240,217,140,.70);
+      border-block-color:rgba(240,217,140,.66);
       box-shadow:0 20px 62px rgba(0,0,0,.34), inset 0 1px 0 rgba(240,217,140,.22);
     }
     .discount-banner-pulse-v1{display:none!important}
-    @keyframes discountBannerGlowV4{from{opacity:.48;filter:saturate(1)}to{opacity:.78;filter:saturate(1.12)}}
-    @keyframes discountBannerFloatV4{0%,100%{transform:scale(1.003) translateY(0)}50%{transform:scale(1.008) translateY(-2px)}}
-    @media(max-width:720px){.discount-banner-link-v1{min-height:70px}.discount-banner-img-v1{min-height:84px;object-fit:cover;object-position:center}}
-    @media(max-width:460px){.discount-banner-img-v1{min-height:76px;object-position:center}.discount-banner-v1{border-block-color:rgba(209,161,58,.42)}}
-    @media(prefers-reduced-motion:reduce){.discount-banner-v1::after,.discount-banner-img-v1{animation:none!important}.discount-banner-v1:hover .discount-banner-img-v1{transform:none}}
+    @keyframes discountBannerGlowV6{from{opacity:.45;filter:saturate(1)}to{opacity:.60;filter:saturate(1.06)}}
+    @keyframes discountBannerDriftV6{from{transform:translateX(20%)}to{transform:translateX(-20%)}}
+    @keyframes discountBannerFloatV6{0%,100%{transform:scale(1.002) translateY(0)}50%{transform:scale(1.005) translateY(-1px)}}
+    @media(min-width:1600px){.discount-banner-v1{--banner-h:min(9.92vw,189px)}}
+    @media(max-width:1200px){.discount-banner-v1{--banner-h:118px}.discount-banner-img-v1{object-position:center center}}
+    @media(max-width:900px){.discount-banner-v1{--banner-h:110px}.discount-banner-img-v1{object-position:55% center}}
+    @media(max-width:700px){.discount-banner-v1{--banner-h:104px}.discount-banner-img-v1{object-position:59% center}.discount-banner-v1::before{opacity:.46}.discount-banner-v1::after{opacity:.22}}
+    @media(max-width:540px){.discount-banner-v1{--banner-h:98px}.discount-banner-img-v1{object-position:62% center;filter:saturate(1.06) contrast(1.04)}.discount-banner-v1{border-block-color:rgba(209,161,58,.38)}}
+    @media(max-width:420px){.discount-banner-v1{--banner-h:92px}.discount-banner-img-v1{object-position:65% center}}
+    @media(max-width:360px){.discount-banner-v1{--banner-h:86px}.discount-banner-img-v1{object-position:67% center}}
+    @media(prefers-reduced-motion:reduce){.discount-banner-v1::before,.discount-banner-v1::after,.discount-banner-img-v1{animation:none!important}.discount-banner-v1:hover .discount-banner-img-v1{transform:none}}
   </style>
 </head>
 <body data-page="public-sections">
