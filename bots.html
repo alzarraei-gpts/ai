@@ -16,45 +16,51 @@
     .footer{border-top:1px solid var(--cg-line)!important;background:linear-gradient(180deg,rgba(8,25,16,.98),rgba(4,14,10,.98))!important;padding:0!important}.footer .shell{width:min(1180px,calc(100% - 32px));margin-inline:auto;padding:26px 0 104px!important}.cg-social-footer{display:grid;gap:18px}.cg-social-head{display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid rgba(209,161,58,.20);padding-bottom:14px}.cg-social-title{margin:0;color:var(--cg-text);font-size:clamp(1.05rem,2vw,1.32rem);font-weight:900}.cg-social-note{margin:6px 0 0;color:var(--cg-muted);line-height:1.75}.cg-social-brand{color:var(--cg-gold2);font-weight:800;border:1px solid rgba(209,161,58,.32);border-radius:999px;padding:8px 12px;height:max-content;white-space:nowrap}.cg-social-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:10px}.cg-social-link{display:flex;align-items:center;gap:10px;min-height:44px;padding:9px 12px;border:1px solid rgba(209,161,58,.30);border-radius:15px;background:rgba(9,24,16,.70);color:var(--cg-text)!important;text-decoration:none!important;font-weight:750}.cg-social-link:hover{transform:translateY(-1px);border-color:rgba(209,161,58,.70);background:rgba(209,161,58,.10)}.cg-social-icon{display:grid;place-items:center;width:30px;height:30px;min-width:30px;border-radius:10px;background:linear-gradient(135deg,#f2d27a,#c89534);color:#07130d;font-weight:900;font-size:.86rem}.cg-social-bottom{display:flex;justify-content:space-between;gap:12px;color:rgba(247,239,216,.72);font-size:.86rem}
     .cg-float-stack{position:fixed;left:16px;bottom:16px;z-index:9999;display:grid;gap:10px}.cg-float-btn{display:flex;align-items:center;justify-content:center;gap:9px;min-height:52px;padding:11px 17px;border-radius:999px;border:1px solid rgba(240,217,140,.70);background:linear-gradient(135deg,#d8ad48,#bd8425);color:#07130d!important;text-decoration:none!important;font-weight:900;box-shadow:0 16px 36px rgba(0,0,0,.32);cursor:pointer}.cg-float-btn.secondary{background:rgba(9,24,16,.94);color:var(--cg-text)!important;border-color:var(--cg-line)}.cg-float-btn .cg-social-icon{background:rgba(7,19,13,.96);color:var(--cg-gold2);border-radius:50%}.cg-assistant-panel{position:fixed;left:16px;bottom:142px;z-index:9998;width:min(360px,calc(100vw - 32px));max-height:min(520px,calc(100vh - 172px));overflow:auto;border:1px solid var(--cg-line);border-radius:22px;background:rgba(6,19,13,.98);box-shadow:0 24px 60px rgba(0,0,0,.42);padding:16px;display:none}.cg-assistant-panel.open{display:block}.cg-assistant-panel h3{margin:0 0 8px;color:var(--cg-text)}.cg-assistant-panel p{margin:0 0 12px;color:var(--cg-muted);line-height:1.7}.cg-assistant-panel input{width:100%;box-sizing:border-box;border:1px solid var(--cg-line);border-radius:14px;background:#07140e;color:var(--cg-text);padding:12px 14px;outline:0}.cg-assistant-results{display:grid;gap:10px;margin-top:12px}.cg-assistant-card{border:1px solid rgba(209,161,58,.24);border-radius:14px;padding:10px;background:rgba(255,255,255,.03)}.cg-assistant-card b{display:block;color:var(--cg-text);margin-bottom:5px}.cg-assistant-card span{display:block;color:var(--cg-muted);font-size:.9rem;line-height:1.55}.cg-assistant-card a{display:inline-flex;margin-top:8px;color:var(--cg-gold2);text-decoration:none;font-weight:800}.cg-assistant-close{float:left;border:0;background:transparent;color:var(--cg-gold2);font-size:20px;cursor:pointer}
     @media(max-width:720px){.brand-mark{width:50px!important;height:50px!important;min-width:50px!important}.footer .shell{width:min(100% - 24px,1180px);padding-bottom:128px!important}.cg-social-head,.cg-social-bottom{flex-direction:column;align-items:flex-start}.cg-social-links{grid-template-columns:repeat(2,minmax(0,1fr))}.cg-social-link{font-size:.9rem;padding:8px 10px}.cg-float-stack{left:12px;bottom:12px}.cg-float-btn{min-height:48px;padding:10px 14px}.cg-assistant-panel{left:12px;bottom:132px;width:calc(100vw - 24px)}}@media(max-width:420px){.cg-social-links{grid-template-columns:1fr}}
+
+    /* Header title refinement: title + subtitle in one line with separator */
+    .brand > span:last-child{display:flex!important;align-items:center!important;gap:12px!important;flex-wrap:wrap!important;line-height:1.25!important}
+    .brand h1{font-size:clamp(1.35rem,2.05vw,2rem)!important;font-weight:950!important;letter-spacing:-.02em!important;color:var(--cg-text)!important;line-height:1.15!important}
+    .brand p{display:inline-flex!important;align-items:center!important;gap:12px!important;font-size:clamp(.72rem,1.02vw,1rem)!important;color:var(--cg-muted)!important;line-height:1.5!important;white-space:nowrap!important}
+    .brand p::before{content:"|";color:rgba(240,217,140,.62);font-weight:900;font-size:1.15em;line-height:1}
+    @media(max-width:720px){.brand{gap:10px!important}.brand > span:last-child{gap:7px 10px!important}.brand h1{font-size:clamp(1.05rem,5vw,1.45rem)!important}.brand p{font-size:clamp(.62rem,3vw,.78rem)!important;white-space:normal!important}.brand p::before{font-size:1em}}
+    @media(max-width:420px){.brand > span:last-child{display:grid!important;gap:3px!important}.brand p::before{content:"";display:none}.brand p{font-size:.7rem!important;line-height:1.45!important}}
   </style>
 
   <style id="discount-banner-v1">
     .discount-banner-v1{
-      --banner-h:clamp(92px,9.92vw,189px);
+      --banner-h:clamp(78px,9.92vw,189px);
+      --banner-radius:0px;
       position:relative;
-      isolation:isolate;
+      z-index:5;
       overflow:hidden;
-      width:100%;
-      margin:0;
-      background:
-        radial-gradient(circle at 74% 48%,rgba(29,201,118,.18),transparent 25%),
-        linear-gradient(180deg,#02140d,#020c08 68%,#03140c);
-      border-block:1px solid rgba(209,161,58,.46);
-      box-shadow:0 18px 55px rgba(0,0,0,.30), inset 0 1px 0 rgba(240,217,140,.16);
+      background:#001f16;
+      border-block:1px solid rgba(209,161,58,.42);
+      box-shadow:0 12px 38px rgba(0,0,0,.28), inset 0 1px 0 rgba(240,217,140,.18);
+      isolation:isolate;
+      transform:translateZ(0);
     }
     .discount-banner-v1::before,
     .discount-banner-v1::after{
       content:"";
       position:absolute;
-      inset:0;
+      inset:-45%;
       pointer-events:none;
+      z-index:2;
     }
     .discount-banner-v1::before{
-      z-index:2;
-      background:
-        radial-gradient(circle at 78% 42%,rgba(240,217,140,.12),transparent 18%),
-        radial-gradient(circle at 90% 42%,rgba(30,255,145,.11),transparent 25%),
-        linear-gradient(180deg,rgba(255,255,255,.026),transparent 38%,rgba(0,0,0,.14));
-      opacity:.54;
-      animation:discountBannerGlowV6 7.5s ease-in-out infinite alternate;
+      background:radial-gradient(circle at 78% 48%,rgba(77,255,161,.25),transparent 23%),radial-gradient(circle at 62% 52%,rgba(240,217,140,.18),transparent 18%),linear-gradient(90deg,transparent 0%,rgba(240,217,140,.08) 42%,rgba(72,255,164,.10) 50%,rgba(240,217,140,.08) 58%,transparent 100%);
+      opacity:.55;
+      mix-blend-mode:screen;
+      filter:blur(2px) saturate(1.08);
+      animation:discountBannerGlowV8 8.5s ease-in-out infinite alternate;
     }
     .discount-banner-v1::after{
-      z-index:3;
-      background:linear-gradient(90deg,transparent,rgba(240,217,140,.045),transparent);
-      opacity:.34;
-      transform:translateX(22%);
-      animation:discountBannerDriftV6 12s ease-in-out infinite alternate;
+      inset:0;
+      background:linear-gradient(110deg,transparent 0%,rgba(255,255,255,.035) 38%,rgba(240,217,140,.10) 50%,rgba(255,255,255,.035) 62%,transparent 100%);
+      opacity:.38;
+      transform:translateX(32%);
       mix-blend-mode:screen;
+      animation:discountBannerSweepV8 10.5s ease-in-out infinite;
     }
     .discount-banner-link-v1{
       position:relative;
@@ -62,11 +68,9 @@
       display:block;
       width:100%;
       height:var(--banner-h);
-      min-height:92px;
-      max-height:189px;
       line-height:0;
       text-decoration:none!important;
-      background:#020d08;
+      outline-offset:4px;
     }
     .discount-banner-img-v1{
       display:block;
@@ -74,32 +78,34 @@
       height:100%;
       object-fit:cover;
       object-position:center center;
-      filter:saturate(1.08) contrast(1.05) drop-shadow(0 14px 36px rgba(0,0,0,.30));
-      transform:scale(1.002);
-      animation:discountBannerFloatV6 8.5s ease-in-out infinite;
-      transition:filter .35s ease, transform .35s ease, object-position .35s ease;
-      will-change:transform;
+      filter:saturate(1.08) contrast(1.06) brightness(1.02) drop-shadow(0 0 12px rgba(65,255,154,.09));
+      transform-origin:center;
+      will-change:transform,filter,object-position;
+      animation:discountBannerFloatV8 8s ease-in-out infinite;
     }
-    .discount-banner-v1:hover .discount-banner-img-v1{
-      filter:saturate(1.15) contrast(1.08) brightness(1.025) drop-shadow(0 18px 44px rgba(0,0,0,.36));
-      transform:scale(1.008);
+    .discount-banner-v1:hover .discount-banner-img-v1,
+    .discount-banner-v1:focus-within .discount-banner-img-v1{
+      transform:scale(1.018) translateY(-1px);
+      filter:saturate(1.15) contrast(1.08) brightness(1.045) drop-shadow(0 0 18px rgba(65,255,154,.16));
     }
-    .discount-banner-v1:hover{
-      border-block-color:rgba(240,217,140,.66);
-      box-shadow:0 20px 62px rgba(0,0,0,.34), inset 0 1px 0 rgba(240,217,140,.22);
+    .discount-banner-v1:hover,
+    .discount-banner-v1:focus-within{
+      border-block-color:rgba(240,217,140,.68);
+      box-shadow:0 14px 44px rgba(0,0,0,.34),0 0 28px rgba(64,255,156,.08),inset 0 1px 0 rgba(240,217,140,.24);
     }
     .discount-banner-pulse-v1{display:none!important}
-    @keyframes discountBannerGlowV6{from{opacity:.45;filter:saturate(1)}to{opacity:.60;filter:saturate(1.06)}}
-    @keyframes discountBannerDriftV6{from{transform:translateX(20%)}to{transform:translateX(-20%)}}
-    @keyframes discountBannerFloatV6{0%,100%{transform:scale(1.002) translateY(0)}50%{transform:scale(1.005) translateY(-1px)}}
+    @keyframes discountBannerGlowV8{0%{opacity:.40;transform:scale(1) translateX(1%)}100%{opacity:.62;transform:scale(1.03) translateX(-1%)}}
+    @keyframes discountBannerSweepV8{0%{transform:translateX(36%);opacity:.18}45%{opacity:.36}100%{transform:translateX(-36%);opacity:.18}}
+    @keyframes discountBannerFloatV8{0%,100%{transform:scale(1.003) translateY(0)}50%{transform:scale(1.009) translateY(-1px)}}
     @media(min-width:1600px){.discount-banner-v1{--banner-h:min(9.92vw,189px)}}
-    @media(max-width:1200px){.discount-banner-v1{--banner-h:118px}.discount-banner-img-v1{object-position:center center}}
-    @media(max-width:900px){.discount-banner-v1{--banner-h:110px}.discount-banner-img-v1{object-position:55% center}}
-    @media(max-width:700px){.discount-banner-v1{--banner-h:104px}.discount-banner-img-v1{object-position:59% center}.discount-banner-v1::before{opacity:.46}.discount-banner-v1::after{opacity:.22}}
-    @media(max-width:540px){.discount-banner-v1{--banner-h:98px}.discount-banner-img-v1{object-position:62% center;filter:saturate(1.06) contrast(1.04)}.discount-banner-v1{border-block-color:rgba(209,161,58,.38)}}
-    @media(max-width:420px){.discount-banner-v1{--banner-h:92px}.discount-banner-img-v1{object-position:65% center}}
-    @media(max-width:360px){.discount-banner-v1{--banner-h:86px}.discount-banner-img-v1{object-position:67% center}}
-    @media(prefers-reduced-motion:reduce){.discount-banner-v1::before,.discount-banner-v1::after,.discount-banner-img-v1{animation:none!important}.discount-banner-v1:hover .discount-banner-img-v1{transform:none}}
+    @media(max-width:1280px){.discount-banner-v1{--banner-h:clamp(94px,10vw,126px)}.discount-banner-img-v1{object-position:52% center}}
+    @media(max-width:1024px){.discount-banner-v1{--banner-h:clamp(92px,11.5vw,118px)}.discount-banner-img-v1{object-position:57% center}}
+    @media(max-width:820px){.discount-banner-v1{--banner-h:clamp(88px,14vw,112px)}.discount-banner-img-v1{object-position:63% center}.discount-banner-v1::before{opacity:.48}.discount-banner-v1::after{opacity:.28}}
+    @media(max-width:640px){.discount-banner-v1{--banner-h:clamp(86px,18vw,108px)}.discount-banner-img-v1{object-position:68% center;filter:saturate(1.08) contrast(1.05) brightness(1.02)}.discount-banner-v1::before{background:radial-gradient(circle at 80% 48%,rgba(77,255,161,.22),transparent 28%),linear-gradient(90deg,transparent,rgba(240,217,140,.07),transparent)}}
+    @media(max-width:520px){.discount-banner-v1{--banner-h:clamp(84px,22vw,104px)}.discount-banner-img-v1{object-position:73% center}.discount-banner-v1::after{opacity:.20}}
+    @media(max-width:430px){.discount-banner-v1{--banner-h:clamp(82px,25vw,100px)}.discount-banner-img-v1{object-position:77% center}.discount-banner-v1::before{opacity:.42}}
+    @media(max-width:360px){.discount-banner-v1{--banner-h:82px}.discount-banner-img-v1{object-position:80% center}}
+    @media(prefers-reduced-motion:reduce){.discount-banner-v1::before,.discount-banner-v1::after,.discount-banner-img-v1{animation:none!important}.discount-banner-v1:hover .discount-banner-img-v1{transform:none!important}}
   </style>
 </head>
 <body data-page="public-bots">
