@@ -273,7 +273,7 @@ body.save-confirm::after{
 }
 
 
-/* === Patch: فصل أزرار الإحصاءات عن زر الدخول في بطاقات الباقات والتقسيمات === */
+/* === Patch: فصل أزرار الإحصاءات عن زر الدخول في بطاقات الباقات والتصنيفات === */
 .package-card,
 #sections .card{
   display: flex !important;

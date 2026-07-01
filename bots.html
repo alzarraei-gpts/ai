@@ -366,7 +366,7 @@
 
 
   <style id="negative-space-tightening-v5">
-    /* سياسة التقارب: تقليل الفراغات السلبية في رؤوس الباقات/التقسيمات/البوتات */
+    /* سياسة التقارب: تقليل الفراغات السلبية في رؤوس الباقات/التصنيفات/البوتات */
     #app .cg-heading-section,
     #app .cg-tight-heading-shell{
       padding-block:6px 8px!important;
@@ -501,7 +501,7 @@
       </a>
       <nav class="nav" aria-label="التنقل الرئيسي">
         <a href="index.html">الرئيسية</a>
-        <a href="package.html">التقسيمات</a>
+        <a href="package.html">التصنيفات</a>
       </nav>
     </div>
   </header>
@@ -526,7 +526,7 @@
     var socials=[['لينكدين','https://www.linkedin.com/in/ArabAIModels','in'],['يوتيوب','https://www.youtube.com/@ArabAIModels','▶'],['فيس بوك','https://www.facebook.com/ArabAIModels','f'],['منصة X','https://x.com/arabaimodels','𝕏'],['انستغرام','https://www.instagram.com/ArabAIModels','◎'],['تيك توك','https://www.tiktok.com/@ArabAIModels','♪'],['تليغرام','https://t.me/ArabAIModels','✈'],['سناب شات','https://www.snapchat.com/@arabaimodels','◌'],['واتساب',WA,'☏'],['البريد','mailto:zraieee@gmail.com','✉'],['باي بال','https://www.paypal.com/paypalme/zraiee','$'],['سكول','https://www.skool.com/zraiee-3956/about','S']];
     function qs(s,r){return (r||document).querySelector(s)} function qsa(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))} function norm(t){return (t||'').replace(/\s+/g,' ').trim()}
     function c(tag,cls,text){var e=document.createElement(tag); if(cls)e.className=cls; if(text!=null)e.textContent=text; return e}
-    function fixLabels(root){qsa('a,button,[role="button"],.btn,.cta,.action',root||document).forEach(function(el){var t=norm(el.textContent); if(t==='نسخ وصف البوت')el.textContent='وصف البوت'; if(document.body.dataset.page==='public-sections'&&t==='الدخول للتقسيمات')el.remove();});}
+    function fixLabels(root){qsa('a,button,[role="button"],.btn,.cta,.action',root||document).forEach(function(el){var t=norm(el.textContent); if(t==='نسخ وصف البوت')el.textContent='وصف البوت'; if(document.body.dataset.page==='public-sections'&&t==='الدخول للتصنيفات')el.remove();});}
     function copyText(t){if(navigator.clipboard&&navigator.clipboard.writeText)return navigator.clipboard.writeText(t);var a=c('textarea');a.value=t;Object.assign(a.style,{position:'fixed',opacity:'0'});document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}a.remove();return Promise.resolve();}
     function modalBox(){var m=qs('#modal.open,.modal.open');if(!m)return null;return qsa(':scope > *',m).find(function(x){return x.nodeType===1})||m}
     function modalText(box){var items=qsa('p,li,blockquote,.description,.desc,.content,.body,.text',box).filter(function(x){return !x.closest('.cg-copy-description-btn')&&norm(x.innerText||x.textContent)});var t=items.map(function(x){return norm(x.innerText||x.textContent)}).join('\n\n');return t||norm((box.innerText||box.textContent||'').replace(/نسخ الوصف|وصف البوت|ChatGPT|Gemini/g,''));}
@@ -607,9 +607,9 @@
       var block=nearestContentBlock(h);
       var chips=[];
       if(block){
-        chips=all(block,'.chips,[class*="chips"],[class*="stats"],[class*="badges"]').filter(function(x){return norm(x.textContent).match(/الباقات|التقسيمات|البوتات|الحالية|\d/);});
+        chips=all(block,'.chips,[class*="chips"],[class*="stats"],[class*="badges"]').filter(function(x){return norm(x.textContent).match(/الباقات|التصنيفات|البوتات|الحالية|\d/);});
         if(!chips.length){
-          var chipItems=all(block,'.chip,[class*="chip"],[class*="badge"],[class*="stat"]').filter(function(x){return norm(x.textContent).match(/الباقات|التقسيمات|البوتات|الحالية|\d/);});
+          var chipItems=all(block,'.chip,[class*="chip"],[class*="badge"],[class*="stat"]').filter(function(x){return norm(x.textContent).match(/الباقات|التصنيفات|البوتات|الحالية|\d/);});
           if(chipItems.length){
             var wrap=document.createElement('div');
             wrap.className='cg-title-chips';
@@ -628,7 +628,7 @@
       return null;
     }
     function compactHeading(app, movedChips){
-      var h=findText(app,'h2',['الباقات','التقسيمات','البوتات']) || findText(app,'h1',['الباقات','التقسيمات','البوتات']);
+      var h=findText(app,'h2',['الباقات','التصنيفات','البوتات']) || findText(app,'h1',['الباقات','التصنيفات','البوتات']);
       if(!h || h.dataset.inlineHeadingReady)return;
       var p=findNearbyParagraph(h);
       if(!p)return;
@@ -643,7 +643,7 @@
       row.appendChild(h);
       row.appendChild(sep);
       row.appendChild(p);
-      var localChips=all(app,'.chips,[class*="chips"],[class*="stats"],[class*="badges"]').find(function(x){return !x.closest('.cg-remove-portal-intro') && norm(x.textContent).match(/الباقات|التقسيمات|البوتات|الحالية|\d/);});
+      var localChips=all(app,'.chips,[class*="chips"],[class*="stats"],[class*="badges"]').find(function(x){return !x.closest('.cg-remove-portal-intro') && norm(x.textContent).match(/الباقات|التصنيفات|البوتات|الحالية|\d/);});
       var chips=movedChips || localChips;
       if(chips && !chips.closest('.cg-inline-heading-row')){chips.classList.add('cg-title-chips'); row.appendChild(chips);}
       var block=h.closest('section,.section-head,[class*="section"],.shell') || row.parentElement;
@@ -683,10 +683,10 @@
           }
         }
       });
-      /* توحيد رؤوس الباقات/التقسيمات/البوتات في سطر واحد متى ظهرت */
+      /* توحيد رؤوس الباقات/التصنيفات/البوتات في سطر واحد متى ظهرت */
       all(app,'h1,h2').forEach(function(h){
         var t=norm(h.textContent);
-        if(!/^(الباقات|التقسيمات|البوتات)$/.test(t) || h.dataset.cgInlineFinal==='1')return;
+        if(!/^(الباقات|التصنيفات|البوتات)$/.test(t) || h.dataset.cgInlineFinal==='1')return;
         var p=h.nextElementSibling;
         while(p && p.tagName!=='P')p=p.nextElementSibling;
         if(!p || norm(p.textContent).length<5)return;
