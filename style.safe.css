@@ -1,0 +1,372 @@
+
+:root{--bg:#04100d;--bg2:#071914;--card:#0b2019;--gold:#c9a15b;--gold2:#f2d48a;--text:#f8f1df;--muted:#c9c0aa;--line:rgba(201,161,91,.32);--danger:#ffdfc4;--shadow:0 24px 80px rgba(0,0,0,.35);--radius:24px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;direction:rtl;font-family:"Tajawal","Segoe UI",Tahoma,Arial,sans-serif;background:radial-gradient(circle at 30% 0%,rgba(201,161,91,.14),transparent 32%),linear-gradient(135deg,#020806,#071914 55%,#020806);color:var(--text);min-height:100vh}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}.shell{width:min(1180px,calc(100% - 32px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(4,16,13,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.topbar .shell{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}.brand{display:flex;align-items:center;gap:12px}.brand-mark{width:42px;height:42px;border-radius:16px;background:linear-gradient(135deg,var(--gold),#765520);box-shadow:0 0 0 4px rgba(201,161,91,.13)}.brand h1{font-size:18px;margin:0}.brand p{margin:2px 0 0;color:var(--muted);font-size:13px}.nav{display:flex;gap:8px;flex-wrap:wrap}.nav a,.nav button,.btn{border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--text);border-radius:999px;padding:10px 14px;cursor:pointer}.nav a:hover,.nav button:hover,.btn:hover{border-color:var(--gold);background:rgba(201,161,91,.13)}.btn.primary{background:linear-gradient(135deg,#d6af68,#8e6427);color:#150f07;border-color:rgba(255,255,255,.08);font-weight:800}.hero{padding:48px 0 28px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:center}.hero h2{font-size:clamp(32px,5vw,58px);line-height:1.12;margin:0 0 16px}.hero p{color:var(--muted);font-size:17px;line-height:1.9;margin:0 0 24px}.hero-card{border:1px solid var(--line);border-radius:32px;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));box-shadow:var(--shadow);overflow:hidden}.media-wide{aspect-ratio:16/9;width:100%;background:linear-gradient(135deg,rgba(201,161,91,.28),rgba(9,44,34,.76));display:grid;place-items:center}.media-square{aspect-ratio:1/1;width:100%;background:linear-gradient(135deg,rgba(201,161,91,.22),rgba(9,44,34,.82));display:grid;place-items:center}.placeholder{font-weight:900;color:rgba(255,255,255,.82);text-align:center;padding:18px}.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin:28px 0 18px}.section-head h2{margin:0;font-size:26px}.section-head p{margin:6px 0 0;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.card{border:1px solid var(--line);border-radius:var(--radius);background:rgba(11,32,25,.78);box-shadow:var(--shadow);overflow:hidden;transition:.2s transform,.2s border-color;cursor:pointer}.card:hover{transform:translateY(-4px);border-color:var(--gold)}.card-body{padding:18px}.card h3{margin:0 0 9px;font-size:20px}.card p{margin:0;color:var(--muted);line-height:1.75}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 10px;color:var(--gold2);font-size:12px;background:rgba(201,161,91,.08)}.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:18px 0}.search{flex:1;min-width:220px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--text);border-radius:999px;padding:12px 16px;outline:none}.bot-card{cursor:default}.bot-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.bot-actions a,.bot-actions button{border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--text);border-radius:14px;padding:9px 12px;cursor:pointer}.bot-actions a.primary{background:linear-gradient(135deg,#d6af68,#8e6427);color:#150f07;font-weight:800}.empty{border:1px dashed var(--line);border-radius:24px;padding:28px;text-align:center;color:var(--muted);background:rgba(255,255,255,.03)}.footer{margin-top:54px;border-top:1px solid var(--line);padding:24px 0;color:var(--muted)}.modal{position:fixed;inset:0;display:none;z-index:40;background:rgba(0,0,0,.68);padding:24px}.modal.open{display:grid;place-items:center}.modal-box{width:min(760px,100%);max-height:88vh;overflow:auto;border:1px solid var(--line);border-radius:28px;background:#081a15;box-shadow:var(--shadow);padding:24px}.modal-box h2{margin-top:0}.modal-box p{color:var(--muted);line-height:1.85}.admin-layout{display:grid;grid-template-columns:320px 1fr;gap:20px;align-items:start}.panel{border:1px solid var(--line);border-radius:24px;background:rgba(11,32,25,.72);padding:18px}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{color:var(--gold2);font-size:13px}.field input,.field textarea,.field select{border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--text);border-radius:14px;padding:11px;outline:none}.field textarea{min-height:96px;resize:vertical}.list-item{display:flex;justify-content:space-between;gap:8px;align-items:center;border:1px solid var(--line);border-radius:16px;padding:10px;margin-bottom:8px;background:rgba(255,255,255,.03)}.list-item button{border:1px solid var(--line);border-radius:10px;background:transparent;color:var(--text);cursor:pointer;padding:6px 8px}.small{font-size:13px;color:var(--muted);line-height:1.7}.notice{border:1px solid rgba(201,161,91,.4);background:rgba(201,161,91,.08);border-radius:18px;padding:14px;color:var(--gold2);line-height:1.8}@media(max-width:900px){.hero-grid,.admin-layout{grid-template-columns:1fr}.grid,.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.grid,.grid.two{grid-template-columns:1fr}.topbar .shell{align-items:flex-start;flex-direction:column}.section-head{align-items:flex-start;flex-direction:column}.form-grid{grid-template-columns:1fr}}
+.image-field{grid-column:1/-1}.image-row{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}.upload-btn{white-space:nowrap;text-align:center}.admin-preview{margin-top:8px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.035);display:grid;place-items:center;color:var(--muted);object-fit:cover;max-width:100%;overflow:hidden}.admin-preview.wide{aspect-ratio:16/9;width:min(520px,100%)}.admin-preview.square{aspect-ratio:1/1;width:min(280px,100%)}@media(max-width:620px){.image-row{grid-template-columns:1fr}.upload-btn{width:100%}}
+
+.notice.success{border-color:rgba(142,255,0,.45);background:rgba(142,255,0,.08)}
+.notice.danger{border-color:rgba(255,90,90,.55);background:rgba(255,90,90,.1);color:#ffd8d8}
+
+
+/* مؤشّر بصري لتأكيد الحفظ داخل لوحة التحكم */
+body.save-confirm{
+  background:
+    radial-gradient(circle at 50% 0%, rgba(79,255,105,.30), transparent 34%),
+    linear-gradient(135deg,#021209,#0f4f1d 55%,#04100d) !important;
+}
+body.save-confirm::after{
+  content:'✓ تم الحفظ';
+  position:fixed;
+  left:50%;
+  top:84px;
+  transform:translateX(-50%);
+  z-index:9999;
+  background:linear-gradient(135deg,#53ff62,#13952a);
+  color:#031105;
+  border:1px solid rgba(255,255,255,.35);
+  box-shadow:0 18px 55px rgba(58,255,84,.28);
+  border-radius:999px;
+  padding:12px 22px;
+  font-weight:900;
+  pointer-events:none;
+}
+.panel.save-pulse{
+  box-shadow:0 0 0 3px rgba(79,255,105,.45), var(--shadow);
+}
+
+.image-policy-box{border:1px dashed var(--line);border-radius:16px;padding:10px 12px;background:rgba(201,161,91,.07);color:var(--muted);line-height:1.8;margin-bottom:8px}.image-policy-box code{direction:ltr;unicode-bidi:embed;color:var(--gold2);font-family:ui-monospace,Consolas,monospace}.mini-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.mini-actions .btn{padding:7px 10px;font-size:13px}.image-row{display:flex;gap:8px;align-items:center}.image-row input{flex:1;direction:ltr;text-align:left}.admin-preview{border:1px solid var(--line);border-radius:18px;margin-top:10px;object-fit:cover;background:rgba(0,0,0,.18);display:grid;place-items:center;color:var(--muted);overflow:hidden}.admin-preview.wide{width:100%;aspect-ratio:16/9}.admin-preview.square{width:min(260px,100%);aspect-ratio:1/1}.save-confirm{animation:savePulse 1.2s ease}@keyframes savePulse{0%{background-color:#063d21}45%{background-color:#0b6b35}100%{background-color:transparent}}
+
+
+/* تحسين لوحة التحكم: إلغاء القائمة الجانبية وتحويلها إلى شريط اختيار مختصر */
+.admin-stack{display:grid;grid-template-columns:1fr;gap:18px;align-items:start}.admin-control-panel{position:sticky;top:76px;z-index:12;background:rgba(8,26,21,.94);backdrop-filter:blur(14px)}.admin-control-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:14px}.admin-control-head h2{margin:0 0 4px}.admin-quick-actions{display:flex;gap:8px;flex-wrap:wrap}.admin-picker-grid{display:grid;grid-template-columns:1fr 1fr auto;gap:12px;align-items:end}.admin-picker-grid .field select{min-height:46px}.admin-stats{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;align-items:center}.admin-stats span{border:1px solid var(--line);border-radius:999px;padding:10px 12px;background:rgba(201,161,91,.07);color:var(--muted);white-space:nowrap}.admin-stats b{color:var(--gold2)}.admin-help-line{margin-top:12px;border:1px dashed var(--line);border-radius:16px;padding:10px 12px;color:var(--muted);background:rgba(255,255,255,.025);font-size:13px;line-height:1.7}.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.admin-layout{display:block}.panel h2{scroll-margin-top:170px}@media(max-width:900px){.admin-control-panel{position:static}.admin-control-head{flex-direction:column}.admin-picker-grid{grid-template-columns:1fr}.admin-stats{justify-content:flex-start}}
+
+
+/* Unified admin insertion interface */
+.admin-main{padding:24px 0 36px}.unified-intro{display:grid;grid-template-columns:1.3fr .9fr;gap:18px;align-items:center;margin-bottom:16px}.unified-intro h2{margin:0 0 8px}.unified-intro p{margin:0;color:var(--muted);line-height:1.8}.unified-rule{border:1px dashed var(--line);border-radius:18px;padding:14px;background:rgba(201,161,91,.08);color:var(--muted);line-height:1.8}.unified-rule code,.asset-path-card code{direction:ltr;unicode-bidi:embed;color:var(--gold2);font-family:ui-monospace,Consolas,monospace}.controlbar-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:14px}.controlbar-head h2{margin:0 0 6px}.unified-picker{grid-template-columns:repeat(3,minmax(0,1fr))}.control-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.unified-editor-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start}.unified-card{min-height:100%;padding:16px}.unified-card-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:14px}.unified-card-head h2{margin:5px 0 0;font-size:22px}.level-badge{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:5px 10px;color:#1d1407;background:linear-gradient(135deg,#e2bd73,#a87931);font-weight:900;font-size:12px}.asset-editor{display:grid;grid-template-columns:1fr;gap:14px}.asset-box{border:1px solid rgba(201,161,91,.22);border-radius:22px;padding:12px;background:rgba(255,255,255,.025)}.asset-label{display:block;color:var(--gold2);font-size:13px;margin-bottom:8px}.asset-path-card{margin:10px 0;border:1px dashed var(--line);border-radius:14px;padding:10px;background:rgba(201,161,91,.07);display:grid;gap:4px;color:var(--muted);font-size:12px}.text-editor{display:grid;gap:10px}.unified-save-row{border-top:1px solid var(--line);padding-top:12px}.image-center{margin-top:16px}.policy-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.policy-grid article{border:1px solid var(--line);border-radius:18px;padding:14px;background:rgba(255,255,255,.03)}.policy-grid p{margin:8px 0 0;color:var(--muted);line-height:1.75}.notice.success{border-color:rgba(57,207,103,.45);background:rgba(57,207,103,.09);color:#d8ffe2}.notice.danger{border-color:rgba(255,190,140,.55);background:rgba(255,113,80,.10);color:#ffdfc4}body.save-confirm{animation:savePulseStrong 1.2s ease}body.save-confirm::after{content:'✓ تم الحفظ';position:fixed;top:92px;left:50%;transform:translateX(-50%);z-index:80;background:#0b7d3c;color:white;border:1px solid rgba(255,255,255,.3);box-shadow:0 20px 50px rgba(0,0,0,.35);border-radius:999px;padding:12px 20px;font-weight:900}@keyframes savePulseStrong{0%{background-color:#063d21}45%{background-color:#0b6b35}100%{background-color:transparent}}@media(max-width:1100px){.unified-editor-grid{grid-template-columns:1fr}.unified-intro{grid-template-columns:1fr}.policy-grid{grid-template-columns:1fr}.unified-picker{grid-template-columns:1fr}.controlbar-head{flex-direction:column}.admin-stats{justify-content:flex-start}}@media(max-width:620px){.image-row{display:grid;grid-template-columns:1fr}.unified-card-head{flex-direction:column}.asset-box .admin-preview.square{width:100%}}
+
+/* حالة تحميل بيانات الإدراج */
+.load-state{border:1px solid var(--line);border-radius:22px;padding:16px 18px;margin-bottom:14px;background:rgba(255,255,255,.035);line-height:1.8}
+.load-state h2{margin:0 0 8px;font-size:22px}
+.load-state p{margin:0 0 10px;color:var(--muted)}
+.load-state code{direction:ltr;unicode-bidi:embed;color:var(--gold2);font-family:ui-monospace,Consolas,monospace}
+.load-success{border-color:rgba(57,207,103,.45);background:linear-gradient(135deg,rgba(57,207,103,.12),rgba(255,255,255,.025))}
+.load-success h2{color:#d8ffe2}
+.load-waiting{border-color:rgba(242,212,138,.42);background:linear-gradient(135deg,rgba(201,161,91,.12),rgba(255,255,255,.025))}
+.load-help{margin-top:16px}
+
+/* إصلاح قوائم الاختيار داخل لوحة التحكم: جعل النص ظاهرًا في قائمة Windows/Chrome */
+.field select,
+.admin-picker-grid select,
+select {
+  color: var(--text) !important;
+  background-color: #10241c !important;
+  border-color: var(--line) !important;
+  color-scheme: dark;
+}
+.field select option,
+.admin-picker-grid select option,
+select option {
+  color: #111111 !important;
+  background-color: #ffffff !important;
+}
+.field select option:checked,
+.admin-picker-grid select option:checked,
+select option:checked {
+  color: #ffffff !important;
+  background-color: #2d6cdf !important;
+}
+.field select option:hover,
+.admin-picker-grid select option:hover,
+select option:hover {
+  color: #ffffff !important;
+  background-color: #365f3f !important;
+}
+
+/* Patch: تثبيت سيكشن مركز التحكم أثناء النزول والصعود داخل admin.html */
+.admin-main > .admin-control-panel{
+  position: sticky !important;
+  top: 12px !important;
+  z-index: 70 !important;
+  background: rgba(8,26,21,.96) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 18px 48px rgba(0,0,0,.34), 0 0 0 1px rgba(201,161,91,.12);
+}
+
+/* منع تداخل زر تأكيد الحفظ مع السيكشن المثبت */
+body.save-confirm::after{
+  top: 18px !important;
+  z-index: 120 !important;
+}
+
+/* تخفيف ارتفاع السيكشن المثبت في الشاشات الصغيرة حتى لا يغطي بطاقات التحرير */
+@media (max-height: 760px){
+  .admin-main > .admin-control-panel{
+    max-height: 58vh;
+    overflow: auto;
+    scrollbar-width: thin;
+  }
+}
+
+@media (max-width: 900px){
+  .admin-main > .admin-control-panel{
+    position: sticky !important;
+    top: 8px !important;
+    max-height: 64vh;
+    overflow: auto;
+  }
+}
+
+
+/* Patch: إحكام وإغلاق سيكشن مركز التحكم ومنع تجاوز خطوط المحاذاة */
+.admin-main{
+  overflow: visible !important;
+}
+
+.admin-main > .admin-control-panel{
+  position: sticky !important;
+  top: 12px !important;
+  z-index: 95 !important;
+  width: min(1180px, calc(100vw - 32px)) !important;
+  max-width: 100% !important;
+  margin-inline: auto !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 26px !important;
+  background: #071914 !important;
+  box-shadow: 0 18px 46px rgba(0,0,0,.38), 0 0 0 1px rgba(201,161,91,.12) inset !important;
+  overflow: hidden !important;
+  isolation: isolate !important;
+  contain: paint !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.admin-main > .admin-control-panel::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(9,35,27,.98), rgba(5,18,15,.98));
+  pointer-events: none;
+}
+
+.admin-main > .admin-control-panel .controlbar-head,
+.admin-main > .admin-control-panel .admin-picker-grid,
+.admin-main > .admin-control-panel .control-actions,
+.admin-main > .admin-control-panel .admin-stats,
+.admin-main > .admin-control-panel .load-state{
+  max-width: 100% !important;
+}
+
+.admin-main > .admin-control-panel .admin-picker-grid{
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.admin-main > .admin-control-panel .field,
+.admin-main > .admin-control-panel select,
+.admin-main > .admin-control-panel input,
+.admin-main > .admin-control-panel textarea{
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+.admin-main > .admin-control-panel .control-actions{
+  overflow: hidden !important;
+}
+
+.unified-editor-grid{
+  position: relative !important;
+  z-index: 1 !important;
+  margin-top: 20px !important;
+  align-items: start !important;
+}
+
+.unified-card,
+.asset-box,
+.asset-path-card,
+.panel{
+  overflow: hidden !important;
+  contain: paint !important;
+}
+
+.image-row{
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+.image-row input{
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+.admin-preview,
+.admin-preview img,
+.asset-box img{
+  max-width: 100% !important;
+}
+
+body.save-confirm::after{
+  top: 18px !important;
+  z-index: 140 !important;
+}
+
+@media (max-width: 1100px){
+  .admin-main > .admin-control-panel{
+    width: min(100%, calc(100vw - 24px)) !important;
+    top: 8px !important;
+  }
+  .admin-main > .admin-control-panel .admin-picker-grid{
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-height: 760px){
+  .admin-main > .admin-control-panel{
+    max-height: 62vh !important;
+    overflow: auto !important;
+    scrollbar-width: thin;
+  }
+}
+
+/* === Bot card actions: force buttons to the bottom of every bot card === */
+.grid .bot-card{
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  min-height: 100% !important;
+}
+
+.grid .bot-card .media-square,
+.grid .bot-card .media-wide{
+  flex: 0 0 auto !important;
+}
+
+.grid .bot-card .card-body{
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+}
+
+.grid .bot-card .card-body h3{
+  flex: 0 0 auto !important;
+}
+
+.grid .bot-card .card-body p{
+  flex: 0 0 auto !important;
+  margin-bottom: 18px !important;
+}
+
+.grid .bot-card .bot-actions{
+  margin-top: auto !important;
+  padding-top: 18px !important;
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: flex-start !important;
+  gap: 8px !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+}
+
+.grid .bot-card .bot-actions a,
+.grid .bot-card .bot-actions button{
+  flex: 0 0 auto !important;
+}
+
+
+/* === Patch: فصل أزرار الإحصاءات عن زر الدخول في بطاقات الباقات والتقسيمات === */
+.package-card,
+#sections .card{
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
+.package-card .card-body,
+#sections .card .card-body{
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+}
+
+.package-card .card-body > p,
+#sections .card .card-body > p{
+  margin-bottom: 18px !important;
+}
+
+.card-footer-row{
+  margin-top: auto !important;
+  padding-top: 18px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  width: 100% !important;
+  border-top: 1px solid rgba(201,161,91,.18) !important;
+}
+
+.card-footer-row .chips{
+  margin: 0 !important;
+  display: flex !important;
+  gap: 8px !important;
+  flex-wrap: wrap !important;
+  justify-content: flex-start !important;
+  order: 2 !important;
+}
+
+.card-footer-row .card-cta{
+  margin: 0 !important;
+  flex: 0 0 auto !important;
+  order: 1 !important;
+}
+
+.card-footer-row .card-cta .btn{
+  white-space: nowrap !important;
+}
+
+/* دعم النسخ التي لم تستبدل app.js بعد: منع التداخل حتى لو بقيت chips و card-cta منفصلتين */
+.package-card .card-body > .chips:not(.card-footer-row .chips),
+#sections .card .card-body > .chips:not(.card-footer-row .chips){
+  margin-top: auto !important;
+  margin-bottom: 10px !important;
+  justify-content: flex-start !important;
+}
+
+.package-card .card-body > .card-cta:not(.card-footer-row .card-cta),
+#sections .card .card-body > .card-cta:not(.card-footer-row .card-cta){
+  display: flex !important;
+  justify-content: flex-end !important;
+  margin-top: 0 !important;
+}
+
+@media (max-width: 620px){
+  .card-footer-row{
+    align-items: stretch !important;
+    flex-direction: column-reverse !important;
+  }
+  .card-footer-row .card-cta .btn{
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
+
+/* Patch: make image picker button visually match save buttons */
+.image-row .upload-btn,
+label.upload-btn.btn,
+.asset-box .upload-btn,
+.asset-editor .upload-btn {
+  background: linear-gradient(135deg, #d6af68, #8e6427) !important;
+  color: #150f07 !important;
+  border-color: rgba(255,255,255,.10) !important;
+  font-weight: 900 !important;
+  box-shadow: 0 12px 28px rgba(201, 161, 91, .18) !important;
+}
+
+.image-row .upload-btn:hover,
+label.upload-btn.btn:hover,
+.asset-box .upload-btn:hover,
+.asset-editor .upload-btn:hover {
+  background: linear-gradient(135deg, #f0cf84, #a9782e) !important;
+  color: #100a03 !important;
+  transform: translateY(-1px);
+}
