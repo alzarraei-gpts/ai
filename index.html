@@ -4,6 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>بوابة النماذج الذكية</title>
+  <!-- social-preview-v21 -->
+  <link rel="icon" type="image/png" href="images/favicon.png?v=header-logo-v21">
+  <link rel="apple-touch-icon" href="images/logo-transparent.png?v=header-logo-v21">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="بوابة النماذج الذكية">
+  <meta property="og:locale" content="ar_AR">
+  <meta property="og:image" content="https://alzarraei-gpts.github.io/ai/images/whatsapp-preview.png?v=header-logo-v21">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://alzarraei-gpts.github.io/ai/images/whatsapp-preview.png?v=header-logo-v21">
+  <meta property="og:title" content="بوابة النماذج الذكية">
+  <meta property="og:description" content="واجهة عامة للباقات والتصنيفات والبوتات.">
+  <meta property="og:url" content="https://alzarraei-gpts.github.io/ai/">
+  <meta name="twitter:title" content="بوابة النماذج الذكية">
+  <meta name="twitter:description" content="واجهة عامة للباقات والتصنيفات والبوتات.">
+
   <link rel="stylesheet" href="css/style.css?v=2026-07-02-clean-merged"><style id="site-enhancements-v10">
     :root{--cg-bg:#06130d;--cg-panel:#0a1d14;--cg-gold:#d1a13a;--cg-gold2:#f0d98c;--cg-text:#f7efd8;--cg-muted:#d8c892;--cg-line:rgba(209,161,58,.42)}
     html[dir="rtl"],body{direction:rtl} body{overflow-x:hidden} img{max-width:100%;height:auto} #app,#app *:not(svg):not(path){text-align:right}
@@ -28,13 +45,46 @@
     body[data-page="public-home"] #app .cg-hidden-public-hero{display:none!important}
     body[data-page="public-home"] #app :where(section,div,article,header)[data-cg-remove-hero="1"]{display:none!important}
     @media(max-width:720px){.cg-top-offer-banner{width:min(calc(100% - 24px),1180px);margin:0 auto 18px!important;border-radius:22px}.cg-top-offer-banner img{width:100%;max-width:none}}
+
+
+    /* header-logo-exact-v21: يثبت الشعار قبل نص "بوابة النماذج الذكية" دون تغيير بنية الواجهة */
+    .topbar.public-topbar .brand{
+      display:inline-flex!important;
+      align-items:center!important;
+      gap:12px!important;
+      direction:rtl!important;
+      flex-direction:row!important;
+    }
+    .topbar.public-topbar .brand .cg-header-logo{
+      width:58px!important;
+      height:58px!important;
+      min-width:58px!important;
+      display:block!important;
+      object-fit:contain!important;
+      border:0!important;
+      border-radius:0!important;
+      background:transparent!important;
+      box-shadow:none!important;
+      filter:drop-shadow(0 4px 10px rgba(0,0,0,.22));
+      flex-shrink:0!important;
+    }
+    .topbar.public-topbar .brand .cg-header-logo + span{
+      display:block!important;
+    }
+    @media(max-width:720px){
+      .topbar.public-topbar .brand .cg-header-logo{
+        width:50px!important;
+        height:50px!important;
+        min-width:50px!important;
+      }
+    }
   </style>
 </head>
 <body data-page="public-home">
   <header class="topbar public-topbar">
     <div class="shell">
       <a class="brand" href="index.html" aria-label="بوابة النماذج الذكية">
-        <span class="brand-mark" aria-hidden="true"></span>
+        <img class="brand-mark cg-header-logo" src="images/logo-transparent.png?v=header-logo-v21" alt="" aria-hidden="true" decoding="async" loading="eager">
         <span><h1>بوابة النماذج الذكية</h1><p>واجهة عامة للباقات والتصنيفات والبوتات</p></span>
       </a>
       <nav class="nav" aria-label="التنقل الرئيسي">

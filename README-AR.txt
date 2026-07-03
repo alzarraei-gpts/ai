@@ -1,34 +1,26 @@
-حزمة دمج الشعار وصورة واتساب — دون المساس بلوحة التحكم
+# حزمة تصحيح الشعار وصورة المشاركة
 
-المحتوى:
-- assets/logo.png
-- assets/whatsapp-preview.png
-- assets/favicon.png
-- apply-logo-and-preview.ps1
+هذه الحزمة تضيف الشعار في الترويسة قبل نص "بوابة النماذج الذكية" مباشرة في الصفحات العامة فقط:
 
-ماذا تفعل الحزمة؟
-1) تنسخ الشعار إلى: images/logo.png
-2) تنسخ صورة مشاركة واتساب إلى: images/whatsapp-preview.png
-3) تنسخ الأيقونة إلى: images/favicon.png
-4) تضيف وسوم Open Graph داخل index.html فقط.
-5) تضيف الشعار تلقائيًا قبل العنوان الرئيسي الأول في الصفحة.
-6) تحفظ نسخة احتياطية من index.html داخل: _backup_before_logo_patch
-7) لا تعدل admin.html ولا لوحة التحكم.
+- index.html
+- package.html
+- bots.html
 
-طريقة التشغيل:
-1) فك الضغط عن الحزمة.
-2) افتح PowerShell من داخل مجلد الحزمة.
-3) نفذ الأمر التالي:
+وتضيف ملفات الصور التالية داخل مجلد images:
 
-powershell -ExecutionPolicy Bypass -File .\apply-logo-and-preview.ps1 -ProjectPath "C:\Users\zedni\OneDrive\Desktop\web\ai"
+- images/logo-transparent.png
+- images/favicon.png
+- images/whatsapp-preview.png
 
-بعد ذلك:
-- افتح index.html محليًا وتأكد من ظهور الشعار.
-- افتح GitHub Desktop.
-- اكتب رسالة Commit مثل: Add logo and WhatsApp preview
-- اضغط Commit to main
-- اضغط Push origin
+لم يتم تعديل admin.html ولم يتم تضمينه داخل الحزمة، حفاظًا على لوحة التحكم.
 
-تنبيه:
-لا تنقل مجلد .git من ai-backup.
-لا تحذف ai-backup إلا بعد التأكد من عمل الموقع ولوحة التحكم.
+طريقة التركيب:
+1. فك الضغط عن الحزمة.
+2. انسخ الملفات والمجلدات الموجودة داخل الحزمة إلى:
+   C:/Users/zedni/OneDrive/Desktop/web/ai
+3. وافق على استبدال index.html و package.html و bots.html فقط.
+4. افتح index.html محليًا للتأكد من ظهور الشعار.
+5. ارفع التعديل من GitHub Desktop عبر Commit ثم Push.
+
+ملاحظة:
+إذا لم تظهر صورة واتساب مباشرة، فهذا غالبًا بسبب التخزين المؤقت. انتظر قليلًا أو غيّر اسم الصورة لاحقًا.
