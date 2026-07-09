@@ -1,0 +1,2767 @@
+[
+  {
+    "type": "package",
+    "id": "pkg01",
+    "title": "باقة الباحث العلمي",
+    "ratio": "16:9",
+    "path": "images/packages/pkg01 (Custom).png"
+  },
+  {
+    "type": "section",
+    "id": "pkg01-sec01",
+    "title": "اقتراح عنوان البحث",
+    "ratio": "1:1",
+    "path": "images/sections/اقتراح عنوان البحث.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec01-bot01",
+    "title": "اقتراح عنوان وفكرة بحث نوعي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec01-bot01.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec01-bot02",
+    "title": "اقتراح عنوان وفكرة بحث كمّي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec01-bot01.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec01-bot03",
+    "title": "اقتراح عنوان وفكرة بحث مختلط",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec01-bot01.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg01-sec02",
+    "title": "صناعة خطة البحث",
+    "ratio": "1:1",
+    "path": "images/sections/صناعة خطة البحث.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec02-bot01",
+    "title": "صناعة خطة بحث نوعي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 3 يوليو 2026، 07_53_10 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec02-bot02",
+    "title": "صناعة خطة بحث كمّي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 3 يوليو 2026، 07_53_10 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec02-bot03",
+    "title": "صناعة خطة بحث مختلط",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 3 يوليو 2026، 07_53_10 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg01-sec03",
+    "title": "دعم خطة البحث",
+    "ratio": "1:1",
+    "path": "images/sections/دعم خطة البحث.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec03-bot01",
+    "title": "البحث عن الدراسات السابقة",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec03-bot07.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec03-bot02",
+    "title": "السمينار البحثي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec03-bot08.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec03-bot03",
+    "title": "اكتشاف الفجوة البحثية",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec03-bot09.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg01-sec04",
+    "title": "خطة البحث الشاملة",
+    "ratio": "1:1",
+    "path": "images/sections/خطة البحث الشاملة.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec04-bot01",
+    "title": "الخطة النوعية الشاملة",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 3 يوليو 2026، 08_01_57 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec04-bot02",
+    "title": "الخطة الكمّية الشاملة",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 3 يوليو 2026، 08_01_57 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec04-bot03",
+    "title": "الخطة المختلطة الشاملة",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 3 يوليو 2026، 08_01_57 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg01-sec05",
+    "title": "كتابة البحث غير الميداني",
+    "ratio": "1:1",
+    "path": "images/sections/كتابة البحث غير الميداني.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec05-bot01",
+    "title": "كتابة البحث الوثائقي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec05-bot13.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec05-bot02",
+    "title": "كتابة البحث النصي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec05-bot14.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec05-bot03",
+    "title": "كتابة البحث التاريخي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec05-bot15.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec05-bot04",
+    "title": "كتابة البحث التأصيلي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec05-bot16.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg01-sec06",
+    "title": "التوثيق والتحرير العلمي",
+    "ratio": "1:1",
+    "path": "images/sections/التوثيق والتحرير العلمي.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec06-bot01",
+    "title": "المحتوى الشرعي الموثق",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec06-bot17.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec06-bot02",
+    "title": "إنشاء وتوثيق المحتوى",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec06-bot18.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec06-bot03",
+    "title": "البحوث الكاملة من المكتبة الشاملة",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec06-bot19.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec06-bot04",
+    "title": "الجامع في تحصيل المراجع",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec06-bot20.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec06-bot05",
+    "title": "التوثيق المرجعي الإحالي للروابط",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec06-bot21.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec06-bot06",
+    "title": "التوثيق المرجعي الإحالي للملفات",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec06-bot22.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg01-sec07",
+    "title": "تحليل البحث الميداني",
+    "ratio": "1:1",
+    "path": "images/sections/تحليل البحث الميداني.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec07-bot01",
+    "title": "التحليل الإحصائي التنفيذي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec07-bot23.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec07-bot02",
+    "title": "تحليل النتائج البحثية",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec07-bot24.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec07-bot03",
+    "title": "التحليل الإحصائي المتقدم",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec07-bot25.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec07-bot04",
+    "title": "التقرير الإحصائي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec07-bot26.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec07-bot05",
+    "title": "تحليل البحث الميداني الشامل",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec07-bot27.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg01-sec08",
+    "title": "التحرير اللغوي للنصوص",
+    "ratio": "1:1",
+    "path": "images/sections/التحرير اللغوي للنصوص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec08-bot01",
+    "title": "إعادة الصياغة",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec08-bot28.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec08-bot02",
+    "title": "التدقيق اللغوي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec08-bot29.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec08-bot03",
+    "title": "تشكيل النصوص العربية",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec08-bot30.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec08-bot04",
+    "title": "إعراب النصوص",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec08-bot31.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg01-sec09",
+    "title": "التراجم والمعاجم",
+    "ratio": "1:1",
+    "path": "images/sections/التراجم والمعاجم.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec09-bot01",
+    "title": "ترجمة الكلمات الغريبة",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec09-bot32.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec09-bot02",
+    "title": "ترجمة الأعلام",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec09-bot33.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec09-bot03",
+    "title": "ترجمة المذاهب والبلدان",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec09-bot34.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg01-sec10",
+    "title": "الجودة والإخراج",
+    "ratio": "1:1",
+    "path": "images/sections/الجودة والإخراج.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec10-bot01",
+    "title": "تخريج الحديث النبوي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec10-bot35.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec10-bot02",
+    "title": "استيفاء المراجع وترتيبها",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec10-bot36.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec10-bot03",
+    "title": "الملخص والإغلاق البحثي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec10-bot37.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg01-sec10-bot04",
+    "title": "استدعاء بوتات البحث",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec10-bot38.png"
+  },
+  {
+    "type": "package",
+    "id": "pkg02",
+    "title": "باقة ملحقات الباحث",
+    "ratio": "16:9",
+    "path": "images/packages/pkg02 (Custom).png"
+  },
+  {
+    "type": "section",
+    "id": "pkg02-sec01",
+    "title": "المراجعة والفحص",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec16.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec01-bot01",
+    "title": "مراجعة البحث النوعي الميداني",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot39.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec01-bot02",
+    "title": "مراجعة البحث الكمي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot40.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec01-bot03",
+    "title": "مراجعة البحث المختلط",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot41.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec01-bot04",
+    "title": "مراجعة البحث غير الميداني",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot42.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec01-bot05",
+    "title": "الفاحص المنهجي للبحث التطبيقي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot43.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg02-sec02",
+    "title": "الفحص والتنسيق الأكاديمي",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec02.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec02-bot01",
+    "title": "كشف الانتحال والأسلوب البشري",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot44.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec02-bot02",
+    "title": "تنسيق الرسائل الجامعية",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot45.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg02-sec03",
+    "title": "الأدلة المرجعية للبحث",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec03.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec03-bot01",
+    "title": "دليل كتابة الرسائل العلمية",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot46.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec03-bot02",
+    "title": "دليل الأنظمة البحثية",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot47.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec03-bot03",
+    "title": "دليل فهارس المخطوطات",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot48.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg02-sec04",
+    "title": "الأدوات المساعدة",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec17.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec04-bot01",
+    "title": "هندسة الأوامر",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot49.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec04-bot02",
+    "title": "برمجيات العقيل",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot50.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec04-bot03",
+    "title": "روابط تفريغ النصوص",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot51.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec04-bot04",
+    "title": "واجهة ويب لخدمة البحث",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot52.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec04-bot05",
+    "title": "استمارة تحكيم الأداة البحثية",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot53.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg02-sec05",
+    "title": "الترجمة للإنجليزية",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec18.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec05-bot01",
+    "title": "ترجمة المصطلحات",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot54.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec05-bot02",
+    "title": "ترجمة البحوث العلمية",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot55.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg02-sec06",
+    "title": "القرآن وعلومه",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec04.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec06-bot01",
+    "title": "مفردات القرآن",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot56.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec06-bot02",
+    "title": "المتشابه اللفظي في القرآن",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot57.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec06-bot03",
+    "title": "علوم القرآن والقراءات",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot58.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg02-sec07",
+    "title": "علوم الحديث",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec05.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec07-bot01",
+    "title": "شرح غريب الحديث",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot59.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec07-bot02",
+    "title": "فهرسة وشرح غريب الحديث",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot60.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec07-bot03",
+    "title": "علل الحديث النبوي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot61.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg02-sec08",
+    "title": "الفقه وأصوله",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec06.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec08-bot01",
+    "title": "تقسيم التركة في الفرائض",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot62.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec08-bot02",
+    "title": "نظام الزكاة",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot63.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec08-bot03",
+    "title": "أصول الفقه",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot64.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg02-sec09",
+    "title": "الفتوى والتوجيه الشرعي",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec07.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec09-bot01",
+    "title": "الرد الفوري على الفتوى الشرعية",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot65.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg02-sec10",
+    "title": "أدوات الإنتاج المعرفي",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec08.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec10-bot01",
+    "title": "المساعد في تأليف الكتب",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot66.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec10-bot02",
+    "title": "مؤلف كتب حوارية تفاعلية",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot67.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg02-sec10-bot03",
+    "title": "تحويل الكتب إلى إلكترونية",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot68.png"
+  },
+  {
+    "type": "package",
+    "id": "pkg03",
+    "title": "باقة التعليم والتدريب",
+    "ratio": "16:9",
+    "path": "images/packages/pkg03 (Custom).png"
+  },
+  {
+    "type": "section",
+    "id": "pkg03-sec01",
+    "title": "التعليم التفاعلي",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec49.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec01-bot01",
+    "title": "المعلم التفاعلي في حفظ القرآن",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec12-bot68.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec01-bot02",
+    "title": "المعلم التفاعلي في الرياضيات",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot69.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec01-bot03",
+    "title": "المعلم التفاعلي في الإنجليزي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot70.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec01-bot04",
+    "title": "المعلم التفاعلي في نطق الإنجليزي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot71.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec01-bot05",
+    "title": "المعلم التفاعلي في النحو",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot75.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg03-sec02",
+    "title": "الدعوة والخطاب الشرعي",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec10.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec02-bot01",
+    "title": "صناعة الخطبة المنبرية",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot74.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg03-sec03",
+    "title": "القدرات والإلهام",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec11.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec03-bot01",
+    "title": "اختبار قدرات العامة",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot72.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec03-bot02",
+    "title": "أحاجي الكلمات المبعثرة",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot73.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec03-bot03",
+    "title": "استلهام حكمة لكل فكرة",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot76.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg03-sec04",
+    "title": "التدريب والتصميم",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec12.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec04-bot01",
+    "title": "إعداد حقيبة تدريبية",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot77.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec04-bot02",
+    "title": "تصميم عروض بوربوينت",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot78.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec04-bot03",
+    "title": "صفحة هبوط تدريبية",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec11-bot79.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg03-sec05",
+    "title": "التصميم التعليمي",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec13.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec05-bot01",
+    "title": "تصميم رسوم تعليمية",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec12-bot69.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec05-bot02",
+    "title": "تصميم ملصقات تعليمية",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec12-bot70.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec05-bot03",
+    "title": "تصميم وبناء المناهج التعليمية",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec12-bot73.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec05-bot04",
+    "title": "تشريح سينمائي واقعي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 5 يوليو 2026، 08_56_41 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec05-bot05",
+    "title": "تشريح سينمائي شفاف",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec12-bot72.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg03-sec06",
+    "title": "البرامج المساعدة",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec14.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec06-bot01",
+    "title": "قارئ رموز الرياضيات الذكي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec12-bot74.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg03-sec07",
+    "title": "النظام والقانون",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec15.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec07-bot01",
+    "title": "النظام السعودي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec12-bot74.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec07-bot02",
+    "title": "التطبيقات القضائية",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec12-bot75.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec07-bot03",
+    "title": "الاستثمار الأجنبي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec12-bot76.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg03-sec07-bot04",
+    "title": "إعادة الصياغة القانونية",
+    "ratio": "1:1",
+    "path": "images/bots/pkg01-sec12-bot77.png"
+  },
+  {
+    "type": "package",
+    "id": "pkg04",
+    "title": "باقة التصميم الذكي",
+    "ratio": "16:9",
+    "path": "images/packages/pkg04 (Custom).png"
+  },
+  {
+    "type": "section",
+    "id": "pkg04-sec01",
+    "title": "النصوص والصور",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec19.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec01-bot01",
+    "title": "تحويل الصورة إلى نص",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 05_12_43 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec01-bot02",
+    "title": "تحويل النص إلى صورة",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 05_12_35 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec01-bot03",
+    "title": "توليد الصور الدعائية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 05_15_42 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg04-sec02",
+    "title": "تحرير الصور",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec20.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec02-bot01",
+    "title": "تكبير وتحسين الصور",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 05_20_05 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec02-bot02",
+    "title": "تعديل وتحرير الصور",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 05_22_13 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec02-bot03",
+    "title": "ترميم الصورة وإزالة التشوهات",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 05_41_25 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec02-bot04",
+    "title": "تعديل الصورة بعجلة الألوان",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 05_25_37 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec02-bot05",
+    "title": "عمل مؤثرات على الصور",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 05_28_26 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg04-sec03",
+    "title": "وصف وتحليل الصور",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec21.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec03-bot01",
+    "title": "تحليل الصور",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 05_44_33 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec03-bot02",
+    "title": "وصف الصورة",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 05_50_35 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg04-sec04",
+    "title": "تصميم وتطبيق الشعارات",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec22.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec04-bot01",
+    "title": "تصميم الشعارات",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_00_26 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec04-bot02",
+    "title": "تصميم الشعار على الرخام",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 05_56_23 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec04-bot03",
+    "title": "تصميم شعار بملامح الوجه",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_40_41 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec04-bot04",
+    "title": "تركيب الشعار على المنتج",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_02_06 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg04-sec05",
+    "title": "الهوية البصرية",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec23.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec05-bot01",
+    "title": "تصميم هوية بصرية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 5 يوليو 2026، 09_04_58 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec05-bot02",
+    "title": "تصميم هوية بصرية مؤسسية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_27_00 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec05-bot03",
+    "title": "تصميم بورتفوليو تفاعلي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_33_07 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec05-bot04",
+    "title": "تصميم بورتفوليو مهني",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_38_34 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec05-bot05",
+    "title": "تصميم موك اب إعلاني",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_29_56 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg04-sec06",
+    "title": "المنتج الإعلاني",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec45.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec06-bot01",
+    "title": "تصميم المنتجات",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_55_15 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec06-bot02",
+    "title": "تصميم إعلان تجاري",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_57_22 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg04-sec07",
+    "title": "بناء الصورة والهيكل البصري",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec46.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec07-bot01",
+    "title": "تصميم مسارات فيكتور",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_03_43 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec07-bot02",
+    "title": "تصميم أيقونات وصور مصغرة",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_50_30 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg04-sec08",
+    "title": "تفكيك المنتج وتحليل مكوناته",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec26.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec08-bot01",
+    "title": "تفكيك العناصر وترتيبها",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 04_19_42 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec08-bot02",
+    "title": "تقسيم المنتج إلى عدة قطع",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 04_21_14 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec08-bot03",
+    "title": "تكوين المجسّم من عناصره",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 08_04_21 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec08-bot04",
+    "title": "سلسلة المراحل العمرية للمنتج",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 08_06_18 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg04-sec09",
+    "title": "انفوغرافي وهولوغرافي",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec27.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec09-bot01",
+    "title": "تصميم انفوغرافي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 08_10_49 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec09-bot02",
+    "title": "تصميم هولوغرافي مخططات",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 08_07_51 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec09-bot03",
+    "title": "تصميم هولوغرافي عرض صورة",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 08_17_29 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec09-bot04",
+    "title": "تصميم هولوغرافي عرض صور",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 08_16_25 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg04-sec10",
+    "title": "التحويل الفني وإعادة التشكيل",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec28.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec10-bot01",
+    "title": "تحويل الكائنات إلى منحوتات",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 08_20_36 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec10-bot02",
+    "title": "تحويل الشخصية إلى تمثال",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 04_28_26 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec10-bot03",
+    "title": "تحويل الرسم إلى شخصية واقعية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 08_31_28 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec10-bot04",
+    "title": "تحويل الوجه إلى فن هندسي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 08_30_29 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg04-sec11",
+    "title": "الدمج والتركيب البصري",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec29.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec11-bot01",
+    "title": "دمج الرسم مع الواقع",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 04_42_07 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec11-bot02",
+    "title": "دمج العناصر في صورة واحدة",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 04_47_29 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec11-bot03",
+    "title": "دمج الشخصية مع المنتج",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 04_44_22 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec11-bot04",
+    "title": "تركيب أوراق نقدية على كائن",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 04_50_48 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg04-sec12",
+    "title": "إضفاء الطابع التعبيري والتأثيرات",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec47.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec12-bot01",
+    "title": "إظهار تعابير بشرية على المنتج",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 08_55_07 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec12-bot02",
+    "title": "تصميم تأثيرات نصية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 08_58_43 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg04-sec13",
+    "title": "الخطوط والكتابات العربية",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec31.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec13-bot01",
+    "title": "تهنئة باسمك وصورتك",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 09_07_53 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec13-bot02",
+    "title": "تصميم تهاني العيد",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 09_02_16 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec13-bot03",
+    "title": "دليل الخطوط العربية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 09_05_46 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec13-bot04",
+    "title": "كتابة كوفي مربع شبكي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 09_10_18 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg04-sec13-bot05",
+    "title": "كتابة الإعلانات التجارية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 04_55_43 ص.png"
+  },
+  {
+    "type": "package",
+    "id": "pkg05",
+    "title": "باقة الفن والأزياء",
+    "ratio": "16:9",
+    "path": "images/packages/pkg05 (Custom).png"
+  },
+  {
+    "type": "section",
+    "id": "pkg05-sec01",
+    "title": "الكتابة على الوجه",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec32.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec01-bot01",
+    "title": "الكتابة على الوجه",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_03_43 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec01-bot02",
+    "title": "تايبوغرافي على الوجه",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_05_27 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec01-bot03",
+    "title": "تايبوغرافي متكيف مع الخامة",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_06_39 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec01-bot04",
+    "title": "تصميم الوشم التجريدي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_09_49 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg05-sec02",
+    "title": "الأغلفة والقوالب",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec33.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec02-bot01",
+    "title": "تصميم أغلفة الكتب",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_13_27 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec02-bot02",
+    "title": "تصميم أغلفة المجلات",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_19_06 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec02-bot03",
+    "title": "تصميم أغلفة المجلات",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_24_07 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec02-bot04",
+    "title": "تصميم أغلفة المنتجات",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 09_21_43 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec02-bot05",
+    "title": "تصميم أغطية شفافة",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_31_54 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec02-bot06",
+    "title": "تصميم قوالب زجاجية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_34_14 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg05-sec03",
+    "title": "تصميم الزخارف",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec35.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec03-bot01",
+    "title": "تصميم زخارف إسلامية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_38_13 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec03-bot02",
+    "title": "تصميم زخارف كلاسيكية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_40_00 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg05-sec04",
+    "title": "التصميم بالرسم",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec48.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec04-bot01",
+    "title": "فن التصميم بالقلم الرصاص",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_42_14 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec04-bot02",
+    "title": "فن التصميم بالألوان المائية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_44_00 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec04-bot03",
+    "title": "فن التصميم بالألوان الزيتية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_46_54 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec04-bot04",
+    "title": "فن التصميم بالمساحيق",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_48_54 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec04-bot05",
+    "title": "فن التصميم بالرمل",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_51_16 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec04-bot06",
+    "title": "فن التصميم بالتطريز",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_53_25 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg05-sec05",
+    "title": "الأزياء والإكسسوارات",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec42.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec05-bot01",
+    "title": "تصميم أزياء تراثية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_54_57 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec05-bot02",
+    "title": "تصميم أزياء مستقبلية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_56_40 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec05-bot03",
+    "title": "تصميم قوالب لؤلؤية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_58_11 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec05-bot04",
+    "title": "تصميم فن الأظافر",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 06_59_24 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg05-sec06",
+    "title": "الفنون السريالية",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec37.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec06-bot01",
+    "title": "توليد الصور السريالية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_01_21 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec06-bot02",
+    "title": "توليد بورتريه سريالية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_07_37 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg05-sec07",
+    "title": "التصميم الضوئي",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec38.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec07-bot01",
+    "title": "دليل الإضاءة",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_10_34 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec07-bot02",
+    "title": "انعكاس الطيف على الأجسام",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_12_23 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec07-bot03",
+    "title": "توليد مشهد بإضاءة نيون",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_14_43 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec07-bot04",
+    "title": "إظهار الكائن بأشعة سينية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_17_33 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec07-bot05",
+    "title": "تحسين إضاءة الوجه",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_05_00 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec07-bot06",
+    "title": "تأثير نيون على الحواف",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_17_33 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg05-sec08",
+    "title": "تصميم التراث الإفريقي",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec39.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec08-bot01",
+    "title": "تصميم ملامح افريقية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_33_36 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec08-bot02",
+    "title": "تصميم مشهد أزياء افريقية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_29_35 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg05-sec09",
+    "title": "تصميم الخامات",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec40.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec09-bot01",
+    "title": "دليل الخامات",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_35_48 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec09-bot02",
+    "title": "تصميم الخامات على الشعار",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_25_43 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec09-bot03",
+    "title": "تصميم الخامات على الكتابة",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_39_44 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec09-bot04",
+    "title": "تصميم الخامات على الوجه",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_41_46 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg05-sec09-bot05",
+    "title": "تصميم الخامات على القماش",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 07_37_23 ص.png"
+  },
+  {
+    "type": "package",
+    "id": "pkg06",
+    "title": "باقة تصميم ثري دي",
+    "ratio": "16:9",
+    "path": "images/packages/pkg06 (Custom).png"
+  },
+  {
+    "type": "section",
+    "id": "pkg06-sec01",
+    "title": "التحويل الهندسي",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec50.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec01-bot01",
+    "title": "خبير الرسم المعماري",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 09_23_48 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec01-bot02",
+    "title": "تحويل كروكي إلى ثري دي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 09_25_21 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec01-bot03",
+    "title": "تحويل الرسوم إلى مجسّمات",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 09_27_01 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec01-bot04",
+    "title": "عمل هياكل معمارية من الصور",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 09_28_13 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec01-bot05",
+    "title": "تحويل المناظير إلى مساقط علوية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 09_29_42 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec01-bot06",
+    "title": "تحليل الفراغات الداخلية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 09_32_02 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg06-sec02",
+    "title": "التصميم الإنشائي",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec51.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec02-bot01",
+    "title": "مهندس التصميم الإنشائي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 09_39_28 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec02-bot02",
+    "title": "إنشاء شبكة المضلعات",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 09_41_11 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg06-sec03",
+    "title": "التصميم والتخطيط",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec52.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec03-bot01",
+    "title": "التصميم الداخلي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 09_43_33 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec03-bot02",
+    "title": "التصميم المعماري",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 09_45_15 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg06-sec04",
+    "title": "الإخراج المعماري",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec53.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec04-bot01",
+    "title": "تصميم ايزوميتريك معماري",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 09_48_09 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec04-bot02",
+    "title": "قياس قطع الأثاث",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 30 يونيو 2026، 09_56_54 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec04-bot03",
+    "title": "تحريك الأثاث للغرف الفارغة",
+    "ratio": "1:1",
+    "path": "images/bots/pkg06-sec04-bot03.webp"
+  },
+  {
+    "type": "section",
+    "id": "pkg06-sec05",
+    "title": "تصميم موديل ثري دي",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec54.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec05-bot01",
+    "title": "تحليل الصورة ثري دي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg06-sec05-bot01.webp"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec05-bot02",
+    "title": "نمذجة ثري دي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg06-sec05-bot02.webp"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec05-bot03",
+    "title": "خامات ثري دي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg06-sec05-bot03.webp"
+  },
+  {
+    "type": "section",
+    "id": "pkg06-sec06",
+    "title": "تجهيز المشاهد",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec55.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec06-bot01",
+    "title": "إضاءات ثري دي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg06-sec06-bot01.webp"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec06-bot02",
+    "title": "كاميرا ثري دي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg06-sec06-bot02.webp"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec06-bot03",
+    "title": "رندر ثري دي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg06-sec06-bot03.webp"
+  },
+  {
+    "type": "section",
+    "id": "pkg06-sec07",
+    "title": "الحركة والإنتاج",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec56.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec07-bot01",
+    "title": "مفاصل الحركة ثري دي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg06-sec07-bot01.webp"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec07-bot02",
+    "title": "مؤثرات ثري دي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg06-sec07-bot02.webp"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec07-bot03",
+    "title": "انيميشن ثري دي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg06-sec07-bot03.webp"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec07-bot04",
+    "title": "موشن جرافيك ثري دي",
+    "ratio": "1:1",
+    "path": "images/bots/pkg06-sec07-bot04.webp"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec07-bot05",
+    "title": "الإنتاج ثلاثي الأبعاد",
+    "ratio": "1:1",
+    "path": "images/bots/pkg06-sec07-bot05.webp"
+  },
+  {
+    "type": "section",
+    "id": "pkg06-sec08",
+    "title": "الألوان والأنماط",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec57.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec08-bot01",
+    "title": "دليل الألوان",
+    "ratio": "1:1",
+    "path": "images/bots/pkg06-sec08-bot01.webp"
+  },
+  {
+    "type": "bot",
+    "id": "pkg06-sec08-bot02",
+    "title": "دليل الأنماط",
+    "ratio": "1:1",
+    "path": "images/bots/pkg06-sec08-bot02.webp"
+  },
+  {
+    "type": "package",
+    "id": "pkg07",
+    "title": "باقة صناعة الأفلام",
+    "ratio": "16:9",
+    "path": "images/packages/pkg10 (Custom).png"
+  },
+  {
+    "type": "section",
+    "id": "pkg07-sec01",
+    "title": "توليد الصور",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec71.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec01-bot01",
+    "title": "توليد برومبت سينمائي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 05_16_00 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec01-bot02",
+    "title": "توليد لقطة سينمائية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 05_17_21 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg07-sec02",
+    "title": "فكرة الفيلم وهويته",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec73.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec02-bot01",
+    "title": "اختيار فكرة فيلم سينمائي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 05_25_17 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec02-bot02",
+    "title": "ضبط الأسلوب والهوية البصرية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 05_27_58 ص (1).png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec02-bot03",
+    "title": "اختيار هوية شخصية الفيلم",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 05_29_59 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec02-bot04",
+    "title": "وصف وتحليل الشخصية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 05_31_01 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec02-bot05",
+    "title": "إنشاء وضعيات للشخصية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 05_32_07 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec02-bot06",
+    "title": "تعابير الوجه ولغة الجسد",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 05_40_02 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg07-sec03",
+    "title": "التأسيس والمرجعية",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec75.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec03-bot01",
+    "title": "توليد مشاهد ستوري بورد",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 05_35_24 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec03-bot02",
+    "title": "توليد إطارات مرجعية للفيديو",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 05_48_46 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg07-sec04",
+    "title": "التحريك والإخراج",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec76.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec04-bot01",
+    "title": "هيكل الحركة والمنطق الفيزيائي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 05_52_47 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec04-bot02",
+    "title": "تحريك الشخصية السينمائية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 05_44_27 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec04-bot03",
+    "title": "الإخراج الحركي واللقطات",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 05_53_10 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec04-bot04",
+    "title": "مراجعة الاتساق والثبات",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 05_33_32 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec04-bot05",
+    "title": "دعم إنتاج الفيلم",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 05_49_49 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec04-bot06",
+    "title": "إنتاج فيلم كامل",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 05_27_59 ص (2).png"
+  },
+  {
+    "type": "section",
+    "id": "pkg07-sec05",
+    "title": "توليد الفيديو",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec70.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec05-bot01",
+    "title": "توليد مقطع برومو",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 05_28_48 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec05-bot02",
+    "title": "توليد قصص فيديو",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 05_51_05 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec05-bot03",
+    "title": "دمج لقطات في فيديو واحد",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 05_52_47 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec05-bot04",
+    "title": "بناء مشهد متعدد اللقطات",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 06_00_05 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg07-sec06",
+    "title": "منصات توليد الفيديو",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec72.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec06-bot01",
+    "title": "داعم فيو ثري بالعربية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 05_56_54 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec06-bot02",
+    "title": "الدليل الإرشادي لمنصة هيقزفيلد",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 06_06_14 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg07-sec07",
+    "title": "الإنتاج والإخراج",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec75.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec07-bot01",
+    "title": "توليد فيلم بالمونتاج الإيقاعي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 06_07_35 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec07-bot02",
+    "title": "توليد فيديو تايم لابس",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 06_09_04 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec07-bot03",
+    "title": "توليد دوران حول المنتج",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 06_10_37 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg07-sec08",
+    "title": "التفكيك والتحليل البصري",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec65.webp"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec08-bot01",
+    "title": "انيميشن تفكيك عناصر المنتج",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 06_13_01 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec08-bot02",
+    "title": "انيميشن إعادة بناء الشكل الجاهز",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 06_27_14 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec08-bot03",
+    "title": "انيميشن الموقع الافتراضي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 06_16_07 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg07-sec09",
+    "title": "الإعلانات والهوية البصرية",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec74.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec09-bot01",
+    "title": "توليد إعلانات كرتونية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 06_17_33 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec09-bot02",
+    "title": "المنتجات تتكلم بنمط بيكسار",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 06_19_30 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec09-bot03",
+    "title": "تحويل الشخصية إلى كائن آخر",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 06_21_54 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg07-sec10",
+    "title": "الصوت والمقامات",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec67.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec10-bot01",
+    "title": "الشعر الغنائي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 06_24_48 ص (2).png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec10-bot02",
+    "title": "كتابة المقامات الأدبية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 06_29_35 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec10-bot03",
+    "title": "تحليل المقامات الموسيقية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 06_31_26 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg07-sec11",
+    "title": "الموسيقى والمؤثرات",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec69.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec11-bot01",
+    "title": "توصيف موسيقى لمنصة سنو",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 06_31_26 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec11-bot02",
+    "title": "توليد معزوفة شرقية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 06_24_48 ص (1).png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec11-bot03",
+    "title": "المؤثرات الصوتية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 06_33_04 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec11-bot04",
+    "title": "مساعد تفريغ النصوص",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 06_37_08 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg07-sec12",
+    "title": "الفصاحة والخطابة",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec68.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec12-bot01",
+    "title": "علم العروض والأوزان الشعرية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 06_39_41 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg07-sec12-bot02",
+    "title": "تشكيل نصوص التعليق الصوتي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 06_41_02 ص.png"
+  },
+  {
+    "type": "package",
+    "id": "pkg08",
+    "title": "باقة الإدارة والتسويق",
+    "ratio": "16:9",
+    "path": "images/packages/pkg08 (Custom).png"
+  },
+  {
+    "type": "section",
+    "id": "pkg08-sec01",
+    "title": "المشاريع وريادة الأعمال",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec77.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec01-bot01",
+    "title": "دراسة جدوى تطوير الموارد",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 07_44_40 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec01-bot02",
+    "title": "دراسة جدوى ربحية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 07_57_09 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec01-bot03",
+    "title": "صناعة المشاريع الذاتية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 08_02_53 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg08-sec02",
+    "title": "توليد الأفكار",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec78.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec02-bot01",
+    "title": "صناعة الأفكار",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 08_10_21 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec02-bot02",
+    "title": "العصف الذهني",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 08_17_26 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec02-bot03",
+    "title": "نظرية تريز للحلول الابتكارية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 08_19_17 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg08-sec03",
+    "title": "الدعم النفسي",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec79.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec03-bot01",
+    "title": "علم النفس التسويقي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 08_20_53 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec03-bot02",
+    "title": "إدارة الضغوط والأزمات",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 08_24_39 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg08-sec04",
+    "title": "الإعلان والحملات",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec80.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec04-bot01",
+    "title": "كتابة محتوى تسويقي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 08_30_22 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec04-bot02",
+    "title": "كتابة إعلانات تجارية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 08_32_02 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec04-bot03",
+    "title": "إطلاق الحملات التسويقية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 09_01_55 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg08-sec05",
+    "title": "تحسين الظهور",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec81.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec05-bot01",
+    "title": "خبير الأسماء التجارية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 09_07_47 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec05-bot02",
+    "title": "الكلمات المفتاحية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 09_10_09 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec05-bot03",
+    "title": "تحسين محركات البحث",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 09_12_00 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec05-bot04",
+    "title": "تحسين المتاجر الإلكترونية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 09_13_36 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec05-bot05",
+    "title": "تحسين تجربة العميل",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 09_15_59 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg08-sec06",
+    "title": "تجهيز أصول الموقع",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec82.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec06-bot01",
+    "title": "البحث المرجعي وتحليل الهوية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 09_17_54 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec06-bot02",
+    "title": "توليد التصور الكامل للموقع",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 09_23_13 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec06-bot03",
+    "title": "تجهيز الأصول المطابقة للتصميم",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 09_34_45 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec06-bot04",
+    "title": "تحويل التصميم إلى موقع",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 09_40_19 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg08-sec07",
+    "title": "الويب وتصميم المواقع",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec83.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec07-bot01",
+    "title": "تصميم واجهة ويب",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 09_42_20 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec07-bot02",
+    "title": "واجهة المستخدم البرمجية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 09_46_57 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg08-sec08",
+    "title": "التسويق الرقمي والتحويل",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec85.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec08-bot01",
+    "title": "تصميم صفحات الهبوط",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 09_48_43 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec08-bot02",
+    "title": "خطة التسويق الإلكترونية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 09_51_39 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg08-sec09",
+    "title": "الإدارة المهنية والتشغيل",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec86.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec09-bot01",
+    "title": "إنشاء خطة عمل تشغيلية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 09_53_44 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec09-bot02",
+    "title": "كتابة سيرة ذاتية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 09_54_55 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec09-bot03",
+    "title": "التمكين الوظيفي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 09_57_33 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec09-bot04",
+    "title": "صياغة العقود التجارية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 09_57_46 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec09-bot05",
+    "title": "إعداد التقارير الدورية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 09_58_47 م.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec09-bot06",
+    "title": "المساعد العقاري الذكي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 1 يوليو 2026، 10_01_38 م.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg08-sec10",
+    "title": "الاستثمار والتمويل",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec87.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec10-bot01",
+    "title": "المستشار المالي الذكي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 04_28_21 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec10-bot02",
+    "title": "التحليل الفني والمالي للأسهم",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 04_30_37 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec10-bot03",
+    "title": "ماسحة الأخبار المالية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 07_37_27 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec10-bot04",
+    "title": "تحليل صفقات الفوركس",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 04_33_37 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg08-sec11",
+    "title": "الحوكمة والأسواق",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec88.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec11-bot01",
+    "title": "حوكمة الشركات",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 04_35_31 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec11-bot02",
+    "title": "حوكمة مؤشرات الأداء",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 04_39_16 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec11-bot03",
+    "title": "نظام الشركات ولوائح السوق",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 04_41_50 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec11-bot04",
+    "title": "محلل السوق والمنافسين",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 04_46_08 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg08-sec12",
+    "title": "المنصات والأتمتة",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec89.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec12-bot01",
+    "title": "دعم البائعين في منصة خمسات",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 04_48_12 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg08-sec12-bot02",
+    "title": "المساعد الذكي في أتمتة العمل",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 04_50_30 ص.png"
+  },
+  {
+    "type": "package",
+    "id": "pkg09",
+    "title": "باقة الصحة والمجتمع",
+    "ratio": "16:9",
+    "path": "images/packages/pkg09 (Custom).png"
+  },
+  {
+    "type": "section",
+    "id": "pkg09-sec01",
+    "title": "القياس النفسي",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec90.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg09-sec01-bot01",
+    "title": "مقياس التركيز الذهني",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 05_36_31 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg09-sec01-bot02",
+    "title": "قياس الحيل النفسية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 04_55_40 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg09-sec01-bot03",
+    "title": "فهم الشخصية",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 04_58_40 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg09-sec02",
+    "title": "الوعي الصحي",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec91.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg09-sec02-bot01",
+    "title": "الكشف عن المنتج الصحي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 05_00_37 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg09-sec03",
+    "title": "التواصل والتفاعل",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec92.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg09-sec03-bot01",
+    "title": "قياس الكاريزما والتواصل",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 05_02_58 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg09-sec03-bot02",
+    "title": "إدارة الحوار الهادف",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 05_06_35 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg09-sec04",
+    "title": "الصحة الاجتماعية",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec93.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg09-sec04-bot01",
+    "title": "التأهيل الأسري والزوجي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 05_08_48 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg09-sec04-bot02",
+    "title": "مدرسة الحكم النبوي الرشيد",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 05_10_10 ص.png"
+  },
+  {
+    "type": "package",
+    "id": "pkg10",
+    "title": "باقة صناعة البوتات",
+    "ratio": "16:9",
+    "path": "images/packages/pkg07 (Custom).png"
+  },
+  {
+    "type": "section",
+    "id": "pkg10-sec01",
+    "title": "أساسيات التكوين",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec94.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg10-sec01-bot01",
+    "title": "تعليم جي بي تي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 05_12_30 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg10-sec01-bot02",
+    "title": "صناعة نماذج جي بي تي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 05_16_05 ص (1).png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg10-sec01-bot03",
+    "title": "اختبار مرتكزات الذكاء الاصطناعي",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 05_18_09 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg10-sec02",
+    "title": "هندسة التعليمات",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec95.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg10-sec02-bot01",
+    "title": "تعليمات النظام والسياق",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 05_20_24 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg10-sec02-bot02",
+    "title": "تعليمات المواعيد والمهام",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 05_33_35 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg10-sec02-bot03",
+    "title": "تعليمات وضع الوكيل",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 05_38_41 ص.png"
+  },
+  {
+    "type": "section",
+    "id": "pkg10-sec03",
+    "title": "تعليمات التكوين",
+    "ratio": "1:1",
+    "path": "images/sections/pkg01-sec96.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg10-sec03-bot01",
+    "title": "تعليمات تكوين النموذج",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 05_41_40 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg10-sec03-bot02",
+    "title": "شارح تعليمات تكوين النماذج",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 05_28_57 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg10-sec03-bot03",
+    "title": "اختبار تعليمات تكوين النماذج",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 05_43_42 ص.png"
+  },
+  {
+    "type": "bot",
+    "id": "pkg10-sec03-bot04",
+    "title": "إدارة ملفات المعرفة",
+    "ratio": "1:1",
+    "path": "images/bots/ChatGPT Image 2 يوليو 2026، 05_45_17 ص.png"
+  }
+]
