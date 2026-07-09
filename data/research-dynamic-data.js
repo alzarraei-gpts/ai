@@ -1,6 +1,6 @@
 window.RESEARCH_DATA = {
   "version": "all-packages-from-docm-v1",
-  "updatedAt": "2026-07-05T18:13:36.769Z",
+  "updatedAt": "2026-07-09T04:10:39.118Z",
   "source": "كل الباقات.docm",
   "policy": {
     "media": "الصور تُحفظ داخل مجلد images مع السماح بأسماء الصور الأصلية دون فرض أسماء ثابتة.",
@@ -13,8 +13,8 @@ window.RESEARCH_DATA = {
     {
       "id": "pkg01",
       "title": "باقة الباحث العلمي",
-      "image": "images/packages/pkg01.png",
-      "description": "تضم باقة الباحث العلمي 10 تقسيمات و38 بوتًا، وفق المحتوى المستخرج من ملف كل الباقات.",
+      "image": "images/packages/pkg01 (Custom).png",
+      "description": "تضم باقة الباحث العلمي 10 تقسيمات و38 بوتًا،.",
       "sections": [
         {
           "id": "pkg01-sec01",
@@ -481,8 +481,8 @@ window.RESEARCH_DATA = {
     {
       "id": "pkg02",
       "title": "باقة ملحقات الباحث",
-      "image": "images/packages/pkg02.png",
-      "description": "تضم باقة ملحقات الباحث 10 تقسيمات و30 بوتًا، وفق المحتوى المستخرج من ملف كل الباقات.",
+      "image": "images/packages/pkg02 (Custom).png",
+      "description": "تضم باقة ملحقات الباحث 10 تقسيمات و30 بوتًا،.",
       "sections": [
         {
           "id": "pkg02-sec01",
@@ -869,8 +869,8 @@ window.RESEARCH_DATA = {
     {
       "id": "pkg03",
       "title": "باقة التعليم والتدريب",
-      "image": "images/packages/pkg03.png",
-      "description": "تضم باقة التعليم والتدريب 7 تقسيمات و22 بوتًا، وفق المحتوى المستخرج من ملف كل الباقات.",
+      "image": "images/packages/pkg03 (Custom).png",
+      "description": "تضم باقة التعليم والتدريب 7 تقسيمات و22 بوتًا،.",
       "sections": [
         {
           "id": "pkg03-sec01",
@@ -1153,8 +1153,8 @@ window.RESEARCH_DATA = {
     {
       "id": "pkg04",
       "title": "باقة التصميم الذكي",
-      "image": "images/packages/pkg04.png",
-      "description": "تضم باقة التصميم الذكي 13 تقسيمات و46 بوتًا، وفق المحتوى المستخرج من ملف كل الباقات.",
+      "image": "images/packages/pkg04 (Custom).png",
+      "description": "تضم باقة التصميم الذكي 13 تقسيمات و46 بوتًا،.",
       "sections": [
         {
           "id": "pkg04-sec01",
@@ -1725,8 +1725,8 @@ window.RESEARCH_DATA = {
     {
       "id": "pkg05",
       "title": "باقة الفن والأزياء",
-      "image": "images/packages/pkg05.png",
-      "description": "تضم باقة الفن والأزياء 9 تقسيمات و37 بوتًا، وفق المحتوى المستخرج من ملف كل الباقات.",
+      "image": "images/packages/pkg05 (Custom).png",
+      "description": "تضم باقة الفن والأزياء 9 تقسيمات و37 بوتًا،.",
       "sections": [
         {
           "id": "pkg05-sec01",
@@ -2175,8 +2175,8 @@ window.RESEARCH_DATA = {
     {
       "id": "pkg06",
       "title": "باقة تصميم ثري دي",
-      "image": "images/packages/pkg06.png",
-      "description": "تضم باقة تصميم ثري دي 8 تقسيمات و26 بوتًا، وفق المحتوى المستخرج من ملف كل الباقات.",
+      "image": "images/packages/pkg06 (Custom).png",
+      "description": "تضم باقة تصميم ثري دي 8 تقسيمات و26 بوتًا،.",
       "sections": [
         {
           "id": "pkg06-sec01",
@@ -2507,8 +2507,8 @@ window.RESEARCH_DATA = {
     {
       "id": "pkg07",
       "title": "باقة صناعة الأفلام",
-      "image": "images/packages/pkg10.png",
-      "description": "تضم باقة صناعة الأفلام 12 تقسيمات و40 بوتًا، وفق المحتوى المستخرج من ملف كل الباقات.",
+      "image": "images/packages/pkg10 (Custom).png",
+      "description": "تضم باقة صناعة الأفلام 12 تقسيمات و40 بوتًا،.",
       "sections": [
         {
           "id": "pkg07-sec01",
@@ -3011,8 +3011,8 @@ window.RESEARCH_DATA = {
     {
       "id": "pkg08",
       "title": "باقة الإدارة والتسويق",
-      "image": "images/packages/pkg08.png",
-      "description": "تضم باقة الإدارة والتسويق 12 تقسيمات و40 بوتًا، وفق المحتوى المستخرج من ملف كل الباقات.",
+      "image": "images/packages/pkg08 (Custom).png",
+      "description": "تضم باقة الإدارة والتسويق 12 تقسيمات و40 بوتًا،.",
       "sections": [
         {
           "id": "pkg08-sec01",
@@ -3515,8 +3515,8 @@ window.RESEARCH_DATA = {
     {
       "id": "pkg09",
       "title": "باقة الصحة والمجتمع",
-      "image": "images/packages/pkg09.png",
-      "description": "تضم باقة الصحة والمجتمع 4 تقسيمات و8 بوتًا، وفق المحتوى المستخرج من ملف كل الباقات.",
+      "image": "images/packages/pkg09 (Custom).png",
+      "description": "تضم باقة الصحة والمجتمع 4 تقسيمات و8 بوتًا،.",
       "sections": [
         {
           "id": "pkg09-sec01",
@@ -3635,8 +3635,8 @@ window.RESEARCH_DATA = {
     {
       "id": "pkg10",
       "title": "باقة صناعة البوتات",
-      "image": "images/packages/pkg07.png",
-      "description": "تضم باقة صناعة البوتات 3 تقسيمات و10 بوتًا، وفق المحتوى المستخرج من ملف كل الباقات.",
+      "image": "images/packages/pkg07 (Custom).png",
+      "description": "تضم باقة صناعة البوتات 3 تقسيمات و10 بوتًا،.",
       "sections": [
         {
           "id": "pkg10-sec01",
